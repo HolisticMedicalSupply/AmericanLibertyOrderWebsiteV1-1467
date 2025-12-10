@@ -104,10 +104,10 @@ export default function PoliciesOverview() {
                 >
                   <Link
                     to={`/policies/${policy.slug}`}
-                    className="group block h-full"
+                    className="group block h-full cursor-pointer"
                   >
                     <div
-                      className="glass-effect rounded-xl p-6 border border-border/50 hover:border-primary transition-all h-full flex flex-col"
+                      className="glass-effect rounded-xl p-6 border border-border/50 hover:border-primary hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full flex flex-col"
                       style={{
                         borderColor: policy.color + '30',
                       }}

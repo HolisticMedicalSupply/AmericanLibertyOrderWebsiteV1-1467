@@ -164,6 +164,12 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.glass-effect {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
 @keyframes float {
   0%, 100% {
     transform: translateY(0px);
@@ -200,4 +206,12 @@
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+/* Gradient text utility to prevent clipping of descenders */
+.gradient-text {
+  @apply bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  line-height: 1.2;
 }
