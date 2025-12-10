@@ -84,22 +84,22 @@ export default function Home() {
     <div className="min-h-screen">
       <Navigation />
 
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url(/hero-bg-final.png)" }}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background/95"></div>
         </div>
         
-        <div className="relative z-10 container mx-auto px-6 text-center">
+        <div className="relative z-10 container mx-auto px-6 text-center flex flex-col items-center justify-center h-full py-20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="mb-8"
           >
-            <img src="/logo-final.png" alt="ALO" className="h-56 w-56 mx-auto mb-8 animate-float" />
+            <img src="/logo-final.png" alt="ALO" className="h-80 w-80 mx-auto mb-8 animate-float" />
           </motion.div>
           
           <motion.h1
@@ -139,7 +139,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
-            className="mt-16"
+            className="absolute bottom-8"
           >
             <a href="#about" className="inline-block">
               <ChevronDown className="h-8 w-8 text-foreground/60 animate-bounce" />
@@ -246,9 +246,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="programs" className="py-24 relative overflow-hidden">
+      <section id="programs" className="py-24 bg-muted/40 relative overflow-hidden">
         <div 
-          className="absolute inset-0 opacity-5 bg-cover bg-center"
+          className="absolute inset-0 opacity-3 bg-cover bg-center"
           style={{ backgroundImage: "url(/programs-bg.png)" }}
         ></div>
         
