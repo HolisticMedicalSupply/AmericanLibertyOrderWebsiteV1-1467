@@ -241,7 +241,7 @@ export default function PolicyDetail() {
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="glass-effect rounded-xl p-6 border border-border/50 sticky top-24"
+              className="glass-effect rounded-xl p-6 border border-border/50"
             >
               <h3 className="font-semibold mb-4">Subscribe for Updates</h3>
               <p className="text-sm text-muted-foreground mb-4">
