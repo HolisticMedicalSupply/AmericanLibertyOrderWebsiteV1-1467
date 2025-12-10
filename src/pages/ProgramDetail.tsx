@@ -7,10 +7,10 @@ import { getIconComponent } from '@/lib/icon-mapper';
 import Navigation from '@/components/Navigation';
 
 const tierColors = {
-  Core: 'bg-blue-500/20 text-blue-400 border-blue-500/30',
-  Recommended: 'bg-green-500/20 text-green-400 border-green-500/30',
-  Optional: 'bg-gray-500/20 text-gray-400 border-gray-500/30',
-  Featured: 'bg-purple-500/20 text-purple-400 border-purple-500/30'
+  Core: 'bg-primary/20 text-primary border-primary/30',
+  Recommended: 'bg-accent/20 text-accent border-accent/30',
+  Optional: 'bg-muted/20 text-muted-foreground border-muted/30',
+  Featured: 'bg-secondary/20 text-secondary border-secondary/30'
 };
 
 export default function ProgramDetail() {
@@ -130,11 +130,11 @@ export default function ProgramDetail() {
                         className="px-6 pb-6 space-y-6"
                       >
                         <div>
-                          <h4 className="font-semibold text-blue-400 mb-3">What We Offer</h4>
+                          <h4 className="font-semibold text-primary mb-3">What We Offer</h4>
                           <ul className="space-y-2">
                             {program.activities.map((activity, i) => (
                               <li key={i} className="flex items-start gap-2 text-muted-foreground">
-                                <span className="text-blue-400 mt-1">✓</span>
+                                <span className="text-primary mt-1">✓</span>
                                 <span>{activity}</span>
                               </li>
                             ))}
@@ -143,7 +143,7 @@ export default function ProgramDetail() {
 
                         {program.requirements && (
                           <div>
-                            <h4 className="font-semibold text-yellow-400 mb-3">Requirements</h4>
+                            <h4 className="font-semibold text-accent mb-3">Requirements</h4>
                             <p className="text-muted-foreground">{program.requirements}</p>
                           </div>
                         )}
@@ -151,12 +151,12 @@ export default function ProgramDetail() {
                         {program.frequency && (
                           <div className="grid grid-cols-2 gap-4">
                             <div>
-                              <h4 className="font-semibold text-green-400 mb-2">Frequency</h4>
+                              <h4 className="font-semibold text-accent mb-2">Frequency</h4>
                               <p className="text-sm text-muted-foreground">{program.frequency}</p>
                             </div>
                             {program.lead && (
                               <div>
-                                <h4 className="font-semibold text-purple-400 mb-2">Program Lead</h4>
+                                <h4 className="font-semibold text-secondary mb-2">Program Lead</h4>
                                 <p className="text-sm text-muted-foreground">{program.lead}</p>
                               </div>
                             )}
@@ -294,7 +294,7 @@ export default function ProgramDetail() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground mb-1">Core Programs</p>
-                  <p className="text-2xl font-bold text-blue-400">
+                  <p className="text-2xl font-bold text-primary">
                     {programCategory.programs.filter(p => p.tier === 'Core').length}
                   </p>
                 </div>

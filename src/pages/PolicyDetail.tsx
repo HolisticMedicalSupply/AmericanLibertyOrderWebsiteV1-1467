@@ -7,12 +7,12 @@ import { getIconComponent } from '@/lib/icon-mapper';
 import Navigation from '@/components/Navigation';
 
 const viabilityColors = {
-  high: 'bg-green-500/20 text-green-400 border-green-500/30',
-  'mod-high': 'bg-lime-500/20 text-lime-400 border-lime-500/30',
-  moderate: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30',
-  'low-mod': 'bg-orange-500/20 text-orange-400 border-orange-500/30',
-  low: 'bg-red-500/20 text-red-400 border-red-500/30',
-  varies: 'bg-purple-500/20 text-purple-400 border-purple-500/30'
+  high: 'bg-accent/20 text-accent border-accent/30',
+  'mod-high': 'bg-accent/15 text-accent border-accent/25',
+  moderate: 'bg-accent/10 text-accent border-accent/20',
+  'low-mod': 'bg-secondary/15 text-secondary border-secondary/25',
+  low: 'bg-secondary/20 text-secondary border-secondary/30',
+  varies: 'bg-primary/20 text-primary border-primary/30'
 };
 
 const viabilityLabels = {
@@ -185,13 +185,13 @@ export default function PolicyDetail() {
                         </div>
 
                         <div>
-                          <h4 className="font-semibold text-green-400 mb-3 flex items-center gap-2">
+                          <h4 className="font-semibold text-accent mb-3 flex items-center gap-2">
                             Our Positions
                           </h4>
                           <ul className="space-y-2">
                             {subPolicy.positions.map((item, i) => (
                               <li key={i} className="flex items-start gap-2 text-muted-foreground">
-                                <span className="text-green-400 mt-1">✓</span>
+                                <span className="text-accent mt-1">✓</span>
                                 <span>{item}</span>
                               </li>
                             ))}
@@ -199,8 +199,8 @@ export default function PolicyDetail() {
                         </div>
 
                         <div>
-                          <h4 className="font-semibold text-blue-400 mb-3">How We Frame It</h4>
-                          <p className="text-muted-foreground italic border-l-2 border-blue-400 pl-4">
+                          <h4 className="font-semibold text-primary mb-3">How We Frame It</h4>
+                          <p className="text-muted-foreground italic border-l-2 border-primary pl-4">
                             {subPolicy.framing}
                           </p>
                         </div>
@@ -323,7 +323,7 @@ export default function PolicyDetail() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground mb-1">High Viability</p>
-                  <p className="text-2xl font-bold text-green-400">
+                  <p className="text-2xl font-bold text-accent">
                     {policy.subPolicies.filter(sp => sp.viability === 'high').length}
                   </p>
                 </div>
