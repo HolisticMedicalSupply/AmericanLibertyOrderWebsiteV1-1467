@@ -1,0 +1,419 @@
+{
+  "programs": [
+    {
+      "id": "member-support",
+      "title": "Member Support Programs",
+      "slug": "member-support",
+      "icon": "🛡️",
+      "color": "#1976D2",
+      "shortDescription": "Comprehensive support systems for members facing government overreach, economic hardship, or personal challenges.",
+      "overview": "We believe in mutual aid and community resilience. Our member support programs provide practical assistance to those standing up for liberty and facing consequences for their principles.",
+      "programs": [
+        {
+          "name": "Financial Hardship Fund",
+          "tier": "Core",
+          "description": "Emergency financial assistance for members facing hardship due to standing up for principles or government overreach",
+          "details": [
+            "Grants up to $5,000 for emergency expenses",
+            "No-interest loans up to $25,000 for larger needs",
+            "Business interruption support for entrepreneurs",
+            "Medical bill assistance",
+            "Housing emergency assistance"
+          ],
+          "howToQualify": [
+            "Active membership for 6+ months",
+            "Demonstrated financial need",
+            "Connection to liberty principles or government overreach",
+            "Application reviewed by support committee"
+          ]
+        },
+        {
+          "name": "Legal Defense Network",
+          "tier": "Core",
+          "description": "Access to pre-screened liberty-minded attorneys and legal defense funding",
+          "details": [
+            "Directory of vetted attorneys by practice area and location",
+            "Free initial consultations for members",
+            "Legal defense fund for cases involving constitutional rights",
+            "Amicus brief support for important cases",
+            "Know Your Rights training and resources"
+          ],
+          "howToQualify": [
+            "All members have access to attorney directory",
+            "Legal defense funding requires case review",
+            "Priority for cases advancing liberty principles",
+            "Pro bono matching for low-income members"
+          ]
+        },
+        {
+          "name": "Family Support Services",
+          "tier": "Recommended",
+          "description": "Holistic support for families facing challenges, from childcare to elder care",
+          "details": [
+            "Emergency childcare coordination",
+            "Homeschool family network and resources",
+            "Family mediation services",
+            "Marriage enrichment programs",
+            "Parenting support groups",
+            "Resources for families with special needs children"
+          ],
+          "howToQualify": [
+            "Active membership",
+            "Most services available to all members",
+            "Some specialized services require needs assessment"
+          ]
+        },
+        {
+          "name": "Elder Care & Support",
+          "tier": "Recommended",
+          "description": "Helping our older members age with dignity and independence",
+          "details": [
+            "Home visit coordination for isolated seniors",
+            "Technology training for staying connected",
+            "Medicare/insurance navigation assistance",
+            "End-of-life planning resources",
+            "Advocacy against elder financial abuse",
+            "Intergenerational mentorship opportunities"
+          ],
+          "howToQualify": [
+            "Available to members 60+",
+            "Family members can coordinate on behalf of senior members",
+            "Some services available to non-member elderly parents of members"
+          ]
+        },
+        {
+          "name": "Mental Health & Counseling",
+          "tier": "Optional",
+          "description": "Confidential mental health support and counseling services",
+          "details": [
+            "Network of liberty-minded therapists and counselors",
+            "Crisis hotline for members in distress",
+            "Support groups for various challenges",
+            "Subsidized counseling sessions",
+            "Trauma recovery resources",
+            "Stress management and resilience training"
+          ],
+          "howToQualify": [
+            "All members have access to resources and crisis line",
+            "Subsidized sessions based on financial need",
+            "Complete confidentiality guaranteed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "community-service",
+      "title": "Community Service & Outreach",
+      "slug": "community-service",
+      "icon": "🤝",
+      "color": "#388E3C",
+      "shortDescription": "Building strong communities through service, demonstrating our values through action.",
+      "overview": "Actions speak louder than words. Our community service programs demonstrate our commitment to our neighbors and build the social capital needed for lasting change.",
+      "programs": [
+        {
+          "name": "Veterans Support Initiative",
+          "tier": "Core",
+          "description": "Serving those who served, with practical assistance and community connection",
+          "details": [
+            "Job placement assistance for transitioning veterans",
+            "Small business mentorship for veteran entrepreneurs",
+            "Home repair projects for disabled veterans",
+            "Holiday support for veteran families",
+            "Connection to VA benefits and advocacy",
+            "Peer support groups for veterans"
+          ],
+          "howToQualify": [
+            "Open to all veterans in the community",
+            "Non-members can access all services",
+            "Volunteer opportunities for members to serve veterans"
+          ]
+        },
+        {
+          "name": "First Responder Appreciation",
+          "tier": "Recommended",
+          "description": "Supporting police, firefighters, and EMTs with recognition and practical help",
+          "details": [
+            "Annual First Responder Appreciation events",
+            "Family support during crises or line-of-duty incidents",
+            "Scholarship program for first responders pursuing education",
+            "Wellness programs addressing PTSD and burnout",
+            "Advocacy for fair compensation and benefits",
+            "Community bridge-building initiatives"
+          ],
+          "howToQualify": [
+            "Open to all first responders in the community",
+            "Family members can access support services",
+            "Members volunteer to organize and staff events"
+          ]
+        },
+        {
+          "name": "Community Clean-Up & Beautification",
+          "tier": "Core",
+          "description": "Regular community service projects to improve our shared spaces",
+          "details": [
+            "Monthly neighborhood clean-up events",
+            "Park and public space beautification",
+            "Graffiti removal and vandalism repair",
+            "Community garden development",
+            "Adopt-a-road programs",
+            "Litter prevention education"
+          ],
+          "howToQualify": [
+            "Open to all community members",
+            "Family-friendly events with activities for all ages",
+            "No membership required to participate"
+          ]
+        },
+        {
+          "name": "Disaster Relief & Preparedness",
+          "tier": "Recommended",
+          "description": "Emergency response and community resilience building",
+          "details": [
+            "Disaster preparedness training for families",
+            "Emergency supply distribution during crises",
+            "Volunteer coordination for disaster response",
+            "Rebuilding assistance after disasters",
+            "Community resilience planning",
+            "Ham radio network for emergency communications"
+          ],
+          "howToQualify": [
+            "Preparedness training open to all community members",
+            "Volunteer response team requires training and commitment",
+            "Assistance available to all in need during disasters"
+          ]
+        },
+        {
+          "name": "Food Security Programs",
+          "tier": "Optional",
+          "description": "Addressing hunger and promoting food independence",
+          "details": [
+            "Community food pantry support",
+            "Fresh food distribution from local farms",
+            "Community garden plots for families",
+            "Food preservation workshops",
+            "Connection to SNAP benefits and nutrition programs",
+            "School breakfast and lunch programs advocacy"
+          ],
+          "howToQualify": [
+            "Food assistance available to all in need",
+            "Garden plots by application, prioritizing families",
+            "Educational programs open to community"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "youth-programs",
+      "title": "Youth & Next Generation",
+      "slug": "youth-programs",
+      "icon": "🎓",
+      "color": "#F57C00",
+      "shortDescription": "Investing in the next generation through education, mentorship, and leadership development.",
+      "overview": "The future of liberty depends on raising informed, principled young people. Our youth programs combine education, practical skills, and mentorship to prepare the next generation of leaders.",
+      "programs": [
+        {
+          "name": "Youth Mentorship Program",
+          "tier": "Core",
+          "description": "One-on-one mentorship connecting young people with accomplished adults",
+          "details": [
+            "Mentors matched by interests and career goals",
+            "Structured program with regular meetings",
+            "Life skills and professional development focus",
+            "College and career planning guidance",
+            "Leadership development opportunities",
+            "Community service projects for mentees"
+          ],
+          "howToQualify": [
+            "Youth ages 13-22 can apply for mentorship",
+            "Adults undergo background checks to become mentors",
+            "Commitment of at least one year",
+            "Parent approval required for minors"
+          ]
+        },
+        {
+          "name": "Scholarships & Financial Aid",
+          "tier": "Core",
+          "description": "Financial support for education and skills training",
+          "details": [
+            "Academic scholarships based on merit and need",
+            "Trade school and vocational training grants",
+            "Homeschool family education assistance",
+            "Books and supplies for students in need",
+            "SAT/ACT test prep support",
+            "Financial literacy for scholarship recipients"
+          ],
+          "howToQualify": [
+            "Open to children and youth of members",
+            "Application process including essay on liberty principles",
+            "Financial need assessment",
+            "Renewable based on continued eligibility"
+          ]
+        },
+        {
+          "name": "Internship & Apprenticeship Network",
+          "tier": "Recommended",
+          "description": "Connecting young people with real-world work experience",
+          "details": [
+            "Paid internships with member businesses",
+            "Apprenticeships in skilled trades",
+            "Government and civic internships",
+            "Non-profit and community organization placements",
+            "Summer work programs for high school students",
+            "Job shadowing opportunities"
+          ],
+          "howToQualify": [
+            "Open to high school and college students",
+            "Resume and interview process",
+            "Businesses and organizations apply to host interns",
+            "Matching based on interests and location"
+          ]
+        },
+        {
+          "name": "Civics & Leadership Camps",
+          "tier": "Core",
+          "description": "Intensive educational experiences on American government and leadership",
+          "details": [
+            "Week-long summer camps for different age groups",
+            "Mock trials and legislative simulations",
+            "Debates on current policy issues",
+            "Constitution and founding documents study",
+            "Guest speakers including elected officials",
+            "Service projects in the community",
+            "Leadership and public speaking training"
+          ],
+          "howToQualify": [
+            "Open to youth ages 12-18",
+            "Application includes essay component",
+            "Sliding scale tuition based on family income",
+            "Scholarships available for all qualified applicants"
+          ]
+        },
+        {
+          "name": "Teen Volunteer Corps",
+          "tier": "Optional",
+          "description": "Organized volunteer opportunities for young people",
+          "details": [
+            "Monthly community service projects",
+            "Leadership roles for older teens",
+            "Volunteer hour tracking for school requirements",
+            "Skill-building through service",
+            "Social opportunities with like-minded peers",
+            "Recognition and awards for outstanding service"
+          ],
+          "howToQualify": [
+            "Open to teens ages 13-18",
+            "Registration and parent consent required",
+            "Minimum commitment of 3 volunteer events per year",
+            "Leadership positions by application"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "media-influence",
+      "title": "Media & Public Influence",
+      "slug": "media-influence",
+      "icon": "📡",
+      "color": "#7B1FA2",
+      "shortDescription": "Strategic communications, media training, and content creation to amplify our message and counter misinformation.",
+      "overview": "Winning hearts and minds requires effective communication. Our media programs equip members to share our message, provide platforms for our voices, and train the next generation of liberty communicators.",
+      "programs": [
+        {
+          "name": "Media & Communications Training",
+          "tier": "Core",
+          "description": "Professional training in effective communication and media engagement",
+          "details": [
+            "Media interview preparation and practice",
+            "Op-ed and letter-to-editor writing workshops",
+            "Social media strategy and content creation",
+            "Public speaking and presentation skills",
+            "Debate techniques and framing messages",
+            "Crisis communications training for leaders"
+          ],
+          "howToQualify": [
+            "Basic workshops open to all members",
+            "Advanced training for chapter leaders and volunteers",
+            "Specialized training for those in media-facing roles",
+            "Online and in-person options available"
+          ]
+        },
+        {
+          "name": "Publications & Content Creation",
+          "tier": "Core",
+          "description": "Regular publications and original content advancing liberty principles",
+          "details": [
+            "Monthly newsletter with policy analysis and updates",
+            "Quarterly magazine with long-form journalism",
+            "Policy briefs and white papers",
+            "Infographics and shareable social media content",
+            "Video content for YouTube and social platforms",
+            "Member submissions and guest columns"
+          ],
+          "howToQualify": [
+            "All members receive publications",
+            "Members can submit content for publication",
+            "Editorial process ensures quality and accuracy",
+            "Training available for aspiring writers"
+          ]
+        },
+        {
+          "name": "Podcast & Media Network",
+          "tier": "Recommended",
+          "description": "Audio and video content reaching new audiences",
+          "details": [
+            "Flagship podcast featuring interviews and analysis",
+            "Local chapter podcast network",
+            "YouTube channel with educational content",
+            "Live streaming of events and discussions",
+            "Audio documentaries on key policy issues",
+            "Training for members to start their own podcasts"
+          ],
+          "howToQualify": [
+            "Free access to all content",
+            "Members can pitch podcast episode ideas",
+            "Training programs for content creators",
+            "Technical and promotional support for chapter podcasts"
+          ]
+        },
+        {
+          "name": "Speakers Bureau",
+          "tier": "Recommended",
+          "description": "Trained speakers available for events, schools, and organizations",
+          "details": [
+            "Roster of expert speakers on various topics",
+            "Booking and coordination services",
+            "Standardized presentations with flexibility",
+            "Speaker training and development",
+            "Feedback and continuous improvement",
+            "Speakers available for free or honorarium"
+          ],
+          "howToQualify": [
+            "Organizations can request speakers",
+            "Members apply to join speakers bureau",
+            "Training and evaluation required",
+            "Ongoing education and skill development"
+          ]
+        },
+        {
+          "name": "Digital Activism & Campaigns",
+          "tier": "Optional",
+          "description": "Coordinated online advocacy and awareness campaigns",
+          "details": [
+            "Social media campaigns on key issues",
+            "Petition drives and online organizing",
+            "Email and text message mobilization",
+            "Online advertising and outreach",
+            "Data analytics and campaign optimization",
+            "Training in digital organizing tools"
+          ],
+          "howToQualify": [
+            "All members can participate in campaigns",
+            "Training required for campaign leadership roles",
+            "Local chapters can launch their own campaigns",
+            "National coordination for major initiatives"
+          ]
+        }
+      ]
+    }
+  ]
+}

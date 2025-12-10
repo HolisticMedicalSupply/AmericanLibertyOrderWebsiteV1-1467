@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { 
   ChevronDown, 
   Shield, 
@@ -39,25 +40,34 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { useTheme } from "@/hooks/use-theme";
+import policyData from "../../policy-data.json";
+import programsData from "../../programs-data.json";
 
 export default function Home() {
   const [email, setEmail] = useState("");
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const { theme, setTheme } = useTheme();
 
-  const policies = [
-    { icon: DollarSign, title: "Economic Freedom & Anti-Cronyism", description: "End corporate welfare, eliminate subsidies, and restore true free markets" },
-    { icon: Apple, title: "Food & Health Sovereignty", description: "Empower individuals with health freedom and food production rights" },
-    { icon: HomeIcon, title: "Property Rights", description: "Protect homeownership and land rights against government overreach" },
-    { icon: Scale, title: "Government Accountability", description: "Demand transparency and hold officials accountable to the people" },
-    { icon: Vote, title: "Election Integrity", description: "Secure transparent, verifiable election systems at all levels" },
-    { icon: ScrollText, title: "Constitutional Rights", description: "Defend all constitutional amendments without exception" },
-    { icon: Globe, title: "Foreign Policy", description: "Prioritize sovereignty and non-interventionism" },
-    { icon: Bitcoin, title: "Monetary Reform", description: "Support sound money principles and end monetary manipulation" },
-    { icon: Receipt, title: "Tax Reform", description: "Simplify taxation and reduce burden on working families" },
-    { icon: Pill, title: "Drug Policy Reform", description: "End the drug war, support harm reduction and personal choice" },
-    { icon: Building2, title: "Housing Reform", description: "Remove barriers to affordable housing and homeownership" },
-  ];
+  const iconMap: Record<string, any> = {
+    "economic-freedom": DollarSign,
+    "food-health-sovereignty": Apple,
+    "property-rights": HomeIcon,
+    "government-accountability": Scale,
+    "election-integrity": Vote,
+    "constitutional-rights": ScrollText,
+    "technology-communications": Globe,
+    "monetary-reform": Bitcoin,
+    "political-reform": Receipt,
+    "foreign-policy": Globe,
+    "healthcare-reform": Pill,
+    "education-reform": BookOpen,
+    "social-security": Building2,
+  };
+
+  const policies = policyData.policies.map((policy: any) => ({
+    ...policy,
+    icon: iconMap[policy.slug] || Target,
+  }));
 
   const principles = [
     { icon: ScrollText, title: "Constitutional Fidelity", description: "Uphold the letter and spirit of the Constitution" },
@@ -78,8 +88,8 @@ export default function Home() {
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#about" className="text-foreground/80 hover:text-foreground transition-colors">About</a>
-            <a href="#policies" className="text-foreground/80 hover:text-foreground transition-colors">Policies</a>
-            <a href="#programs" className="text-foreground/80 hover:text-foreground transition-colors">Programs</a>
+            <Link to="/policies" className="text-foreground/80 hover:text-foreground transition-colors">Policies</Link>
+            <Link to="/programs" className="text-foreground/80 hover:text-foreground transition-colors">Programs</Link>
             <a href="#get-involved" className="text-foreground/80 hover:text-foreground transition-colors">Get Involved</a>
             <Button
               variant="ghost"
@@ -225,7 +235,7 @@ export default function Home() {
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {policies.map((policy, index) => (
+            {policies.map((policy: any, index: number) => (
               <motion.div
                 key={policy.title}
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -233,15 +243,20 @@ export default function Home() {
                 transition={{ duration: 0.4, delay: index * 0.05 }}
                 viewport={{ once: true }}
               >
-                <Card className="glass-card h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group cursor-pointer">
-                  <CardHeader>
-                    <policy.icon className="h-10 w-10 text-primary mb-3 group-hover:scale-110 transition-transform" />
-                    <CardTitle className="text-lg">{policy.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription>{policy.description}</CardDescription>
-                  </CardContent>
-                </Card>
+                <Link to={`/policies/${policy.slug}`}>
+                  <Card className="glass-card h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group cursor-pointer">
+                    <CardHeader>
+                      <policy.icon className="h-10 w-10 text-primary mb-3 group-hover:scale-110 transition-transform" />
+                      <CardTitle className="text-lg">{policy.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription>{policy.shortDescription}</CardDescription>
+                      <div className="mt-3 flex items-center gap-1 text-sm text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                        Learn more <ArrowRight className="h-4 w-4" />
+                      </div>
+                    </CardContent>
+                  </Card>
+                </Link>
               </motion.div>
             ))}
           </div>
@@ -276,121 +291,43 @@ export default function Home() {
             className="max-w-4xl mx-auto"
           >
             <Accordion type="single" collapsible className="space-y-4">
-              <AccordionItem value="member-support" className="glass-card px-6 rounded-lg border-none">
-                <AccordionTrigger className="text-xl font-semibold hover:text-primary">
-                  <div className="flex items-center gap-3">
-                    <Heart className="h-6 w-6 text-primary" />
-                    Member Support Programs
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="text-base text-muted-foreground pt-4 space-y-2">
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5" />
-                    <div>
-                      <strong>Legal Support Network:</strong> Connect with constitutional attorneys and legal resources
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5" />
-                    <div>
-                      <strong>Crisis Response Team:</strong> Rapid assistance for members facing rights violations
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5" />
-                    <div>
-                      <strong>Education Resources:</strong> Comprehensive library of constitutional law and civic knowledge
-                    </div>
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="community-service" className="glass-card px-6 rounded-lg border-none">
-                <AccordionTrigger className="text-xl font-semibold hover:text-primary">
-                  <div className="flex items-center gap-3">
-                    <HandHeart className="h-6 w-6 text-primary" />
-                    Community Service & Outreach
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="text-base text-muted-foreground pt-4 space-y-2">
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5" />
-                    <div>
-                      <strong>Local Chapter Network:</strong> Build community through regular meetups and events
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5" />
-                    <div>
-                      <strong>Voter Registration Drives:</strong> Increase civic participation in your community
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5" />
-                    <div>
-                      <strong>Town Hall Coordination:</strong> Organize and attend local government meetings
-                    </div>
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="youth" className="glass-card px-6 rounded-lg border-none">
-                <AccordionTrigger className="text-xl font-semibold hover:text-primary">
-                  <div className="flex items-center gap-3">
-                    <GraduationCap className="h-6 w-6 text-primary" />
-                    Youth & Next Generation
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="text-base text-muted-foreground pt-4 space-y-2">
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5" />
-                    <div>
-                      <strong>Student Leadership Program:</strong> Train the next generation of liberty advocates
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5" />
-                    <div>
-                      <strong>Campus Chapters:</strong> Establish presence in colleges and universities
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5" />
-                    <div>
-                      <strong>Mentorship Network:</strong> Connect young activists with experienced members
-                    </div>
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="media" className="glass-card px-6 rounded-lg border-none">
-                <AccordionTrigger className="text-xl font-semibold hover:text-primary">
-                  <div className="flex items-center gap-3">
-                    <Radio className="h-6 w-6 text-primary" />
-                    Media & Public Influence
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="text-base text-muted-foreground pt-4 space-y-2">
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5" />
-                    <div>
-                      <strong>Content Creation Hub:</strong> Produce educational content for social media
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5" />
-                    <div>
-                      <strong>Podcast Network:</strong> Share stories and insights with broader audiences
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5" />
-                    <div>
-                      <strong>Op-Ed Program:</strong> Get member voices published in local and national media
-                    </div>
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
+              {programsData.programs.map((program: any) => {
+                const iconMap: Record<string, any> = {
+                  "member-support": Heart,
+                  "community-service": HandHeart,
+                  "youth-programs": GraduationCap,
+                  "media-influence": Radio,
+                };
+                const ProgramIcon = iconMap[program.slug] || Target;
+                
+                return (
+                  <AccordionItem key={program.id} value={program.slug} className="glass-card px-6 rounded-lg border-none">
+                    <AccordionTrigger className="text-xl font-semibold hover:text-primary">
+                      <div className="flex items-center gap-3">
+                        <ProgramIcon className="h-6 w-6 text-primary" />
+                        {program.title}
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="text-base text-muted-foreground pt-4 space-y-3">
+                      <p className="mb-4">{program.shortDescription}</p>
+                      {program.programs.slice(0, 3).map((item: any, i: number) => (
+                        <div key={i} className="flex items-start gap-2">
+                          <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5" />
+                          <div>
+                            <strong>{item.name}:</strong> {item.description}
+                          </div>
+                        </div>
+                      ))}
+                      <Link to={`/programs/${program.slug}`}>
+                        <Button variant="outline" className="mt-4 w-full group">
+                          View All {program.title}
+                          <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                        </Button>
+                      </Link>
+                    </AccordionContent>
+                  </AccordionItem>
+                );
+              })}
             </Accordion>
           </motion.div>
         </div>

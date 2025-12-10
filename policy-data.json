@@ -1,0 +1,388 @@
+{
+  "policies": [
+    {
+      "id": "economic-freedom",
+      "title": "Economic Freedom & Anti-Cronyism",
+      "slug": "economic-freedom",
+      "icon": "💼",
+      "color": "#00838F",
+      "shortDescription": "Remove government-created barriers that protect established interests and distort free markets; combat regulatory capture.",
+      "overview": "The fundamental problem is cronyism — the merger of economic and political power where government picks winners and creates barriers that protect established players. This isn't free-market capitalism; it's regulatory capture.",
+      "subPolicies": [
+        {
+          "title": "Medicare Bid Reform",
+          "viability": "moderate",
+          "problem": [
+            "Medicare Advantage insurers bid annually for contracts",
+            "Bids are proprietary and hidden from public view",
+            "No transparency in how taxpayer dollars are spent",
+            "Rural areas often have fewer plan options",
+            "Impossible for citizens to evaluate value for money"
+          ],
+          "positions": [
+            "Mandatory public disclosure of all Medicare Advantage bids",
+            "Standardized reporting format for easy comparison",
+            "Rural access requirements in bidding process",
+            "Public dashboards showing cost vs. outcomes by plan",
+            "Penalties for insurers who consistently underperform"
+          ],
+          "framing": "Taxpayers deserve to know how their Medicare dollars are spent. Transparency ensures accountability and better care."
+        },
+        {
+          "title": "Occupational Licensing Reform",
+          "viability": "mod-high",
+          "problem": [
+            "Over 25% of American workers now need government permission to work (up from 5% in 1950s)",
+            "Licensing boards dominated by industry incumbents",
+            "Creates barriers for military spouses, interstate movers",
+            "Disproportionately hurts low-income workers",
+            "Often serves to limit competition rather than protect consumers"
+          ],
+          "positions": [
+            "Sunrise/Sunset Reviews: New licenses require proof of actual public harm; existing licenses reviewed every 7 years",
+            "Interstate Reciprocity: Full recognition of out-of-state licenses",
+            "Least Restrictive Alternative: Require use of registration, certification, or bonding before full licensing",
+            "Board Composition Reform: No more than 1/3 of licensing board can be active practitioners",
+            "Criminal Justice Reform: Ban blanket prohibitions on licenses for people with criminal records"
+          ],
+          "framing": "Government should only require a license when there's clear evidence of public harm. Let people work."
+        },
+        {
+          "title": "Right to Repair",
+          "viability": "high",
+          "problem": [
+            "Manufacturers restrict access to repair manuals, tools, and parts",
+            "Software locks prevent independent repair",
+            "Farmers can't fix their own tractors",
+            "Creates monopoly on repairs, drives up costs",
+            "Increases e-waste and reduces product lifespan"
+          ],
+          "positions": [
+            "Mandate availability of parts, tools, and documentation to independent repair shops and owners",
+            "Prohibit software locks that prevent repair",
+            "Ban manufacturer retaliation against repairers",
+            "Fair pricing requirements for repair parts",
+            "Environmental benefits: reduce e-waste, extend product life"
+          ],
+          "framing": "If you buy it, you own it. You should be able to fix it. Right to Repair is property rights."
+        },
+        {
+          "title": "Civil Asset Forfeiture Reform",
+          "viability": "mod-high",
+          "problem": [
+            "Police can seize property suspected of involvement in crime",
+            "No conviction required — property itself is 'guilty'",
+            "Proceeds often go to police departments creating perverse incentive",
+            "Disproportionately affects low-income individuals who can't afford lawyers",
+            "Constitutional concerns: violates due process"
+          ],
+          "positions": [
+            "Require criminal conviction before asset forfeiture",
+            "Burden of proof on government, not property owner",
+            "End direct financial benefit to seizing agencies",
+            "Innocent owner defense must be robust",
+            "Full transparency: public reporting of all forfeitures"
+          ],
+          "framing": "This is government theft. Innocent until proven guilty applies to your property too."
+        }
+      ]
+    },
+    {
+      "id": "food-health-sovereignty",
+      "title": "Food & Health Sovereignty",
+      "slug": "food-health-sovereignty",
+      "icon": "🌾",
+      "color": "#2E7D32",
+      "shortDescription": "Freedom to choose food and health products, prioritizing local production and producer-to-consumer channels.",
+      "overview": "People should have the freedom to choose their own food and health products, with full information and informed consent. Local production and direct producer-to-consumer relationships should be protected and expanded.",
+      "subPolicies": [
+        {
+          "title": "Raw Dairy Access & Labeling",
+          "viability": "moderate",
+          "problem": [
+            "Federal regulations restrict raw milk sales across state lines",
+            "Many states ban raw dairy sales entirely",
+            "Limits consumer choice despite growing demand",
+            "Small dairy farmers shut out of market",
+            "Studies show low risk when handled properly"
+          ],
+          "positions": [
+            "Legalize raw dairy sales with mandatory labeling",
+            "Allow direct farm-to-consumer sales",
+            "Require clear health warnings on packaging",
+            "Regular testing requirements for safety",
+            "Interstate commerce protections"
+          ],
+          "framing": "Informed adults should be free to make their own food choices. Clear labeling ensures safety."
+        },
+        {
+          "title": "Local & Cottage Food Expansion",
+          "viability": "high",
+          "problem": [
+            "Cottage food laws vary widely by state",
+            "Many states prohibit home-based food businesses",
+            "Excessive regulations prevent small-scale food entrepreneurship",
+            "Limits access to locally-produced foods"
+          ],
+          "positions": [
+            "Expand cottage food laws in all states",
+            "Raise sales caps for home-based food businesses",
+            "Reduce inspection requirements for low-risk foods",
+            "Allow online sales and shipping",
+            "Protect farmers market sales"
+          ],
+          "framing": "Support local food producers and entrepreneurship while maintaining basic safety standards."
+        },
+        {
+          "title": "Medical Freedom & Informed Consent",
+          "viability": "varies",
+          "problem": [
+            "Government and employers mandate medical procedures",
+            "Limited informed consent in many healthcare settings",
+            "Suppression of alternative viewpoints",
+            "Privacy concerns with medical data"
+          ],
+          "positions": [
+            "Robust informed consent requirements for all medical procedures",
+            "Protect right to refuse medical treatment",
+            "Medical privacy protections",
+            "Religious and philosophical exemptions",
+            "Ban discrimination based on medical choices"
+          ],
+          "framing": "Your body, your choice. Medical decisions should be between you and your doctor."
+        }
+      ]
+    },
+    {
+      "id": "property-rights",
+      "title": "Property Rights",
+      "slug": "property-rights",
+      "icon": "🏡",
+      "color": "#5D4037",
+      "shortDescription": "Defend ownership against government and private overreach; ensure fair treatment for property owners.",
+      "overview": "Property rights are fundamental to liberty. Owners should have control over their property, free from excessive government regulation and private entity overreach.",
+      "subPolicies": [
+        {
+          "title": "HOA Reform",
+          "viability": "high",
+          "problem": [
+            "HOAs often abuse power with arbitrary rules",
+            "Foreclosure over minor violations",
+            "Lack of financial transparency",
+            "Self-dealing by board members",
+            "Difficult for homeowners to challenge decisions"
+          ],
+          "positions": [
+            "Term limits for HOA board members",
+            "Mandatory financial audits and transparency",
+            "Homeowner bill of rights",
+            "Restrictions on foreclosure powers",
+            "Easy appeals process for rule violations",
+            "Limits on fine amounts"
+          ],
+          "framing": "Your home is your castle. HOAs should serve homeowners, not rule them like tyrants."
+        },
+        {
+          "title": "Eminent Domain Reform",
+          "viability": "mod-high",
+          "problem": [
+            "Government takes private property for 'public use'",
+            "Post-Kelo, 'public use' includes private development",
+            "Compensation often below market value",
+            "No compensation for lost business or relocation costs",
+            "Abuse particularly affects low-income communities"
+          ],
+          "positions": [
+            "Constitutional amendment: Public use means true public use only",
+            "125% of fair market value compensation",
+            "Compensation for business losses and relocation",
+            "Right of first refusal if property not used as stated",
+            "Higher standards for proving public necessity"
+          ],
+          "framing": "Government shouldn't take your property to give to developers. When it must take property, compensation should be fair and generous."
+        },
+        {
+          "title": "Mineral Rights Protection",
+          "viability": "moderate",
+          "problem": [
+            "Mineral rights often separated from surface rights",
+            "Foreign entities buying up mineral rights",
+            "Landowners unable to develop their own resources",
+            "Squatting on undeveloped mineral rights"
+          ],
+          "positions": [
+            "Protect active mineral rights holders",
+            "Fee structure for undeveloped rights held speculatively",
+            "Restrictions on foreign ownership of mineral rights",
+            "Surface owner protections during extraction",
+            "Right of first refusal for surface owners"
+          ],
+          "framing": "Mineral rights are property rights. Americans should control American resources."
+        }
+      ]
+    },
+    {
+      "id": "government-accountability",
+      "title": "Government Accountability & Reform",
+      "slug": "government-accountability",
+      "icon": "⚖️",
+      "color": "#7B1FA2",
+      "shortDescription": "Reduce cronyism, increase transparency, and democratize influence in government.",
+      "overview": "Government must be accountable to the people. Reduce special interest influence, increase transparency, and ensure elected officials serve the public interest.",
+      "subPolicies": [
+        {
+          "title": "Congressional Stock Trading Ban",
+          "viability": "high",
+          "problem": [
+            "Members of Congress consistently outperform market",
+            "Access to non-public information creates unfair advantage",
+            "Creates conflicts of interest in policymaking",
+            "Erodes public trust"
+          ],
+          "positions": [
+            "Ban individual stock trading by Congress and immediate family",
+            "Allow only broad index funds and blind trusts",
+            "Mandatory disclosure of all holdings",
+            "Criminal penalties for violations",
+            "Extend to senior executive branch officials"
+          ],
+          "framing": "If you make the laws, you shouldn't be able to profit from insider knowledge."
+        },
+        {
+          "title": "Term Limits",
+          "viability": "low",
+          "problem": [
+            "Career politicians become entrenched",
+            "Seniority system rewards longevity over merit",
+            "Creates professional political class",
+            "Difficult to challenge incumbents"
+          ],
+          "positions": [
+            "12-year limit for House and Senate combined",
+            "Prospective only (doesn't affect current members)",
+            "Constitutional amendment required",
+            "Alternatively: end seniority system advantages"
+          ],
+          "framing": "Citizen legislators, not career politicians. Fresh perspectives prevent corruption."
+        },
+        {
+          "title": "End Lobbying: Citizen Voice Portal",
+          "viability": "low-mod",
+          "problem": [
+            "Lobbyists have disproportionate access to lawmakers",
+            "Money buys influence through lobbying",
+            "Average citizens have no comparable voice",
+            "Revolving door between government and lobbying firms"
+          ],
+          "positions": [
+            "Replace paid lobbying with structured citizen input portal",
+            "AI-analyzed public comments on pending legislation",
+            "Lawmakers required to review and respond to constituent feedback",
+            "Ban former officials from lobbying for 10 years",
+            "Full transparency on all meetings and communications"
+          ],
+          "framing": "End the lobbyist gravy train. Every citizen should have equal voice in their government."
+        },
+        {
+          "title": "Regulatory State Reform",
+          "viability": "moderate",
+          "problem": [
+            "Unelected bureaucrats write rules with force of law",
+            "Courts defer to agency interpretations (Chevron)",
+            "Regulations never expire even when outdated",
+            "Agencies act as investigator, prosecutor, and judge"
+          ],
+          "positions": [
+            "REINS Act: Major regulations require Congressional approval",
+            "End Chevron deference",
+            "10-year sunset on all regulations",
+            "Separate adjudication from enforcement",
+            "Cost-benefit analysis requirement"
+          ],
+          "framing": "Unelected bureaucrats shouldn't write laws. Regulations need democratic accountability."
+        },
+        {
+          "title": "Emergency Powers Reform",
+          "viability": "mod-high",
+          "problem": [
+            "Emergency powers invoked and never rescinded",
+            "Limited legislative oversight once declared",
+            "Executive branch accumulates power during emergencies",
+            "Abuse of emergency declarations"
+          ],
+          "positions": [
+            "30-day automatic sunset on emergency declarations",
+            "Congressional approval required for extensions",
+            "Clear criteria for what constitutes emergency",
+            "Judicial review of emergency actions",
+            "Compensation for rights violations during emergencies"
+          ],
+          "framing": "Emergencies are temporary. Emergency powers must be too."
+        }
+      ]
+    },
+    {
+      "id": "election-integrity",
+      "title": "Election Integrity",
+      "slug": "election-integrity",
+      "icon": "🗳️",
+      "color": "#C62828",
+      "shortDescription": "Easy to vote, hard to cheat. Robust safeguards alongside broad participation.",
+      "overview": "Elections must be secure, transparent, and accessible. Every legal vote should count, and only legal votes should count.",
+      "subPolicies": [
+        {
+          "title": "Voter ID Requirements",
+          "viability": "high",
+          "problem": [
+            "Inconsistent ID requirements across states",
+            "Concerns about voter impersonation",
+            "Lack of verification in some jurisdictions"
+          ],
+          "positions": [
+            "Mandatory photo ID for in-person voting",
+            "Free state-issued ID for all citizens",
+            "Mobile ID services for elderly and disabled",
+            "Multiple acceptable forms of ID",
+            "Provisional ballot option with ID cure period"
+          ],
+          "framing": "ID is required for everything else. Elections should be no different. We'll make sure everyone can get ID."
+        },
+        {
+          "title": "Paper Ballots & Audit Trails",
+          "viability": "high",
+          "problem": [
+            "Electronic voting machines vulnerable to hacking",
+            "No paper trail in some jurisdictions",
+            "Difficulty conducting audits and recounts",
+            "Public distrust in electronic systems"
+          ],
+          "positions": [
+            "Mandatory paper ballots nationwide",
+            "Voter-verified paper trail for all electronic voting",
+            "Hand-marked ballots preferred",
+            "Machine-readable for quick counting",
+            "Risk-limiting audits after every election"
+          ],
+          "framing": "Paper ballots can't be hacked. They provide the gold standard for election security."
+        },
+        {
+          "title": "Chain of Custody Protocols",
+          "viability": "high",
+          "problem": [
+            "Unclear custody of ballots in some jurisdictions",
+            "Opportunities for tampering or loss",
+            "Lack of transparency in ballot handling"
+          ],
+          "positions": [
+            "Strict chain of custody requirements",
+            "Bipartisan observation at every step",
+            "Video surveillance of ballot storage",
+            "Tamper-evident seals and containers",
+            "Real-time tracking systems"
+          ],
+          "framing": "Ballots should be treated like evidence in a trial: documented custody at all times."
+        }
+      ]
+    }
+  ]
+}
