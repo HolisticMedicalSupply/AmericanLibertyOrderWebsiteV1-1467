@@ -112,7 +112,7 @@ export default function Home() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url(/hero-bg.png)" }}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-background/95"></div>
         </div>
         
         <div className="relative z-10 container mx-auto px-6 text-center">
@@ -122,40 +122,67 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="mb-8"
           >
-            <img src="/logo.png" alt="ALO" className="h-32 w-32 mx-auto mb-8 animate-float" />
+            <div className="inline-block p-6 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl">
+              <img src="/logo.png" alt="ALO" className="h-32 w-32 animate-float" />
+            </div>
           </motion.div>
           
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent"
-          >
-            Defending Liberty Through Action
-          </motion.h1>
-          
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-foreground/80 mb-12 max-w-3xl mx-auto"
-          >
-            Empowering citizens to reclaim constitutional principles through practical reform, community action, and unwavering dedication to individual liberty
-          </motion.p>
-          
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
-          >
-            <Button size="lg" className="text-lg px-8 py-6" asChild>
-              <a href="#get-involved">Join Us Today</a>
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6 glass" asChild>
-              <a href="#about">Learn More</a>
-            </Button>
-          </motion.div>
+          <div className="max-w-5xl mx-auto p-8 md:p-12 rounded-3xl bg-black/30 backdrop-blur-lg border border-white/10 shadow-2xl">
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight tracking-tight"
+              style={{
+                textShadow: '0 4px 20px rgba(0, 0, 0, 0.8), 0 2px 8px rgba(0, 0, 0, 0.9)'
+              }}
+            >
+              <span className="text-white">Defending </span>
+              <span className="bg-gradient-to-r from-[#C9A227] via-[#FFD700] to-[#C9A227] bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(201,162,39,0.5)]">
+                Liberty
+              </span>
+              <br />
+              <span className="text-white">Through </span>
+              <span className="bg-gradient-to-r from-[#FF6B35] via-[#FF8C42] to-[#FF6B35] bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(255,107,53,0.5)]">
+                Action
+              </span>
+            </motion.h1>
+            
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="text-xl md:text-2xl text-white font-medium mb-12 max-w-3xl mx-auto leading-relaxed"
+              style={{
+                textShadow: '0 2px 12px rgba(0, 0, 0, 0.9), 0 1px 4px rgba(0, 0, 0, 1)'
+              }}
+            >
+              Empowering citizens to reclaim constitutional principles through practical reform, community action, and unwavering dedication to individual liberty
+            </motion.p>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center"
+            >
+              <Button 
+                size="lg" 
+                className="text-lg px-8 py-6 bg-gradient-to-r from-[#3C5A99] to-[#2E4A7F] hover:from-[#4A68A7] hover:to-[#3C5A99] text-white font-bold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 border-white/20" 
+                asChild
+              >
+                <a href="#get-involved">Join Us Today</a>
+              </Button>
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="text-lg px-8 py-6 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white font-bold border-2 border-white/40 hover:border-white/60 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105" 
+                asChild
+              >
+                <a href="#about">Learn More</a>
+              </Button>
+            </motion.div>
+          </div>
 
           <motion.div
             initial={{ opacity: 0 }}
@@ -163,8 +190,8 @@ export default function Home() {
             transition={{ duration: 1, delay: 1 }}
             className="absolute bottom-8 left-1/2 -translate-x-1/2"
           >
-            <a href="#about">
-              <ChevronDown className="h-8 w-8 text-foreground/60 animate-bounce" />
+            <a href="#about" className="block p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 transition-all">
+              <ChevronDown className="h-8 w-8 text-white animate-bounce drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]" />
             </a>
           </motion.div>
         </div>
