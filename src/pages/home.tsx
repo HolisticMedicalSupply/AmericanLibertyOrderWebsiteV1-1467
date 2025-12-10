@@ -99,14 +99,14 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="mb-8"
           >
-            <img src="/logo-final.png" alt="ALO" className="h-80 w-80 mx-auto mb-8 animate-float" />
+            <img src="/logo-transparent.png" alt="ALO" className="h-80 w-80 mx-auto mb-8 animate-float" />
           </motion.div>
           
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent leading-tight py-2"
+            className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent leading-tight py-2"
             style={{ lineHeight: '1.2' }}
           >
             Defending Liberty Through Action
@@ -487,7 +487,7 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <img src="/logo-final.png" alt="ALO" className="h-10 w-10" />
+                <img src="/logo-transparent.png" alt="ALO" className="h-10 w-10" />
                 <span className="font-bold text-lg">American Liberty Order</span>
               </div>
               <p className="text-sm text-muted-foreground">

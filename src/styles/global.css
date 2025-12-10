@@ -226,9 +226,9 @@
   display: none;
 }
 
-/* Gradient text utility to prevent clipping of descenders */
+/* Gradient text utility - professional navy to gold gradient */
 .gradient-text {
-  @apply bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
   line-height: 1.2;

@@ -58,7 +58,7 @@ export default function ProgramDetail() {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 pt-32">
         <div className="mb-8">
           <Link
             to="/programs"
