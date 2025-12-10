@@ -1,13 +1,13 @@
 {
   "site": {
-    "name": "Minimal Starter",
-    "tagline": "Your Creative Canvas",
-    "description": "A clean, minimal starter template providing the perfect foundation for your next project. Built with modern tools and ready for your creativity.",
-    "ogImage": "/og-image.png",
+    "name": "American Liberty Order",
+    "tagline": "Defending Constitutional Principles Through Citizen Empowerment",
+    "description": "The American Liberty Order is a civic organization dedicated to defending individual liberty, constitutional fidelity, and practical government reform through citizen empowerment and community action.",
+    "ogImage": "/logo.png",
     "twitterHandle": "",
     "contact": {
-      "email": "contact@example.com",
-      "company": "Your Company",
+      "email": "contact@americanlibertyorder.org",
+      "company": "American Liberty Order",
       "address": ""
     },
     "legal": {
