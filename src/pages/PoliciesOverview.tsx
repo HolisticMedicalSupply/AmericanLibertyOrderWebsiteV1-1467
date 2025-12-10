@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Search, ArrowRight } from 'lucide-react';
 import policyData from '@/data/policy-data.json';
+import { getIconComponent } from '@/lib/icon-mapper';
 
 export default function PoliciesOverview() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -95,39 +96,41 @@ export default function PoliciesOverview() {
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredPolicies.map((policy, index) => (
-                <motion.div
-                  key={policy.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.1 + index * 0.05 }}
-                >
-                  <Link
-                    to={`/policies/${policy.slug}`}
-                    className="group block h-full cursor-pointer"
+              {filteredPolicies.map((policy, index) => {
+                const PolicyIcon = getIconComponent(policy.icon);
+                return (
+                  <motion.div
+                    key={policy.id}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.1 + index * 0.05 }}
                   >
-                    <div
-                      className="glass-effect rounded-xl p-6 border border-border/50 hover:border-primary hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full flex flex-col"
-                      style={{
-                        borderColor: policy.color + '30',
-                      }}
+                    <Link
+                      to={`/policies/${policy.slug}`}
+                      className="group block h-full cursor-pointer"
                     >
                       <div
-                        className="w-14 h-14 rounded-xl mb-4 flex items-center justify-center text-xl"
+                        className="glass-effect rounded-xl p-6 border border-border/50 hover:border-primary hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full flex flex-col"
                         style={{
-                          backgroundColor: policy.color + '20',
-                          color: policy.color,
+                          borderColor: policy.color + '30',
                         }}
                       >
-                        {policy.icon}
-                      </div>
-                      <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
-                        {policy.title}
-                      </h3>
-                      <p className="text-muted-foreground text-sm mb-4 flex-1">
-                        {policy.description}
-                      </p>
-                      <div className="flex items-center justify-between pt-4 border-t border-border">
+                        <div
+                          className="w-14 h-14 rounded-xl mb-4 flex items-center justify-center text-xl"
+                          style={{
+                            backgroundColor: policy.color + '20',
+                            color: policy.color,
+                          }}
+                        >
+                          <PolicyIcon className="h-7 w-7" />
+                        </div>
+                        <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
+                          {policy.title}
+                        </h3>
+                        <p className="text-muted-foreground text-sm mb-4 flex-1">
+                          {policy.description}
+                        </p>
+                        <div className="flex items-center justify-between pt-4 border-t border-border">
                         <span className="text-sm text-muted-foreground">
                           {policy.subPolicies.length} sub-{policy.subPolicies.length === 1 ? 'policy' : 'policies'}
                         </span>
@@ -136,7 +139,8 @@ export default function PoliciesOverview() {
                     </div>
                   </Link>
                 </motion.div>
-              ))}
+                );
+              })}
             </div>
           </>
         )}

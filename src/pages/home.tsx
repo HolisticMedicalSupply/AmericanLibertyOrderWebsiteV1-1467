@@ -162,9 +162,9 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
-            className="absolute bottom-8 left-1/2 -translate-x-1/2"
+            className="mt-16"
           >
-            <a href="#about">
+            <a href="#about" className="inline-block">
               <ChevronDown className="h-8 w-8 text-foreground/60 animate-bounce" />
             </a>
           </motion.div>
@@ -220,7 +220,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="flex justify-center"
           >
-            <img src="/mission.png" alt="Mission" className="max-w-2xl w-full rounded-lg shadow-2xl" />
+            <img src="/mission-updated.png" alt="Mission" className="max-w-2xl w-full rounded-lg shadow-2xl" />
           </motion.div>
         </div>
       </section>

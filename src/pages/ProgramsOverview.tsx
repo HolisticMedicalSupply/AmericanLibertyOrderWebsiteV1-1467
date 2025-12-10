@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Search, ArrowRight } from 'lucide-react';
 import programsData from '@/data/programs-data.json';
+import { getIconComponent } from '@/lib/icon-mapper';
 
 export default function ProgramsOverview() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -82,42 +83,44 @@ export default function ProgramsOverview() {
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {filteredPrograms.map((programCategory, index) => (
-                <motion.div
-                  key={programCategory.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.1 + index * 0.05 }}
-                >
-                  <Link
-                    to={`/programs/${programCategory.slug}`}
-                    className="group block h-full"
+              {filteredPrograms.map((programCategory, index) => {
+                const ProgramIcon = getIconComponent(programCategory.icon);
+                return (
+                  <motion.div
+                    key={programCategory.id}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.1 + index * 0.05 }}
                   >
-                    <div
-                      className="glass-effect rounded-xl p-6 border border-border/50 hover:border-primary transition-all h-full flex flex-col"
-                      style={{
-                        borderColor: programCategory.color + '30',
-                      }}
+                    <Link
+                      to={`/programs/${programCategory.slug}`}
+                      className="group block h-full"
                     >
-                      <div className="flex items-start gap-4 mb-4">
-                        <div
-                          className="w-14 h-14 rounded-xl flex items-center justify-center text-xl flex-shrink-0"
-                          style={{
-                            backgroundColor: programCategory.color + '20',
-                            color: programCategory.color,
-                          }}
-                        >
-                          {programCategory.icon}
+                      <div
+                        className="glass-effect rounded-xl p-6 border border-border/50 hover:border-primary transition-all h-full flex flex-col"
+                        style={{
+                          borderColor: programCategory.color + '30',
+                        }}
+                      >
+                        <div className="flex items-start gap-4 mb-4">
+                          <div
+                            className="w-14 h-14 rounded-xl flex items-center justify-center text-xl flex-shrink-0"
+                            style={{
+                              backgroundColor: programCategory.color + '20',
+                              color: programCategory.color,
+                            }}
+                          >
+                            <ProgramIcon className="h-7 w-7" />
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
+                              {programCategory.title}
+                            </h3>
+                            <p className="text-muted-foreground text-sm mb-3">
+                              {programCategory.description}
+                            </p>
+                          </div>
                         </div>
-                        <div className="flex-1 min-w-0">
-                          <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
-                            {programCategory.title}
-                          </h3>
-                          <p className="text-muted-foreground text-sm mb-3">
-                            {programCategory.description}
-                          </p>
-                        </div>
-                      </div>
 
                       <div className="space-y-2 mb-4 flex-1">
                         <h4 className="text-sm font-semibold text-muted-foreground">Programs:</h4>
@@ -145,7 +148,8 @@ export default function ProgramsOverview() {
                     </div>
                   </Link>
                 </motion.div>
-              ))}
+                );
+              })}
             </div>
           </>
         )}

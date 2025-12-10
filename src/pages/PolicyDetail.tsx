@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronLeft, Share2, Download, ChevronDown, ChevronUp, Mail } from 'lucide-react';
 import policyData from '@/data/policy-data.json';
+import { getIconComponent } from '@/lib/icon-mapper';
 
 const viabilityColors = {
   high: 'bg-green-500/20 text-green-400 border-green-500/30',
@@ -79,6 +80,8 @@ export default function PolicyDetail() {
     .filter(p => p.id !== policy.id)
     .slice(0, 3);
 
+  const PolicyIcon = getIconComponent(policy.icon);
+
   return (
     <div className="min-h-screen bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -104,7 +107,7 @@ export default function PolicyDetail() {
                 className="w-16 h-16 rounded-xl mb-6 flex items-center justify-center text-2xl"
                 style={{ backgroundColor: policy.color + '20', color: policy.color }}
               >
-                {policy.icon}
+                <PolicyIcon className="h-8 w-8" />
               </div>
               <h1 className="text-4xl font-bold mb-4 gradient-text">{policy.title}</h1>
               <p className="text-lg text-muted-foreground mb-6">{policy.description}</p>
@@ -269,27 +272,30 @@ export default function PolicyDetail() {
             >
               <h3 className="font-semibold mb-4">Related Policies</h3>
               <div className="space-y-3">
-                {relatedPolicies.map((related) => (
-                  <Link
-                    key={related.id}
-                    to={`/policies/${related.slug}`}
-                    className="block p-3 rounded-lg bg-card border border-border hover:border-primary transition-all group"
-                  >
-                    <div className="flex items-center gap-3">
-                      <div
-                        className="w-10 h-10 rounded-lg flex items-center justify-center text-sm flex-shrink-0"
-                        style={{ backgroundColor: related.color + '20', color: related.color }}
-                      >
-                        {related.icon}
+                {relatedPolicies.map((related) => {
+                  const RelatedIcon = getIconComponent(related.icon);
+                  return (
+                    <Link
+                      key={related.id}
+                      to={`/policies/${related.slug}`}
+                      className="block p-3 rounded-lg bg-card border border-border hover:border-primary transition-all group"
+                    >
+                      <div className="flex items-center gap-3">
+                        <div
+                          className="w-10 h-10 rounded-lg flex items-center justify-center text-sm flex-shrink-0"
+                          style={{ backgroundColor: related.color + '20', color: related.color }}
+                        >
+                          <RelatedIcon className="h-5 w-5" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <h4 className="font-medium text-sm group-hover:text-primary transition-colors line-clamp-2">
+                            {related.title}
+                          </h4>
+                        </div>
                       </div>
-                      <div className="flex-1 min-w-0">
-                        <h4 className="font-medium text-sm group-hover:text-primary transition-colors line-clamp-2">
-                          {related.title}
-                        </h4>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
+                    </Link>
+                  );
+                })}
               </div>
               <Link
                 to="/policies"
