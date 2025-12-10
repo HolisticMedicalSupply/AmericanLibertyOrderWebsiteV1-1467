@@ -1,0 +1,1069 @@
+{
+  "policies": [
+    {
+      "id": "economic-freedom",
+      "slug": "economic-freedom",
+      "title": "Economic Freedom & Anti-Cronyism",
+      "icon": "TrendingUp",
+      "color": "#14B8A6",
+      "description": "Eliminate corporate welfare, monopolistic practices, and government favoritism to restore true market competition and economic liberty.",
+      "subPolicies": [
+        {
+          "title": "Competitive Medicare Bidding",
+          "viability": "high",
+          "problem": [
+            "Medicare pays wildly inflated prices for medical equipment and supplies",
+            "Suppliers charge 2-10x what items cost on the open market",
+            "Taxpayers lose billions annually to price-gouging",
+            "No competitive pressure to lower costs"
+          ],
+          "positions": [
+            "Require Medicare to use competitive bidding for all durable medical equipment",
+            "Allow beneficiaries to shop and keep savings",
+            "Publish transparent pricing data",
+            "Eliminate barriers to supplier competition",
+            "Estimated savings: $10-20 billion annually"
+          ],
+          "framing": "Why should taxpayers pay $600 for a wheelchair that costs $150 on Amazon? This isn't about cutting Medicare—it's about stopping waste and giving seniors better value."
+        },
+        {
+          "title": "Occupational Licensing Reform",
+          "viability": "mod-high",
+          "problem": [
+            "1 in 4 workers now need government permission to work",
+            "Licensing requirements often have no safety justification",
+            "Creates barriers for low-income workers and veterans",
+            "Protects established businesses from competition",
+            "Licenses don't transfer between states"
+          ],
+          "positions": [
+            "Require cost-benefit analysis for all licensing requirements",
+            "Eliminate licenses that serve no public safety purpose",
+            "Accept out-of-state licenses (universal recognition)",
+            "Replace most licenses with voluntary certification",
+            "Protect specific high-risk professions only (surgeons, pilots, etc.)"
+          ],
+          "framing": "Should you need 1,500 hours of training to shampoo hair? Licensing protects insiders, not consumers. Let people work."
+        },
+        {
+          "title": "Right to Repair",
+          "viability": "high",
+          "problem": [
+            "Manufacturers block independent repair through proprietary tools and parts",
+            "Farmers can't fix their own tractors",
+            "Artificially shortened product lifespans",
+            "Monopolistic repair pricing",
+            "Environmental waste from un-repairable products"
+          ],
+          "positions": [
+            "Require manufacturers to provide repair manuals and diagnostic tools",
+            "Ban software locks that prevent repair",
+            "Allow independent repair shops to compete",
+            "Protect consumer ownership rights",
+            "Apply to all products: tractors, phones, appliances, medical devices"
+          ],
+          "framing": "If you bought it, you should be able to fix it. Right to Repair is about ownership, not regulation."
+        },
+        {
+          "title": "Civil Asset Forfeiture Reform",
+          "viability": "mod-high",
+          "problem": [
+            "Police can seize property without criminal conviction",
+            "Owners must prove innocence to get property back",
+            "Law enforcement profits from seizures—creates perverse incentives",
+            "Disproportionately affects low-income and minority communities",
+            "Used as revenue generation rather than crime-fighting"
+          ],
+          "positions": [
+            "Require criminal conviction before asset forfeiture",
+            "End profit incentive—redirect forfeiture funds to general revenue",
+            "Shift burden of proof to government",
+            "Provide legal counsel for those contesting seizures",
+            "Increase transparency and reporting requirements"
+          ],
+          "framing": "Your property shouldn't be guilty until proven innocent. This is legalized theft, and it needs to end."
+        },
+        {
+          "title": "Anti-ESG / Anti-Stakeholder Capitalism",
+          "viability": "moderate",
+          "problem": [
+            "Corporations push social agendas using investor money without approval",
+            "ESG scores pressure companies to adopt specific political positions",
+            "Fiduciary duty replaced with 'stakeholder' obligations",
+            "Investment firms vote shareholder proxies to advance ESG goals",
+            "Pension funds forced into ESG investments despite lower returns"
+          ],
+          "positions": [
+            "Require explicit shareholder approval for all political/social spending",
+            "Ban pension funds from ESG-based investing without member consent",
+            "Prohibit discrimination based on ESG scores (banking, insurance)",
+            "Restore fiduciary duty to shareholders, not 'stakeholders'",
+            "Full transparency on proxy voting by investment firms"
+          ],
+          "framing": "Your retirement savings shouldn't fund political agendas. ESG is social engineering disguised as investing."
+        },
+        {
+          "title": "Healthcare Price Transparency",
+          "viability": "high",
+          "problem": [
+            "Patients can't get prices before receiving care",
+            "Same procedure costs 10x more at one hospital vs another",
+            "Insurance and providers hide negotiated rates",
+            "Creates artificial market—no shopping possible",
+            "Drives up costs and eliminates competition"
+          ],
+          "positions": [
+            "Require upfront, binding price quotes for all non-emergency care",
+            "Publish all negotiated rates between insurers and providers",
+            "Allow patients to shop and keep savings",
+            "Standardize billing codes and terminology",
+            "Heavy penalties for price-hiding"
+          ],
+          "framing": "You can't have a free market without prices. Healthcare transparency isn't radical—it's basic economics."
+        },
+        {
+          "title": "Environmental Policy Reform",
+          "viability": "moderate",
+          "problem": [
+            "Environmental regulations often lack cost-benefit analysis",
+            "One-size-fits-all federal mandates ignore local conditions",
+            "Delays and costs make infrastructure and housing impossible",
+            "Agenda-driven agencies exceed statutory authority",
+            "Regulations used to block competition and local development"
+          ],
+          "positions": [
+            "Require rigorous cost-benefit analysis for all environmental rules",
+            "Return most environmental authority to states",
+            "Set clear statutory limits on agency authority",
+            "Expedite permits for critical infrastructure",
+            "Focus on measurable outcomes, not process compliance",
+            "Reform NEPA to prevent endless litigation delays"
+          ],
+          "framing": "Good environmental policy shouldn't take 10 years to approve. Empower states, streamline permitting, focus on results."
+        }
+      ]
+    },
+    {
+      "id": "food-health-sovereignty",
+      "slug": "food-health-sovereignty",
+      "title": "Food & Health Sovereignty",
+      "icon": "Heart",
+      "color": "#10B981",
+      "description": "Restore individuals' rights to make their own food and health choices without excessive government interference.",
+      "subPolicies": [
+        {
+          "title": "Raw Dairy Freedom",
+          "viability": "moderate",
+          "problem": [
+            "Many states ban sale of raw milk despite consumer demand",
+            "Federal regulations restrict interstate commerce in raw dairy",
+            "Families forced to buy 'shares' in cows to access raw milk legally",
+            "Paternalistic regulations ignore informed consumer choice"
+          ],
+          "positions": [
+            "Legalize raw milk sales with clear labeling requirements",
+            "Allow farmers to sell directly to informed consumers",
+            "Remove federal barriers to interstate raw dairy commerce",
+            "Require warnings but respect consumer autonomy",
+            "Protect small dairies from one-size-fits-all regulations"
+          ],
+          "framing": "Adults should be free to buy raw milk if they understand the risks. This is about freedom and informed choice."
+        },
+        {
+          "title": "Cottage Food Freedom",
+          "viability": "high",
+          "problem": [
+            "Home bakers and cooks face criminal charges for selling food",
+            "Unnecessary commercial kitchen requirements block small businesses",
+            "Regulations designed for factories applied to home operations",
+            "Prevents entrepreneurship and local food systems"
+          ],
+          "positions": [
+            "Legalize home food businesses with gross sales cap (e.g., $50k/year)",
+            "Allow direct sales at farmers markets and online",
+            "Require labeling, not commercial kitchens",
+            "Protect traditional home food businesses",
+            "Focus on disclosure, not prohibition"
+          ],
+          "framing": "A grandmother shouldn't need a $50,000 commercial kitchen to sell cookies. Let people cook."
+        },
+        {
+          "title": "Medical Freedom & Informed Consent",
+          "viability": "varies",
+          "problem": [
+            "Medical mandates override individual autonomy",
+            "Vaccine requirements for employment and education expanding",
+            "Limited informed consent in emergency situations",
+            "Alternative treatments suppressed or banned",
+            "One-size-fits-all mandates ignore individual health conditions"
+          ],
+          "positions": [
+            "Protect medical choice and informed consent",
+            "Ban vaccine passports and employment mandates",
+            "Preserve religious and conscience exemptions",
+            "Ensure access to alternative treatments (right to try)",
+            "No emergency orders that bypass informed consent"
+          ],
+          "framing": "Your body, your choice. Medical freedom is fundamental—not negotiable."
+        }
+      ]
+    },
+    {
+      "id": "property-rights",
+      "slug": "property-rights",
+      "title": "Property Rights",
+      "icon": "Home",
+      "color": "#F59E0B",
+      "description": "Strengthen individual property rights against government overreach and private restrictions.",
+      "subPolicies": [
+        {
+          "title": "HOA Reform",
+          "viability": "mod-high",
+          "problem": [
+            "HOAs wield unchecked power over homeowners",
+            "Fines and liens for minor violations (wrong paint color, grass height)",
+            "Lack of due process and accountability",
+            "Difficult to change rules or remove bad boards",
+            "Creates hostile living environments"
+          ],
+          "positions": [
+            "Limit HOA fine and lien authority",
+            "Require majority approval for new restrictions",
+            "Provide homeowner bill of rights with due process protections",
+            "Prohibit foreclosure for unpaid fines under $5,000",
+            "Allow opt-out for certain restrictions (solar, gardens, political signs)"
+          ],
+          "framing": "You should own your home—not the other way around. HOAs need limits."
+        },
+        {
+          "title": "Eminent Domain Reform",
+          "viability": "high",
+          "problem": [
+            "Government can seize private property for private development",
+            "Low-ball compensation",
+            "Abuse in urban renewal projects",
+            "'Public use' interpreted far too broadly",
+            "Little recourse for property owners"
+          ],
+          "positions": [
+            "Restrict eminent domain to genuine public use (roads, utilities)",
+            "Ban takings for private development or tax revenue",
+            "Require fair market value plus 50% premium for forced sales",
+            "Strong protections for homes, farms, and small businesses",
+            "Burden of proof on government"
+          ],
+          "framing": "Your home isn't a revenue opportunity for developers. Eminent domain should be rare and compensated fairly."
+        },
+        {
+          "title": "Mineral and Subsurface Rights",
+          "viability": "moderate",
+          "problem": [
+            "Property owners don't control mineral rights under their land",
+            "Energy companies can drill without surface owner consent",
+            "Split estates create conflicts and unfair outcomes",
+            "Landowners bear costs but don't share profits"
+          ],
+          "positions": [
+            "Require surface owner consent for mineral extraction",
+            "Reunify split estates where feasible",
+            "Fair compensation for surface damage",
+            "Protect groundwater and surface property",
+            "Respect both surface and mineral rights holders"
+          ],
+          "framing": "If it's your land, you should have a say in what happens on it and under it."
+        }
+      ]
+    },
+    {
+      "id": "government-accountability",
+      "slug": "government-accountability",
+      "title": "Government Accountability & Reform",
+      "icon": "Scale",
+      "color": "#3B82F6",
+      "description": "Implement strict accountability measures to end corruption and restore public trust in government.",
+      "subPolicies": [
+        {
+          "title": "Congressional Stock Trading Ban",
+          "viability": "high",
+          "problem": [
+            "Members of Congress trade stocks based on confidential information",
+            "Outperform market by suspicious margins",
+            "Massive conflicts of interest in policy-making",
+            "Erodes public trust",
+            "Current 'disclosure' rules are ineffective"
+          ],
+          "positions": [
+            "Complete ban on stock trading for Members of Congress and immediate family",
+            "Require divestment or blind trusts upon taking office",
+            "Extend ban to senior executive branch officials",
+            "Criminal penalties for violations",
+            "Apply retroactively to recent suspicious trades"
+          ],
+          "framing": "If you serve in Congress, you shouldn't get rich trading on inside information. Ban it completely."
+        },
+        {
+          "title": "Term Limits",
+          "viability": "low-mod",
+          "problem": [
+            "Career politicians lose touch with constituents",
+            "Seniority system entrenches power",
+            "Incumbency advantage makes competition impossible",
+            "Lobbyists prey on long-term relationships",
+            "Congress becomes out-of-touch ruling class"
+          ],
+          "positions": [
+            "12-year limit for House and Senate combined",
+            "No exemptions or exceptions",
+            "Requires constitutional amendment (Article V convention likely needed)",
+            "Primary focus: state-level advocacy for convention"
+          ],
+          "framing": "Public service shouldn't be a lifetime career. Term limits would break the stranglehold of career politicians."
+        },
+        {
+          "title": "End Lobbying / Citizen Portal",
+          "viability": "low",
+          "problem": [
+            "Lobbyists write legislation and control access to lawmakers",
+            "Ordinary citizens have no comparable influence",
+            "Corporate money dominates policy-making",
+            "Revolving door between government and lobbying firms"
+          ],
+          "positions": [
+            "Create public 'Citizen Portal' for constituents to present bills",
+            "Require all bill drafts to be public before introduction",
+            "Ban former Members of Congress from lobbying for 10 years",
+            "Heavy penalties for undisclosed lobbying",
+            "Empower citizens to bypass lobbying gatekeepers"
+          ],
+          "framing": "Why do corporations get to write laws, but citizens don't? Open the process to everyone."
+        },
+        {
+          "title": "Regulatory Reform & Accountability",
+          "viability": "mod-high",
+          "problem": [
+            "Unelected bureaucrats make rules with force of law",
+            "No congressional approval required",
+            "Agencies reinterpret statutes to expand their power",
+            "Regulations accumulate endlessly—never removed",
+            "Costs hidden and never analyzed"
+          ],
+          "positions": [
+            "Require congressional approval for all major regulations",
+            "Sunset clauses—regulations expire unless renewed",
+            "Cost-benefit analysis for every rule",
+            "Agencies cannot expand authority beyond clear statutory language",
+            "Citizens can challenge regulations in expedited judicial review"
+          ],
+          "framing": "Agencies should execute the law—not write it. Congress must reclaim its authority."
+        },
+        {
+          "title": "Legislative Transparency & Reform",
+          "viability": "mod-high",
+          "problem": [
+            "Bills dropped at midnight with no time to read",
+            "Massive omnibus bills hide controversial provisions",
+            "Last-minute amendments sneak through",
+            "No one knows what they're voting on"
+          ],
+          "positions": [
+            "Mandatory 72-hour public review period for all bills",
+            "Single-subject rule for legislation",
+            "No omnibus bills over 100 pages",
+            "All amendments public 24 hours before vote",
+            "Plain-language summaries required"
+          ],
+          "framing": "Representatives should read what they vote on. So should citizens."
+        },
+        {
+          "title": "Emergency Powers Reform",
+          "viability": "moderate",
+          "problem": [
+            "Executive emergency powers used indefinitely",
+            "No meaningful congressional oversight or renewal",
+            "33+ 'emergencies' currently in effect",
+            "COVID showed executive overreach dangers",
+            "State governors wield unchecked emergency authority"
+          ],
+          "positions": [
+            "Emergency orders expire after 30 days unless renewed by legislature",
+            "No emergency can suspend constitutional rights",
+            "Strict separation of powers—no executive lawmaking",
+            "Judicial review available immediately",
+            "Clear limits on what constitutes an emergency"
+          ],
+          "framing": "Emergencies shouldn't mean dictatorship. Restore checks and balances."
+        }
+      ]
+    },
+    {
+      "id": "election-integrity",
+      "slug": "election-integrity",
+      "title": "Election Integrity",
+      "icon": "Vote",
+      "color": "#8B5CF6",
+      "description": "Ensure secure, transparent, and trustworthy elections through common-sense safeguards.",
+      "subPolicies": [
+        {
+          "title": "Voter ID Requirements",
+          "viability": "high",
+          "problem": [
+            "Many states allow voting without verifying identity",
+            "Opens door to fraud and undermines confidence",
+            "Inconsistent standards create confusion"
+          ],
+          "positions": [
+            "Require government-issued photo ID to vote",
+            "Provide free voter ID to anyone who needs one",
+            "Accept multiple forms (driver's license, passport, military ID, state ID)",
+            "Reasonable accommodations for elderly and disabled"
+          ],
+          "framing": "You need an ID to buy beer—why not to vote? Free ID plus voter ID requirement is common sense."
+        },
+        {
+          "title": "Paper Ballot Requirement",
+          "viability": "high",
+          "problem": [
+            "Electronic-only voting machines have no audit trail",
+            "Vulnerable to hacking and malfunction",
+            "Difficult to verify accuracy",
+            "No way to recount if needed"
+          ],
+          "positions": [
+            "Require paper ballots for all elections",
+            "Electronic machines can assist but must produce paper record",
+            "Voter verifies paper ballot before casting",
+            "Paper is the official record for recounts"
+          ],
+          "framing": "Paper ballots are simple, transparent, and trustworthy. High-tech isn't always better."
+        },
+        {
+          "title": "Chain of Custody & Security",
+          "viability": "mod-high",
+          "problem": [
+            "Ballots transported without clear tracking",
+            "Unsecured drop boxes",
+            "Gaps in custody records",
+            "Difficult to trace irregularities"
+          ],
+          "positions": [
+            "Strict chain-of-custody protocols for all ballots",
+            "Secured, monitored drop boxes (if used)",
+            "Real-time tracking and documentation",
+            "Bipartisan observation at every step",
+            "Criminal penalties for chain-of-custody violations"
+          ],
+          "framing": "We track Amazon packages—why not ballots? Tight security builds trust."
+        },
+        {
+          "title": "Timely Results & Audits",
+          "viability": "moderate",
+          "problem": [
+            "Days or weeks to count votes",
+            "Results announced before counting complete",
+            "Rare and inconsistent audits",
+            "Erodes public confidence"
+          ],
+          "positions": [
+            "Results announced same night or within 24 hours",
+            "Mandatory random audits of 5-10% of precincts",
+            "Full forensic audit available upon petition or close results",
+            "Public observation of counting process"
+          ],
+          "framing": "France counts 40 million votes in 24 hours. America can do better."
+        },
+        {
+          "title": "Voter Roll Maintenance",
+          "viability": "high",
+          "problem": [
+            "Rolls include deceased voters, moved voters, duplicates",
+            "States don't share data",
+            "Outdated rolls enable fraud and mistakes"
+          ],
+          "positions": [
+            "Annual voter roll updates",
+            "Cross-state database to prevent double registration",
+            "Remove deceased and relocated voters promptly",
+            "Verify citizenship",
+            "Easy re-registration if removed in error"
+          ],
+          "framing": "Clean voter rolls protect everyone's vote. Regular maintenance is basic election hygiene."
+        }
+      ]
+    },
+    {
+      "id": "constitutional-rights",
+      "slug": "constitutional-rights",
+      "title": "Constitutional Rights",
+      "icon": "Shield",
+      "color": "#EF4444",
+      "description": "Defend fundamental constitutional liberties against government and corporate overreach.",
+      "subPolicies": [
+        {
+          "title": "Free Speech & Anti-Censorship",
+          "viability": "moderate",
+          "problem": [
+            "Tech platforms censor speech under government pressure",
+            "Viewpoint-based content moderation",
+            "Deplatforming and shadow-banning",
+            "Collusion between government and big tech",
+            "Loss of digital public square"
+          ],
+          "positions": [
+            "Ban government from pressuring platforms to censor lawful speech",
+            "Classify major platforms as common carriers (neutrality requirements)",
+            "Transparency in content moderation decisions",
+            "Right to appeal and judicial review for deplatforming",
+            "Protect anonymous speech"
+          ],
+          "framing": "Free speech doesn't end online. Big Tech shouldn't be the speech police."
+        },
+        {
+          "title": "Individual Liberty & Conscience Protections",
+          "viability": "moderate",
+          "problem": [
+            "Religious and conscience objections overridden by mandates",
+            "Private beliefs punished through civil penalties",
+            "Compelled speech (pronouns, statements)",
+            "Loss of professional licenses for beliefs"
+          ],
+          "positions": [
+            "Strong religious freedom protections (RFRA-style)",
+            "No compelled speech",
+            "Conscience protections for medical professionals",
+            "Protect employment and education from viewpoint discrimination",
+            "Right to opt out of ideologically-driven training or statements"
+          ],
+          "framing": "You shouldn't lose your job for your beliefs. Conscience and liberty go hand-in-hand."
+        },
+        {
+          "title": "Reproductive Rights & Bodily Autonomy",
+          "viability": "varies",
+          "problem": [
+            "Post-Roe patchwork of state laws",
+            "Access to abortion and contraception varies widely",
+            "Government interference in personal medical decisions"
+          ],
+          "positions": [
+            "Support state-level decision-making post-Dobbs",
+            "Protect access to contraception",
+            "Oppose late-term abortion restrictions with exceptions for health/life",
+            "Ensure informed consent and safety standards",
+            "Respect diverse views within membership"
+          ],
+          "framing": "Personal medical decisions should remain personal. Common-sense laws respect both life and liberty."
+        },
+        {
+          "title": "Second Amendment Rights",
+          "viability": "high",
+          "problem": [
+            "Incremental restrictions on gun ownership",
+            "Red flag laws without due process",
+            "Arbitrary 'assault weapon' bans",
+            "Restrictions on law-abiding citizens, not criminals"
+          ],
+          "positions": [
+            "Defend individual right to bear arms",
+            "Oppose arbitrary bans and magazine limits",
+            "Due process required for any restriction (red flag reforms)",
+            "National concealed-carry reciprocity",
+            "Focus enforcement on criminals, not lawful owners"
+          ],
+          "framing": "The Second Amendment isn't negotiable. Enforce existing laws—don't punish law-abiding citizens."
+        },
+        {
+          "title": "Parental Rights in Education",
+          "viability": "high",
+          "problem": [
+            "Schools withhold information from parents",
+            "Parents excluded from curriculum decisions",
+            "Gender and sexuality instruction without parental consent",
+            "Schools override parental authority"
+          ],
+          "positions": [
+            "Parents have final authority over their children's education and medical care",
+            "Transparent curriculum with opt-out rights",
+            "No gender transition without parental knowledge and consent",
+            "Right to know what schools teach",
+            "Protect teachers who respect parental rights"
+          ],
+          "framing": "Parents—not bureaucrats—raise children. Schools should educate, not indoctrinate."
+        },
+        {
+          "title": "Homeschool Freedom & Educational Choice",
+          "viability": "high",
+          "problem": [
+            "Excessive homeschool regulations in some states",
+            "Barriers to educational choice",
+            "Homeschoolers excluded from extracurriculars",
+            "Lack of education savings accounts"
+          ],
+          "positions": [
+            "Protect homeschooling with minimal regulation",
+            "Education savings accounts (ESAs) for all families",
+            "Open extracurriculars and sports to homeschoolers",
+            "Tax credits for educational expenses",
+            "Support charter, private, and alternative education options"
+          ],
+          "framing": "Parents know what's best for their kids. School choice empowers families."
+        }
+      ]
+    },
+    {
+      "id": "technology-communications",
+      "slug": "technology-communications",
+      "title": "Technology & Communications Freedom",
+      "icon": "Wifi",
+      "color": "#06B6D4",
+      "description": "Protect digital rights, privacy, and free expression in the modern technology landscape.",
+      "subPolicies": [
+        {
+          "title": "Digital Privacy & Data Protection",
+          "viability": "moderate",
+          "problem": [
+            "Companies collect and sell personal data without meaningful consent",
+            "Government surveillance programs lack oversight",
+            "Data breaches expose millions",
+            "No right to deletion or portability"
+          ],
+          "positions": [
+            "Require explicit opt-in consent for data collection",
+            "Right to access, delete, and port personal data",
+            "Heavy penalties for data breaches and misuse",
+            "Limit government data collection without warrant",
+            "Transparency in algorithmic decision-making"
+          ],
+          "framing": "Your data is yours. Companies should ask permission—not forgiveness."
+        },
+        {
+          "title": "Net Neutrality & Common Carrier Rules",
+          "viability": "moderate",
+          "problem": [
+            "ISPs can throttle or block content",
+            "Paid prioritization creates two-tier internet",
+            "Limited competition gives ISPs monopoly power"
+          ],
+          "positions": [
+            "Treat ISPs as common carriers—no blocking, throttling, or paid prioritization",
+            "Encourage infrastructure competition",
+            "Local governments shouldn't grant monopolies",
+            "Transparent network management practices"
+          ],
+          "framing": "The internet should be open and equal. No corporate gatekeepers."
+        }
+      ]
+    },
+    {
+      "id": "monetary-financial-reform",
+      "slug": "monetary-financial-reform",
+      "title": "Monetary & Financial Reform",
+      "icon": "DollarSign",
+      "color": "#F97316",
+      "description": "Reform the financial system to end manipulation, restore sound money, and protect savers.",
+      "subPolicies": [
+        {
+          "title": "Federal Reserve Audit & Reform",
+          "viability": "low-mod",
+          "problem": [
+            "Federal Reserve operates with minimal oversight",
+            "Inflation taxes savers and wage-earners",
+            "Monetary policy favors asset-holders",
+            "Lack of transparency and accountability"
+          ],
+          "positions": [
+            "Full audit of Federal Reserve operations",
+            "Congressional oversight of monetary policy",
+            "End or limit quantitative easing",
+            "Stabilize currency value",
+            "Explore alternatives to fiat monetary system"
+          ],
+          "framing": "Why is the Fed the only agency Congress won't audit? Transparency is accountability."
+        },
+        {
+          "title": "Sound Money & Inflation Control",
+          "viability": "low",
+          "problem": [
+            "Persistent inflation erodes purchasing power",
+            "Savings lose value over time",
+            "Debt-based economy punishes savers",
+            "No constraint on money creation"
+          ],
+          "positions": [
+            "Return to sound money principles",
+            "Limit money supply growth",
+            "Explore gold standard or commodity backing",
+            "Protect value of savings and wages",
+            "End bailouts and moral hazard"
+          ],
+          "framing": "Your paycheck should hold its value. Inflation is a hidden tax on working people."
+        }
+      ]
+    },
+    {
+      "id": "political-system-reform",
+      "slug": "political-system-reform",
+      "title": "Political System Reform",
+      "icon": "Users",
+      "color": "#A855F7",
+      "description": "Break the two-party duopoly and restore competitive, representative democracy.",
+      "subPolicies": [
+        {
+          "title": "Ballot Access & Third-Party Representation",
+          "viability": "moderate",
+          "problem": [
+            "Two-party system entrenched by ballot access laws",
+            "Difficult for independents and third parties to compete",
+            "Arbitrary signature requirements and deadlines",
+            "Voters lack real choice"
+          ],
+          "positions": [
+            "Lower ballot access thresholds",
+            "Standardize signature requirements",
+            "Allow fusion voting (multiple parties nominating same candidate)",
+            "Public funding or vouchers for all qualified candidates",
+            "End two-party debate monopoly"
+          ],
+          "framing": "Two parties don't represent everyone. Open the system to competition."
+        },
+        {
+          "title": "Campaign Finance Reform",
+          "viability": "low-mod",
+          "problem": [
+            "Unlimited money in politics",
+            "Super PACs and dark money dominate",
+            "Small donors irrelevant",
+            "Candidates beholden to wealthy donors"
+          ],
+          "positions": [
+            "Public financing option for candidates",
+            "Matching funds for small donations",
+            "Full transparency—no dark money",
+            "Limits on corporate and union political spending",
+            "Strengthen anti-coordination rules"
+          ],
+          "framing": "Big money shouldn't buy elections. Amplify small donors, expose dark money."
+        }
+      ]
+    },
+    {
+      "id": "foreign-policy",
+      "slug": "foreign-policy",
+      "title": "Foreign Policy & National Interest",
+      "icon": "Globe",
+      "color": "#EC4899",
+      "description": "Put American interests first, end forever wars, and restore constitutional war powers.",
+      "subPolicies": [
+        {
+          "title": "End Forever Wars & Restrain Military Interventionism",
+          "viability": "moderate",
+          "problem": [
+            "Endless military commitments with no clear goals",
+            "Trillions spent on nation-building abroad",
+            "Thousands of American lives lost",
+            "Congress abdicates war-making authority"
+          ],
+          "positions": [
+            "No military action without congressional declaration of war",
+            "Withdraw from indefinite deployments",
+            "Focus military on defense, not nation-building",
+            "Sunset all authorizations for use of military force (AUMFs)",
+            "Prioritize diplomacy and restraint"
+          ],
+          "framing": "Our military defends America—not the world. End forever wars and bring troops home."
+        },
+        {
+          "title": "Trade & Economic Sovereignty",
+          "viability": "moderate",
+          "problem": [
+            "Trade agreements favor multinational corporations",
+            "Job losses to offshoring",
+            "Dependence on adversarial nations for critical goods",
+            "Trade deficits drain wealth"
+          ],
+          "positions": [
+            "Fair trade—not unconditional free trade",
+            "Prioritize American manufacturing and workers",
+            "End dependence on China for critical supplies",
+            "Use tariffs to protect strategic industries",
+            "No trade agreements that override U.S. law"
+          ],
+          "framing": "Trade should benefit Americans—not just corporations. Economic security is national security."
+        }
+      ]
+    },
+    {
+      "id": "healthcare-reform",
+      "slug": "healthcare-reform",
+      "title": "Healthcare System Reform",
+      "icon": "Activity",
+      "color": "#14B8A6",
+      "description": "Lower costs, increase choice, and restore market forces to healthcare.",
+      "subPolicies": [
+        {
+          "title": "Price Transparency & Competition",
+          "viability": "high",
+          "problem": [
+            "Patients can't get prices before care",
+            "No ability to shop for healthcare",
+            "Insurance hides negotiated rates",
+            "Costs spiral without market discipline"
+          ],
+          "positions": [
+            "Require upfront, binding price quotes for all non-emergency care",
+            "Publish negotiated rates between insurers and providers",
+            "Allow patients to shop and keep savings",
+            "Increase competition by removing restrictions",
+            "Standardize billing and coding"
+          ],
+          "framing": "You can't have a free market without prices. Healthcare transparency is common sense."
+        },
+        {
+          "title": "Insurance & Care Decoupling",
+          "viability": "moderate",
+          "problem": [
+            "Insurance tied to employment",
+            "Lose job, lose coverage",
+            "No portability or choice",
+            "Tax code subsidizes employer plans, penalizes individuals"
+          ],
+          "positions": [
+            "End tax preference for employer-based insurance",
+            "Universal tax deduction for health expenses",
+            "Portable, individually-owned plans",
+            "Health savings accounts (HSAs) for all",
+            "Allow purchase across state lines"
+          ],
+          "framing": "Health insurance should follow you—not your job. Decouple coverage from employment."
+        }
+      ]
+    },
+    {
+      "id": "education-reform",
+      "slug": "education-reform",
+      "title": "Education Reform",
+      "icon": "BookOpen",
+      "color": "#8B5CF6",
+      "description": "Empower parents, expand choice, and refocus education on knowledge and skills.",
+      "subPolicies": [
+        {
+          "title": "School Choice & Education Savings Accounts",
+          "viability": "high",
+          "problem": [
+            "Families trapped in failing schools",
+            "Public education monopoly",
+            "No alternatives for low-income families",
+            "One-size-fits-all approach"
+          ],
+          "positions": [
+            "Universal education savings accounts (ESAs)",
+            "Money follows the student",
+            "Support public, charter, private, and homeschool options",
+            "Tax credits for educational expenses",
+            "Let parents choose what's best"
+          ],
+          "framing": "Every family deserves school choice—not just the wealthy. Fund students, not systems."
+        },
+        {
+          "title": "Curriculum Transparency & Parental Rights",
+          "viability": "high",
+          "problem": [
+            "Parents don't know what schools teach",
+            "Controversial content without notification",
+            "Schools override parental authority",
+            "No meaningful input or opt-out"
+          ],
+          "positions": [
+            "All curriculum materials publicly available online",
+            "Parental notification and opt-out rights",
+            "No gender or sexuality instruction without explicit consent",
+            "Ban critical race theory and divisive ideologies",
+            "Refocus on knowledge, not activism"
+          ],
+          "framing": "Parents have a right to know—and approve—what their kids are taught."
+        }
+      ]
+    },
+    {
+      "id": "social-security-reform",
+      "slug": "social-security-reform",
+      "title": "Social Security Reform",
+      "icon": "Briefcase",
+      "color": "#F59E0B",
+      "description": "Save Social Security for current retirees while giving younger workers better options.",
+      "subPolicies": [
+        {
+          "title": "Voluntary Private Accounts for Younger Workers",
+          "viability": "moderate",
+          "problem": [
+            "Social Security returns are negative for younger workers",
+            "Trust fund going broke",
+            "No ownership or inheritance of contributions",
+            "Younger workers pay for current retirees with no guarantee"
+          ],
+          "positions": [
+            "Allow workers under 40 to opt into private retirement accounts",
+            "Keep Social Security for current and near-retirees",
+            "Private accounts earn market returns and are inheritable",
+            "Guarantee safety net for those who opt in",
+            "Transition over decades"
+          ],
+          "framing": "Younger workers deserve ownership and better returns. Reform now to save the system."
+        },
+        {
+          "title": "Means Testing & Benefit Adjustments",
+          "viability": "low-mod",
+          "problem": [
+            "Wealthy retirees receive full benefits",
+            "System unsustainable without changes",
+            "Benefits exceed contributions for high earners"
+          ],
+          "positions": [
+            "Reduce benefits for wealthy retirees (means testing)",
+            "Raise retirement age for younger workers",
+            "Adjust cost-of-living formulas",
+            "Protect benefits for low- and middle-income retirees",
+            "Phase in changes gradually"
+          ],
+          "framing": "Tough choices now prevent collapse later. Protect those who need it most."
+        }
+      ]
+    },
+    {
+      "id": "tax-reform",
+      "slug": "tax-reform",
+      "title": "Tax Reform",
+      "icon": "Receipt",
+      "color": "#10B981",
+      "description": "Simplify the tax code, lower rates, and eliminate special-interest loopholes.",
+      "subPolicies": [
+        {
+          "title": "Flat or Consumption Tax",
+          "viability": "low",
+          "problem": [
+            "Complex tax code favors those who can afford accountants",
+            "Loopholes and carve-outs distort economy",
+            "Income tax punishes productivity",
+            "IRS enforcement burdens ordinary taxpayers"
+          ],
+          "positions": [
+            "Replace income tax with flat tax or national sales tax (FairTax)",
+            "Abolish IRS or drastically reduce its size",
+            "Universal deduction to protect low earners",
+            "Eliminate all deductions and credits",
+            "Simplicity and transparency"
+          ],
+          "framing": "Tax everyone fairly at the same rate. No more loopholes, no more IRS abuses."
+        },
+        {
+          "title": "Eliminate Carve-Outs & Special Interests",
+          "viability": "moderate",
+          "problem": [
+            "Tax code riddled with special-interest breaks",
+            "Corporations and wealthy exploit loopholes",
+            "Complexity hides handouts",
+            "Ordinary taxpayers pay more"
+          ],
+          "positions": [
+            "Eliminate all corporate tax breaks and subsidies",
+            "No targeted tax credits for specific industries",
+            "Lower rates, broaden base",
+            "Treat all income equally (wages, capital gains, dividends)",
+            "Transparency in tax expenditures"
+          ],
+          "framing": "Lower rates for everyone—not special deals for insiders. Simplify and level the playing field."
+        }
+      ]
+    },
+    {
+      "id": "drug-policy-reform",
+      "slug": "drug-policy-reform",
+      "title": "Drug Policy Reform",
+      "icon": "Pill",
+      "color": "#EF4444",
+      "description": "End the failed war on drugs with evidence-based policies focused on treatment and liberty.",
+      "subPolicies": [
+        {
+          "title": "Decriminalize & Focus on Treatment",
+          "viability": "moderate",
+          "problem": [
+            "War on drugs has failed for 50 years",
+            "Mass incarceration without reducing use",
+            "Ruined lives over nonviolent offenses",
+            "Lack of treatment options"
+          ],
+          "positions": [
+            "Decriminalize personal drug possession",
+            "Expand treatment and recovery programs",
+            "Expunge nonviolent drug offenses",
+            "Focus enforcement on trafficking and violence",
+            "Treat addiction as health issue, not crime"
+          ],
+          "framing": "Locking people up for addiction doesn't work. Treatment saves lives."
+        },
+        {
+          "title": "Marijuana Legalization",
+          "viability": "high",
+          "problem": [
+            "Federal prohibition despite state legalization",
+            "Arrests for marijuana use continue",
+            "Lost tax revenue and economic opportunity",
+            "Inconsistent laws create confusion"
+          ],
+          "positions": [
+            "Legalize marijuana at federal level",
+            "Expunge marijuana convictions",
+            "Tax and regulate like alcohol",
+            "Allow states to set own policies",
+            "End federal interference in state-legal marijuana"
+          ],
+          "framing": "Marijuana prohibition has failed. Legalize, regulate, and tax it."
+        }
+      ]
+    },
+    {
+      "id": "housing-reform",
+      "slug": "housing-reform",
+      "title": "Housing Reform",
+      "icon": "Building",
+      "color": "#06B6D4",
+      "description": "Address the housing affordability crisis through deregulation and market-based solutions.",
+      "subPolicies": [
+        {
+          "title": "Zoning & Land Use Reform",
+          "viability": "moderate",
+          "problem": [
+            "Restrictive zoning limits housing supply",
+            "Single-family-only zoning in most areas",
+            "NIMBYism blocks new development",
+            "Housing costs soar as supply constrained"
+          ],
+          "positions": [
+            "Legalize multi-family and accessory dwelling units (ADUs)",
+            "Reduce minimum lot sizes and setback requirements",
+            "Expedite permitting for housing",
+            "Override exclusionary zoning",
+            "Let supply meet demand"
+          ],
+          "framing": "Build more housing, lower the cost. Zoning rules make housing unaffordable."
+        },
+        {
+          "title": "Reduce Construction Costs & Regulations",
+          "viability": "mod-high",
+          "problem": [
+            "Excessive building codes raise costs",
+            "Environmental reviews delay projects for years",
+            "Prevailing wage laws increase expenses",
+            "Regulatory compliance adds 20-30% to costs"
+          ],
+          "positions": [
+            "Streamline building codes—adopt model codes",
+            "Expedite environmental reviews for housing",
+            "Reform or eliminate prevailing wage mandates",
+            "Allow innovative construction methods (modular, 3D printing)",
+            "Cut red tape to lower costs"
+          ],
+          "framing": "Regulations price people out of homes. Cut the red tape and build."
+        }
+      ]
+    }
+  ]
+}

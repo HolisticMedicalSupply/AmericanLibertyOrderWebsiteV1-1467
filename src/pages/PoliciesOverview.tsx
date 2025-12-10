@@ -1,208 +1,171 @@
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-import { 
-  Search, 
-  Filter, 
-  Moon, 
-  Sun, 
-  ArrowRight,
-  DollarSign,
-  Apple,
-  Home as HomeIcon,
-  Scale,
-  Vote,
-  ScrollText,
-  Globe,
-  Bitcoin,
-  Receipt,
-  Pill,
-  Building2,
-  BookOpen,
-  Target
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
-import Breadcrumb from "@/components/Breadcrumb";
-import { useTheme } from "@/hooks/use-theme";
-import { useState, useMemo } from "react";
-import policyData from "../../policy-data.json";
+import { useState, useMemo } from 'react';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { Search, ArrowRight } from 'lucide-react';
+import policyData from '@/data/policy-data.json';
 
 export default function PoliciesOverview() {
-  const { theme, setTheme } = useTheme();
-  const [searchQuery, setSearchQuery] = useState("");
-  const [sortBy, setSortBy] = useState<"title" | "viability">("title");
-
-  const iconMap: Record<string, any> = {
-    "economic-freedom": DollarSign,
-    "food-health-sovereignty": Apple,
-    "property-rights": HomeIcon,
-    "government-accountability": Scale,
-    "election-integrity": Vote,
-    "constitutional-rights": ScrollText,
-    "technology-communications": Globe,
-    "monetary-reform": Bitcoin,
-    "political-reform": Receipt,
-    "foreign-policy": Globe,
-    "healthcare-reform": Pill,
-    "education-reform": BookOpen,
-    "social-security": Building2,
-  };
+  const [searchQuery, setSearchQuery] = useState('');
+  const [sortOrder, setSortOrder] = useState<'default' | 'az'>('default');
 
   const filteredPolicies = useMemo(() => {
-    let filtered = policyData.policies.map((policy: any) => ({
-      ...policy,
-      icon: iconMap[policy.slug] || Target,
-    }));
+    let filtered = policyData.policies;
 
     if (searchQuery) {
       const query = searchQuery.toLowerCase();
-      filtered = filtered.filter((policy: any) =>
-        policy.title.toLowerCase().includes(query) ||
-        policy.shortDescription.toLowerCase().includes(query) ||
-        policy.overview.toLowerCase().includes(query)
+      filtered = filtered.filter(
+        (policy) =>
+          policy.title.toLowerCase().includes(query) ||
+          policy.description.toLowerCase().includes(query) ||
+          policy.subPolicies.some(
+            (sub) =>
+              sub.title.toLowerCase().includes(query) ||
+              sub.problem.some(p => p.toLowerCase().includes(query)) ||
+              sub.positions.some(p => p.toLowerCase().includes(query))
+          )
       );
     }
 
-    if (sortBy === "title") {
-      filtered.sort((a: any, b: any) => a.title.localeCompare(b.title));
+    if (sortOrder === 'az') {
+      filtered = [...filtered].sort((a, b) => a.title.localeCompare(b.title));
     }
 
     return filtered;
-  }, [searchQuery, sortBy]);
+  }, [searchQuery, sortOrder]);
 
   return (
     <div className="min-h-screen bg-background">
-      <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-border/50">
-        <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Link to="/" className="flex items-center gap-3">
-              <img src="/logo.png" alt="American Liberty Order" className="h-10 w-10" />
-              <span className="text-lg font-bold text-foreground hidden sm:inline">American Liberty Order</span>
-            </Link>
-          </div>
-          <div className="flex items-center gap-4">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            >
-              {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </Button>
-          </div>
-        </div>
-      </nav>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center mb-12"
+        >
+          <h1 className="text-5xl font-bold mb-4 gradient-text">Our Policy Platform</h1>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Comprehensive policy positions designed to restore liberty, accountability, and citizen sovereignty.
+          </p>
+        </motion.div>
 
-      <div className="pt-24 pb-16">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <Breadcrumb items={[{ label: "Policies" }]} />
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="mb-12"
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="mb-8 flex flex-col sm:flex-row gap-4"
+        >
+          <div className="flex-1 relative">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search policies..."
+              className="w-full pl-12 pr-4 py-3 rounded-lg bg-card border border-border focus:border-primary focus:outline-none"
+            />
+          </div>
+          <select
+            value={sortOrder}
+            onChange={(e) => setSortOrder(e.target.value as 'default' | 'az')}
+            className="px-4 py-3 rounded-lg bg-card border border-border focus:border-primary focus:outline-none"
           >
-            <h1 className="text-5xl font-bold mb-4">Policy Platform</h1>
-            <p className="text-xl text-muted-foreground max-w-3xl">
-              Comprehensive, principle-driven policy reforms to restore American liberty and constitutional governance
+            <option value="default">Default Order</option>
+            <option value="az">A-Z</option>
+          </select>
+        </motion.div>
+
+        {filteredPolicies.length === 0 ? (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="text-center py-12"
+          >
+            <p className="text-xl text-muted-foreground">
+              No policies found matching "{searchQuery}"
             </p>
           </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="mb-8 flex flex-col sm:flex-row gap-4"
-          >
-            <div className="relative flex-1">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-              <Input
-                type="text"
-                placeholder="Search policies..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-10"
-              />
-            </div>
-            <div className="flex gap-2">
-              <Button
-                variant={sortBy === "title" ? "default" : "outline"}
-                onClick={() => setSortBy("title")}
-              >
-                <Filter className="h-4 w-4 mr-2" />
-                A-Z
-              </Button>
-            </div>
-          </motion.div>
-
-          {searchQuery && (
+        ) : (
+          <>
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className="mb-6"
+              transition={{ delay: 0.2 }}
+              className="mb-6 text-muted-foreground"
             >
-              <p className="text-muted-foreground">
-                Found {filteredPolicies.length} {filteredPolicies.length === 1 ? 'policy' : 'policies'}
-              </p>
+              Showing {filteredPolicies.length} of {policyData.policies.length} policies
             </motion.div>
-          )}
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredPolicies.map((policy: any, index: number) => (
-              <motion.div
-                key={policy.id}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4, delay: index * 0.05 }}
-              >
-                <Link to={`/policies/${policy.slug}`}>
-                  <Card 
-                    className="glass h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group cursor-pointer"
-                    style={{ borderTop: `4px solid ${policy.color}` }}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {filteredPolicies.map((policy, index) => (
+                <motion.div
+                  key={policy.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.1 + index * 0.05 }}
+                >
+                  <Link
+                    to={`/policies/${policy.slug}`}
+                    className="group block h-full"
                   >
-                    <CardHeader>
-                      <div className="flex items-start justify-between gap-4 mb-3">
-                        <div 
-                          className="text-4xl w-14 h-14 flex items-center justify-center rounded-xl"
-                          style={{ background: `${policy.color}20` }}
-                        >
-                          {policy.icon && <policy.icon className="h-7 w-7" style={{ color: policy.color }} />}
-                        </div>
-                        <Badge variant="outline" className="text-xs">
-                          {policy.subPolicies?.length || 0} items
-                        </Badge>
+                    <div
+                      className="glass-effect rounded-xl p-6 border border-border/50 hover:border-primary transition-all h-full flex flex-col"
+                      style={{
+                        borderColor: policy.color + '30',
+                      }}
+                    >
+                      <div
+                        className="w-14 h-14 rounded-xl mb-4 flex items-center justify-center text-xl"
+                        style={{
+                          backgroundColor: policy.color + '20',
+                          color: policy.color,
+                        }}
+                      >
+                        {policy.icon}
                       </div>
-                      <CardTitle className="text-lg group-hover:text-primary transition-colors">
+                      <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
                         {policy.title}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <CardDescription className="mb-4">{policy.shortDescription}</CardDescription>
-                      <div className="flex items-center gap-1 text-sm text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                        View details <ArrowRight className="h-4 w-4" />
+                      </h3>
+                      <p className="text-muted-foreground text-sm mb-4 flex-1">
+                        {policy.description}
+                      </p>
+                      <div className="flex items-center justify-between pt-4 border-t border-border">
+                        <span className="text-sm text-muted-foreground">
+                          {policy.subPolicies.length} sub-{policy.subPolicies.length === 1 ? 'policy' : 'policies'}
+                        </span>
+                        <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
                       </div>
-                    </CardContent>
-                  </Card>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
+                    </div>
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+          </>
+        )}
 
-          {filteredPolicies.length === 0 && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              className="text-center py-16"
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+          className="mt-12 glass-effect rounded-xl p-8 border border-border/50 text-center"
+        >
+          <h2 className="text-2xl font-bold mb-4">Ready to Take Action?</h2>
+          <p className="text-muted-foreground mb-6">
+            Join us in fighting for these policies and restoring liberty across America.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link
+              to="/sign-up"
+              className="px-6 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-semibold"
             >
-              <p className="text-xl text-muted-foreground mb-4">No policies found matching your search</p>
-              <Button onClick={() => setSearchQuery("")} variant="outline">
-                Clear search
-              </Button>
-            </motion.div>
-          )}
-        </div>
+              Become a Member
+            </Link>
+            <Link
+              to="/programs"
+              className="px-6 py-3 rounded-lg bg-card border border-border hover:border-primary transition-colors font-semibold"
+            >
+              View Our Programs
+            </Link>
+          </div>
+        </motion.div>
       </div>
     </div>
   );

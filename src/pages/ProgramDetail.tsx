@@ -1,401 +1,301 @@
-import { useParams, Link, useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
-import { 
-  ArrowLeft, 
-  Share2, 
-  Download, 
-  Mail, 
-  CheckCircle2, 
-  Users,
-  Moon,
-  Sun,
-  ExternalLink,
-  Award,
-  Target
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import Breadcrumb from "@/components/Breadcrumb";
-import { useTheme } from "@/hooks/use-theme";
-import { useState } from "react";
-import programsData from "../../programs-data.json";
+import { useParams, Link } from 'react-router-dom';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { ChevronLeft, ChevronDown, ChevronUp, Mail, ExternalLink } from 'lucide-react';
+import programsData from '@/data/programs-data.json';
 
-interface ProgramItem {
-  name: string;
-  tier: string;
-  description: string;
-  details: string[];
-  howToQualify: string[];
-}
-
-interface ProgramCategory {
-  id: string;
-  title: string;
-  slug: string;
-  icon: string;
-  color: string;
-  shortDescription: string;
-  overview: string;
-  programs: ProgramItem[];
-}
+const tierColors = {
+  Core: 'bg-blue-500/20 text-blue-400 border-blue-500/30',
+  Recommended: 'bg-green-500/20 text-green-400 border-green-500/30',
+  Optional: 'bg-gray-500/20 text-gray-400 border-gray-500/30',
+  Featured: 'bg-purple-500/20 text-purple-400 border-purple-500/30'
+};
 
 export default function ProgramDetail() {
   const { slug } = useParams<{ slug: string }>();
-  const navigate = useNavigate();
-  const { theme, setTheme } = useTheme();
-  const [expandedCards, setExpandedCards] = useState<Set<number>>(new Set());
-  const [email, setEmail] = useState("");
+  const [expandedPrograms, setExpandedPrograms] = useState<Set<number>>(new Set());
+  const [email, setEmail] = useState('');
 
-  const program = programsData.programs.find((p: ProgramCategory) => p.slug === slug);
+  const programCategory = programsData.programs.find(p => p.slug === slug);
 
-  if (!program) {
+  if (!programCategory) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4">Program Not Found</h1>
-          <Button onClick={() => navigate("/")}>Return Home</Button>
+          <h1 className="text-2xl font-bold mb-4">Program Not Found</h1>
+          <Link to="/programs" className="text-primary hover:underline">
+            Back to Programs
+          </Link>
         </div>
       </div>
     );
   }
 
-  const relatedPrograms = programsData.programs
-    .filter((p: ProgramCategory) => p.id !== program.id)
-    .slice(0, 3);
-
-  const toggleCard = (index: number) => {
-    const newExpanded = new Set(expandedCards);
+  const toggleProgram = (index: number) => {
+    const newExpanded = new Set(expandedPrograms);
     if (newExpanded.has(index)) {
       newExpanded.delete(index);
     } else {
       newExpanded.add(index);
     }
-    setExpandedCards(newExpanded);
+    setExpandedPrograms(newExpanded);
   };
 
-  const getTierColor = (tier: string) => {
-    if (tier === "Core") return "text-blue-600 bg-blue-500/10 border-blue-500/20";
-    if (tier === "Recommended") return "text-green-600 bg-green-500/10 border-green-500/20";
-    return "text-purple-600 bg-purple-500/10 border-purple-500/20";
-  };
-
-  const handleShare = async () => {
-    if (navigator.share) {
-      await navigator.share({
-        title: program.title,
-        text: program.shortDescription,
-        url: window.location.href,
-      });
-    } else {
-      await navigator.clipboard.writeText(window.location.href);
-      alert("Link copied to clipboard!");
-    }
-  };
-
-  const handleEmailSignup = (e: React.FormEvent) => {
+  const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
-    alert(`Thanks for subscribing! We'll send updates about ${program.title} to ${email}`);
-    setEmail("");
+    alert('Thank you for subscribing to updates on ' + programCategory.title);
+    setEmail('');
   };
+
+  const relatedPrograms = programsData.programs
+    .filter(p => p.id !== programCategory.id)
+    .slice(0, 3);
 
   return (
     <div className="min-h-screen bg-background">
-      <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-border/50">
-        <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Link to="/" className="flex items-center gap-3">
-              <img src="/logo.png" alt="American Liberty Order" className="h-10 w-10" />
-              <span className="text-lg font-bold text-foreground hidden sm:inline">American Liberty Order</span>
-            </Link>
-          </div>
-          <div className="flex items-center gap-4">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            >
-              {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </Button>
-            <Button onClick={() => navigate("/")} variant="outline" size="sm">
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              Back
-            </Button>
-          </div>
-        </div>
-      </nav>
-
-      <div className="pt-24 pb-16">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <Breadcrumb items={[{ label: "Programs", href: "/#programs" }, { label: program.title }]} />
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="relative overflow-hidden rounded-2xl p-8 md:p-12 mb-12"
-            style={{ 
-              background: `linear-gradient(135deg, ${program.color}15 0%, ${program.color}05 100%)`,
-              border: `1px solid ${program.color}30`
-            }}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="mb-8">
+          <Link
+            to="/programs"
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
           >
-            <div className="flex items-start gap-6">
-              <div 
-                className="text-6xl w-20 h-20 flex items-center justify-center rounded-2xl"
-                style={{ background: `${program.color}20` }}
-              >
-                {program.icon}
-              </div>
-              <div className="flex-1">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4">{program.title}</h1>
-                <p className="text-xl text-muted-foreground mb-6">{program.shortDescription}</p>
-                <div className="flex flex-wrap gap-3">
-                  <Button onClick={handleShare} variant="outline">
-                    <Share2 className="h-4 w-4 mr-2" />
-                    Share
-                  </Button>
-                  <Button variant="outline">
-                    <Download className="h-4 w-4 mr-2" />
-                    Download Brochure
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </motion.div>
+            <ChevronLeft className="h-4 w-4" />
+            Back to All Programs
+          </Link>
+        </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-2 space-y-8">
-              <motion.section
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 }}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="lg:col-span-2 space-y-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="glass-effect rounded-xl p-8 border border-border/50"
+              style={{ borderColor: programCategory.color + '40' }}
+            >
+              <div
+                className="w-16 h-16 rounded-xl mb-6 flex items-center justify-center text-2xl"
+                style={{ backgroundColor: programCategory.color + '20', color: programCategory.color }}
               >
-                <Card className="glass">
-                  <CardHeader>
-                    <CardTitle>Overview</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-lg leading-relaxed">{program.overview}</p>
-                  </CardContent>
-                </Card>
-              </motion.section>
+                {programCategory.icon}
+              </div>
+              <h1 className="text-4xl font-bold mb-4 gradient-text">{programCategory.title}</h1>
+              <p className="text-lg text-muted-foreground">{programCategory.description}</p>
+            </motion.div>
 
-              <motion.section
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-              >
-                <div className="flex items-center justify-between mb-6">
-                  <h2 className="text-3xl font-bold">Available Programs</h2>
-                  <div className="flex gap-2 text-sm">
-                    <Badge variant="outline" className="text-blue-600 bg-blue-500/10 border-blue-500/20">
-                      Core
-                    </Badge>
-                    <Badge variant="outline" className="text-green-600 bg-green-500/10 border-green-500/20">
-                      Recommended
-                    </Badge>
-                    <Badge variant="outline" className="text-purple-600 bg-purple-500/10 border-purple-500/20">
-                      Optional
-                    </Badge>
-                  </div>
-                </div>
-                
-                <div className="space-y-4">
-                  {program.programs.map((item: ProgramItem, index: number) => (
-                    <Card 
-                      key={index} 
-                      className="glass overflow-hidden cursor-pointer transition-all hover:shadow-lg"
-                      onClick={() => toggleCard(index)}
+            <div>
+              <h2 className="text-2xl font-bold mb-6">Programs in this Category</h2>
+              <div className="space-y-4">
+                {programCategory.programs.map((program, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.05 }}
+                    className="glass-effect rounded-xl border border-border/50 overflow-hidden"
+                  >
+                    <button
+                      onClick={() => toggleProgram(index)}
+                      className="w-full p-6 text-left flex items-start justify-between hover:bg-card/50 transition-colors"
                     >
-                      <CardHeader>
-                        <div className="flex items-start justify-between gap-4">
-                          <div className="flex-1">
-                            <div className="flex items-center gap-3 mb-2">
-                              <CardTitle className="text-xl">{item.name}</CardTitle>
-                              <Badge 
-                                variant="outline" 
-                                className={getTierColor(item.tier)}
-                              >
-                                {item.tier}
-                              </Badge>
-                            </div>
-                            <CardDescription>{item.description}</CardDescription>
-                          </div>
-                          <motion.div
-                            animate={{ rotate: expandedCards.has(index) ? 180 : 0 }}
-                            transition={{ duration: 0.3 }}
+                      <div className="flex-1">
+                        <div className="flex items-center gap-3 mb-2 flex-wrap">
+                          <h3 className="text-xl font-semibold">{program.title}</h3>
+                          <span
+                            className={`px-3 py-1 rounded-full text-xs font-medium border ${
+                              tierColors[program.tier as keyof typeof tierColors]
+                            }`}
                           >
-                            <CheckCircle2 className="h-5 w-5 text-muted-foreground" />
-                          </motion.div>
+                            {program.tier}
+                          </span>
                         </div>
-                      </CardHeader>
-                      
-                      {expandedCards.has(index) && (
-                        <motion.div
-                          initial={{ opacity: 0, height: 0 }}
-                          animate={{ opacity: 1, height: "auto" }}
-                          exit={{ opacity: 0, height: 0 }}
-                          transition={{ duration: 0.3 }}
-                        >
-                          <CardContent className="space-y-6 border-t border-border/50 pt-6">
-                            <div>
-                              <div className="flex items-center gap-2 mb-3">
-                                <Target className="h-5 w-5" style={{ color: program.color }} />
-                                <h4 className="font-bold text-lg">What We Offer</h4>
-                              </div>
-                              <ul className="space-y-2">
-                                {item.details.map((detail: string, i: number) => (
-                                  <li key={i} className="flex items-start gap-2">
-                                    <CheckCircle2 className="h-4 w-4 flex-shrink-0 mt-1" style={{ color: program.color }} />
-                                    <span>{detail}</span>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-
-                            <div>
-                              <div className="flex items-center gap-2 mb-3">
-                                <Award className="h-5 w-5 text-blue-500" />
-                                <h4 className="font-bold text-lg">How to Qualify</h4>
-                              </div>
-                              <ul className="space-y-2">
-                                {item.howToQualify.map((qualification: string, i: number) => (
-                                  <li key={i} className="flex items-start gap-2">
-                                    <CheckCircle2 className="h-4 w-4 text-blue-500 flex-shrink-0 mt-1" />
-                                    <span className="text-muted-foreground">{qualification}</span>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-
-                            <div className="flex gap-3 pt-4">
-                              <Button size="sm" style={{ backgroundColor: program.color }}>
-                                Apply Now
-                              </Button>
-                              <Button size="sm" variant="outline">
-                                Learn More
-                              </Button>
-                            </div>
-                          </CardContent>
-                        </motion.div>
+                        <p className="text-sm text-muted-foreground">{program.description}</p>
+                      </div>
+                      {expandedPrograms.has(index) ? (
+                        <ChevronUp className="h-5 w-5 text-muted-foreground flex-shrink-0 ml-4" />
+                      ) : (
+                        <ChevronDown className="h-5 w-5 text-muted-foreground flex-shrink-0 ml-4" />
                       )}
-                    </Card>
-                  ))}
-                </div>
-              </motion.section>
+                    </button>
 
-              <motion.section
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-              >
-                <Card className="glass" style={{ borderTop: `4px solid ${program.color}` }}>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <Mail className="h-5 w-5" />
-                      Get Updates on {program.title}
-                    </CardTitle>
-                    <CardDescription>
-                      Subscribe to receive news about new programs and opportunities
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <form onSubmit={handleEmailSignup} className="flex gap-2">
-                      <input
-                        type="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        placeholder="your@email.com"
-                        required
-                        className="flex-1 px-4 py-2 rounded-lg bg-background border border-border focus:outline-none focus:ring-2 focus:ring-primary"
-                      />
-                      <Button type="submit">Subscribe</Button>
-                    </form>
-                  </CardContent>
-                </Card>
-              </motion.section>
-            </div>
-
-            <div className="space-y-6">
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-              >
-                <Card className="glass sticky top-24">
-                  <CardHeader>
-                    <CardTitle>Get Involved</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-3">
-                    <Button className="w-full" style={{ backgroundColor: program.color }}>
-                      Become a Member
-                    </Button>
-                    <Button variant="outline" className="w-full">
-                      Volunteer
-                    </Button>
-                    <Button variant="outline" className="w-full">
-                      Donate
-                    </Button>
-                  </CardContent>
-                </Card>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-              >
-                <Card className="glass">
-                  <CardHeader>
-                    <CardTitle>Other Programs</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-3">
-                    {relatedPrograms.map((related: ProgramCategory) => (
-                      <Link
-                        key={related.id}
-                        to={`/programs/${related.slug}`}
-                        className="block p-3 rounded-lg hover:bg-muted/50 transition-colors border border-border/50"
+                    {expandedPrograms.has(index) && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className="px-6 pb-6 space-y-6"
                       >
-                        <div className="flex items-center gap-3">
-                          <div className="text-2xl">{related.icon}</div>
-                          <div className="flex-1 min-w-0">
-                            <div className="font-medium text-sm line-clamp-1">{related.title}</div>
-                            <div className="text-xs text-muted-foreground line-clamp-2">{related.shortDescription}</div>
-                          </div>
-                          <ExternalLink className="h-4 w-4 text-muted-foreground flex-shrink-0" />
+                        <div>
+                          <h4 className="font-semibold text-blue-400 mb-3">What We Offer</h4>
+                          <ul className="space-y-2">
+                            {program.activities.map((activity, i) => (
+                              <li key={i} className="flex items-start gap-2 text-muted-foreground">
+                                <span className="text-blue-400 mt-1">✓</span>
+                                <span>{activity}</span>
+                              </li>
+                            ))}
+                          </ul>
                         </div>
-                      </Link>
-                    ))}
-                  </CardContent>
-                </Card>
-              </motion.div>
 
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-              >
-                <Card className="glass">
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <Users className="h-5 w-5" />
-                      Success Stories
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-4 text-sm">
-                    <div className="p-3 bg-muted/30 rounded-lg">
-                      <p className="italic text-muted-foreground mb-2">
-                        "These programs changed my life when I needed help the most."
-                      </p>
-                      <p className="text-xs font-medium">— Member testimonial</p>
-                    </div>
-                    <Button variant="outline" className="w-full" size="sm">
-                      Read More Stories
-                    </Button>
-                  </CardContent>
-                </Card>
-              </motion.div>
+                        {program.requirements && (
+                          <div>
+                            <h4 className="font-semibold text-yellow-400 mb-3">Requirements</h4>
+                            <p className="text-muted-foreground">{program.requirements}</p>
+                          </div>
+                        )}
+
+                        {program.frequency && (
+                          <div className="grid grid-cols-2 gap-4">
+                            <div>
+                              <h4 className="font-semibold text-green-400 mb-2">Frequency</h4>
+                              <p className="text-sm text-muted-foreground">{program.frequency}</p>
+                            </div>
+                            {program.lead && (
+                              <div>
+                                <h4 className="font-semibold text-purple-400 mb-2">Program Lead</h4>
+                                <p className="text-sm text-muted-foreground">{program.lead}</p>
+                              </div>
+                            )}
+                          </div>
+                        )}
+
+                        <div className="flex gap-3 pt-4 border-t border-border">
+                          <Link
+                            to="/sign-up"
+                            className="px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-medium flex items-center gap-2"
+                          >
+                            <ExternalLink className="h-4 w-4" />
+                            Join This Program
+                          </Link>
+                          <button className="px-4 py-2 rounded-lg bg-card border border-border hover:border-primary transition-colors font-medium">
+                            Learn More
+                          </button>
+                        </div>
+                      </motion.div>
+                    )}
+                  </motion.div>
+                ))}
+              </div>
             </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="glass-effect rounded-xl p-8 border border-border/50"
+            >
+              <h2 className="text-2xl font-bold mb-4">Ready to Get Started?</h2>
+              <p className="text-muted-foreground mb-6">
+                Join the American Liberty Order and gain access to all our {programCategory.title.toLowerCase()}.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  to="/sign-up"
+                  className="px-6 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-semibold"
+                >
+                  Become a Member
+                </Link>
+                <Link
+                  to="/policies"
+                  className="px-6 py-3 rounded-lg bg-card border border-border hover:border-primary transition-colors font-semibold"
+                >
+                  View Our Policies
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+
+          <div className="space-y-6">
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="glass-effect rounded-xl p-6 border border-border/50 sticky top-24"
+            >
+              <h3 className="font-semibold mb-4">Get Program Updates</h3>
+              <p className="text-sm text-muted-foreground mb-4">
+                Subscribe to receive updates about new programs and opportunities.
+              </p>
+              <form onSubmit={handleSubscribe} className="space-y-3">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Your email"
+                  required
+                  className="w-full px-4 py-2 rounded-lg bg-card border border-border focus:border-primary focus:outline-none"
+                />
+                <button
+                  type="submit"
+                  className="w-full px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors flex items-center justify-center gap-2"
+                >
+                  <Mail className="h-4 w-4" />
+                  Subscribe
+                </button>
+              </form>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.1 }}
+              className="glass-effect rounded-xl p-6 border border-border/50"
+            >
+              <h3 className="font-semibold mb-4">Other Program Categories</h3>
+              <div className="space-y-3">
+                {relatedPrograms.map((related) => (
+                  <Link
+                    key={related.id}
+                    to={`/programs/${related.slug}`}
+                    className="block p-3 rounded-lg bg-card border border-border hover:border-primary transition-all group"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div
+                        className="w-10 h-10 rounded-lg flex items-center justify-center text-sm flex-shrink-0"
+                        style={{ backgroundColor: related.color + '20', color: related.color }}
+                      >
+                        {related.icon}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h4 className="font-medium text-sm group-hover:text-primary transition-colors line-clamp-2">
+                          {related.title}
+                        </h4>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+              <Link
+                to="/programs"
+                className="block mt-4 text-center text-sm text-primary hover:underline"
+              >
+                View All Programs →
+              </Link>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2 }}
+              className="glass-effect rounded-xl p-6 border border-border/50"
+            >
+              <h3 className="font-semibold mb-4">Quick Info</h3>
+              <div className="space-y-4">
+                <div>
+                  <p className="text-sm text-muted-foreground mb-1">Total Programs</p>
+                  <p className="text-2xl font-bold" style={{ color: programCategory.color }}>
+                    {programCategory.programs.length}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground mb-1">Core Programs</p>
+                  <p className="text-2xl font-bold text-blue-400">
+                    {programCategory.programs.filter(p => p.tier === 'Core').length}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground mb-1">Category</p>
+                  <p className="text-sm font-medium">{programCategory.title}</p>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </div>

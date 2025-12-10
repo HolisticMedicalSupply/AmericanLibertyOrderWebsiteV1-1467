@@ -1,52 +1,27 @@
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-import { 
-  Search, 
-  Moon, 
-  Sun, 
-  ArrowRight,
-  Heart,
-  HandHeart,
-  GraduationCap,
-  Radio,
-  Target
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
-import Breadcrumb from "@/components/Breadcrumb";
-import { useTheme } from "@/hooks/use-theme";
-import { useState, useMemo } from "react";
-import programsData from "../../programs-data.json";
+import { useState, useMemo } from 'react';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { Search, ArrowRight } from 'lucide-react';
+import programsData from '@/data/programs-data.json';
 
 export default function ProgramsOverview() {
-  const { theme, setTheme } = useTheme();
-  const [searchQuery, setSearchQuery] = useState("");
-
-  const iconMap: Record<string, any> = {
-    "member-support": Heart,
-    "community-service": HandHeart,
-    "youth-programs": GraduationCap,
-    "media-influence": Radio,
-  };
+  const [searchQuery, setSearchQuery] = useState('');
 
   const filteredPrograms = useMemo(() => {
-    let filtered = programsData.programs.map((program: any) => ({
-      ...program,
-      icon: iconMap[program.slug] || Target,
-    }));
+    let filtered = programsData.programs;
 
     if (searchQuery) {
       const query = searchQuery.toLowerCase();
-      filtered = filtered.filter((program: any) =>
-        program.title.toLowerCase().includes(query) ||
-        program.shortDescription.toLowerCase().includes(query) ||
-        program.overview.toLowerCase().includes(query) ||
-        program.programs.some((p: any) => 
-          p.name.toLowerCase().includes(query) ||
-          p.description.toLowerCase().includes(query)
-        )
+      filtered = filtered.filter(
+        (program) =>
+          program.title.toLowerCase().includes(query) ||
+          program.description.toLowerCase().includes(query) ||
+          program.programs.some(
+            (p) =>
+              p.title.toLowerCase().includes(query) ||
+              p.description.toLowerCase().includes(query) ||
+              p.activities.some(a => a.toLowerCase().includes(query))
+          )
       );
     }
 
@@ -55,139 +30,151 @@ export default function ProgramsOverview() {
 
   return (
     <div className="min-h-screen bg-background">
-      <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-border/50">
-        <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Link to="/" className="flex items-center gap-3">
-              <img src="/logo.png" alt="American Liberty Order" className="h-10 w-10" />
-              <span className="text-lg font-bold text-foreground hidden sm:inline">American Liberty Order</span>
-            </Link>
-          </div>
-          <div className="flex items-center gap-4">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            >
-              {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </Button>
-          </div>
-        </div>
-      </nav>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center mb-12"
+        >
+          <h1 className="text-5xl font-bold mb-4 gradient-text">Our Programs</h1>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Comprehensive programs to empower members, build community, and advance the cause of liberty.
+          </p>
+        </motion.div>
 
-      <div className="pt-24 pb-16">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <Breadcrumb items={[{ label: "Programs" }]} />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="mb-8"
+        >
+          <div className="relative">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search programs..."
+              className="w-full pl-12 pr-4 py-3 rounded-lg bg-card border border-border focus:border-primary focus:outline-none"
+            />
+          </div>
+        </motion.div>
 
+        {filteredPrograms.length === 0 ? (
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="mb-12"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="text-center py-12"
           >
-            <h1 className="text-5xl font-bold mb-4">Our Programs</h1>
-            <p className="text-xl text-muted-foreground max-w-3xl">
-              Comprehensive support systems and engagement opportunities for members to grow, serve, and make an impact
+            <p className="text-xl text-muted-foreground">
+              No programs found matching "{searchQuery}"
             </p>
           </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="mb-8"
-          >
-            <div className="relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-              <Input
-                type="text"
-                placeholder="Search programs..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-10"
-              />
-            </div>
-          </motion.div>
-
-          {searchQuery && (
+        ) : (
+          <>
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className="mb-6"
+              transition={{ delay: 0.2 }}
+              className="mb-6 text-muted-foreground"
             >
-              <p className="text-muted-foreground">
-                Found {filteredPrograms.length} {filteredPrograms.length === 1 ? 'program category' : 'program categories'}
-              </p>
+              Showing {filteredPrograms.length} of {programsData.programs.length} program categories
             </motion.div>
-          )}
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {filteredPrograms.map((program: any, index: number) => (
-              <motion.div
-                key={program.id}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-              >
-                <Link to={`/programs/${program.slug}`}>
-                  <Card 
-                    className="glass h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group cursor-pointer"
-                    style={{ borderTop: `4px solid ${program.color}` }}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {filteredPrograms.map((programCategory, index) => (
+                <motion.div
+                  key={programCategory.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.1 + index * 0.05 }}
+                >
+                  <Link
+                    to={`/programs/${programCategory.slug}`}
+                    className="group block h-full"
                   >
-                    <CardHeader>
-                      <div className="flex items-start justify-between gap-4 mb-3">
-                        <div 
-                          className="text-5xl w-16 h-16 flex items-center justify-center rounded-xl"
-                          style={{ background: `${program.color}20` }}
+                    <div
+                      className="glass-effect rounded-xl p-6 border border-border/50 hover:border-primary transition-all h-full flex flex-col"
+                      style={{
+                        borderColor: programCategory.color + '30',
+                      }}
+                    >
+                      <div className="flex items-start gap-4 mb-4">
+                        <div
+                          className="w-14 h-14 rounded-xl flex items-center justify-center text-xl flex-shrink-0"
+                          style={{
+                            backgroundColor: programCategory.color + '20',
+                            color: programCategory.color,
+                          }}
                         >
-                          {program.icon && <program.icon className="h-8 w-8" style={{ color: program.color }} />}
+                          {programCategory.icon}
                         </div>
-                        <Badge variant="outline" className="text-xs">
-                          {program.programs?.length || 0} programs
-                        </Badge>
+                        <div className="flex-1 min-w-0">
+                          <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
+                            {programCategory.title}
+                          </h3>
+                          <p className="text-muted-foreground text-sm mb-3">
+                            {programCategory.description}
+                          </p>
+                        </div>
                       </div>
-                      <CardTitle className="text-2xl group-hover:text-primary transition-colors">
-                        {program.title}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <CardDescription className="mb-4 text-base">{program.shortDescription}</CardDescription>
-                      <div className="space-y-2 mb-4">
-                        {program.programs?.slice(0, 3).map((item: any, i: number) => (
-                          <div key={i} className="text-sm text-muted-foreground flex items-center gap-2">
-                            <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: program.color }} />
-                            {item.name}
-                          </div>
-                        ))}
-                        {program.programs?.length > 3 && (
-                          <div className="text-sm text-muted-foreground italic">
-                            + {program.programs.length - 3} more programs
-                          </div>
-                        )}
-                      </div>
-                      <div className="flex items-center gap-1 text-sm text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                        Explore programs <ArrowRight className="h-4 w-4" />
-                      </div>
-                    </CardContent>
-                  </Card>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
 
-          {filteredPrograms.length === 0 && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              className="text-center py-16"
+                      <div className="space-y-2 mb-4 flex-1">
+                        <h4 className="text-sm font-semibold text-muted-foreground">Programs:</h4>
+                        <ul className="space-y-1">
+                          {programCategory.programs.slice(0, 4).map((program, i) => (
+                            <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
+                              <span className="text-primary mt-0.5">•</span>
+                              <span className="line-clamp-1">{program.title}</span>
+                            </li>
+                          ))}
+                          {programCategory.programs.length > 4 && (
+                            <li className="text-sm text-muted-foreground italic">
+                              + {programCategory.programs.length - 4} more programs
+                            </li>
+                          )}
+                        </ul>
+                      </div>
+
+                      <div className="flex items-center justify-between pt-4 border-t border-border">
+                        <span className="text-sm text-muted-foreground">
+                          {programCategory.programs.length} program{programCategory.programs.length === 1 ? '' : 's'}
+                        </span>
+                        <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                      </div>
+                    </div>
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+          </>
+        )}
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+          className="mt-12 glass-effect rounded-xl p-8 border border-border/50 text-center"
+        >
+          <h2 className="text-2xl font-bold mb-4">Get Involved Today</h2>
+          <p className="text-muted-foreground mb-6">
+            Join the American Liberty Order and gain access to all our programs and resources.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link
+              to="/sign-up"
+              className="px-6 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-semibold"
             >
-              <p className="text-xl text-muted-foreground mb-4">No programs found matching your search</p>
-              <Button onClick={() => setSearchQuery("")} variant="outline">
-                Clear search
-              </Button>
-            </motion.div>
-          )}
-        </div>
+              Become a Member
+            </Link>
+            <Link
+              to="/policies"
+              className="px-6 py-3 rounded-lg bg-card border border-border hover:border-primary transition-colors font-semibold"
+            >
+              View Our Policies
+            </Link>
+          </div>
+        </motion.div>
       </div>
     </div>
   );

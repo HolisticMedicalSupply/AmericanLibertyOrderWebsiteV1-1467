@@ -1,0 +1,1173 @@
+{
+  "programs": [
+    {
+      "id": "political-action",
+      "slug": "political-action",
+      "title": "Political Action & Electoral Engagement",
+      "icon": "Vote",
+      "color": "#3B82F6",
+      "description": "Direct engagement in the electoral process to advance liberty-minded candidates and policies.",
+      "programs": [
+        {
+          "title": "Candidate Recruitment & Vetting",
+          "tier": "Core",
+          "description": "Identify, recruit, and thoroughly vet candidates who align with American Liberty Order principles for local, state, and federal office.",
+          "activities": [
+            "Systematic identification of potential candidates",
+            "Background checks and policy alignment verification",
+            "Interview process with leadership committee",
+            "Public endorsement process",
+            "Ongoing accountability monitoring"
+          ],
+          "requirements": "Open to all members in good standing",
+          "frequency": "Ongoing, intensified during election cycles",
+          "lead": "Political Action Committee"
+        },
+        {
+          "title": "Campaign Training & Support",
+          "tier": "Core",
+          "description": "Comprehensive training and hands-on support for endorsed candidates running for office.",
+          "activities": [
+            "Campaign management training",
+            "Fundraising workshops",
+            "Media training and messaging",
+            "Volunteer coordination strategies",
+            "Opposition research and debate prep",
+            "Digital campaign tools and tactics"
+          ],
+          "requirements": "For endorsed candidates and their campaign teams",
+          "frequency": "Intensive during campaign season",
+          "lead": "Campaign Training Director"
+        },
+        {
+          "title": "Voter Registration & Turnout",
+          "tier": "Core",
+          "description": "Expand the electorate with liberty-minded voters through registration drives and turnout operations.",
+          "activities": [
+            "Community voter registration events",
+            "College campus registration drives",
+            "Door-to-door canvassing",
+            "Phone banking and text banking",
+            "Ride-to-polls programs",
+            "Early voting mobilization"
+          ],
+          "requirements": "All members encouraged to participate",
+          "frequency": "Year-round, peak activity during elections",
+          "lead": "Field Operations Director"
+        },
+        {
+          "title": "Legislative Advocacy & Lobbying",
+          "tier": "Recommended",
+          "description": "Direct engagement with elected officials to advance policy priorities at all levels of government.",
+          "activities": [
+            "Capitol visits and lobby days",
+            "Committee testimony on bills",
+            "Legislative tracking and alerts",
+            "Constituent pressure campaigns",
+            "Relationship building with offices",
+            "Coalition building with allied groups"
+          ],
+          "requirements": "Advocacy training recommended",
+          "frequency": "During legislative sessions",
+          "lead": "Legislative Affairs Director"
+        },
+        {
+          "title": "Ballot Measure Campaigns",
+          "tier": "Recommended",
+          "description": "Direct democracy through initiative, referendum, and recall campaigns on priority issues.",
+          "activities": [
+            "Initiative drafting and legal review",
+            "Signature gathering operations",
+            "Public education campaigns",
+            "Coalition building",
+            "Get-out-the-vote for ballot measures",
+            "Post-election implementation monitoring"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "As opportunities arise",
+          "lead": "Direct Democracy Committee"
+        },
+        {
+          "title": "Election Integrity Monitoring",
+          "tier": "Core",
+          "description": "Protect the integrity of elections through observation, documentation, and legal action when needed.",
+          "activities": [
+            "Poll watching and election observation",
+            "Chain-of-custody monitoring",
+            "Voter roll maintenance advocacy",
+            "Documentation of irregularities",
+            "Legal challenges when warranted",
+            "Public reporting and transparency"
+          ],
+          "requirements": "Poll watcher training required",
+          "frequency": "Every election",
+          "lead": "Election Integrity Task Force"
+        },
+        {
+          "title": "Precinct Committee Organization",
+          "tier": "Recommended",
+          "description": "Build grassroots political power by recruiting liberty-minded members to serve as precinct committee officers.",
+          "activities": [
+            "Precinct mapping and targeting",
+            "PCO/PCP recruitment",
+            "Training on party rules and procedures",
+            "Coordination for county/district conventions",
+            "Platform development",
+            "Party reform initiatives"
+          ],
+          "requirements": "Must be eligible to serve in party role",
+          "frequency": "Ongoing",
+          "lead": "Party Engagement Coordinator"
+        },
+        {
+          "title": "Independent Expenditure Campaigns",
+          "tier": "Optional",
+          "description": "PAC operations for independent expenditures supporting or opposing candidates based on their positions.",
+          "activities": [
+            "Opposition research",
+            "Strategic advertising (mail, digital, broadcast)",
+            "Voter contact programs",
+            "Issue advocacy campaigns",
+            "Compliance with campaign finance laws",
+            "Transparency reporting"
+          ],
+          "requirements": "Contributions welcome from all supporters",
+          "frequency": "Election cycles",
+          "lead": "Independent Expenditure PAC Director"
+        },
+        {
+          "title": "Candidate Debate & Forum Hosting",
+          "tier": "Recommended",
+          "description": "Host public debates and candidate forums to inform voters and hold candidates accountable.",
+          "activities": [
+            "Debate organization and moderation",
+            "Question development based on member priorities",
+            "Live streaming and recording",
+            "Voter guides based on responses",
+            "Post-debate analysis",
+            "Community viewing parties"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "During primary and general election seasons",
+          "lead": "Public Education Committee"
+        }
+      ]
+    },
+    {
+      "id": "community-building",
+      "slug": "community-building",
+      "title": "Community Building & Events",
+      "icon": "Users",
+      "color": "#10B981",
+      "description": "Build strong local chapters and foster community through regular gatherings and social activities.",
+      "programs": [
+        {
+          "title": "Chapter Meetings & Socials",
+          "tier": "Core",
+          "description": "Regular local chapter meetings for business, education, and community building.",
+          "activities": [
+            "Monthly chapter meetings with speakers",
+            "Social hours before/after meetings",
+            "Member introductions and networking",
+            "Action planning and coordination",
+            "Local issue discussions",
+            "Community building activities"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Monthly",
+          "lead": "Chapter Presidents"
+        },
+        {
+          "title": "Annual State Convention",
+          "tier": "Core",
+          "description": "Statewide gathering for policy development, elections, training, and networking.",
+          "activities": [
+            "Keynote speakers and panels",
+            "Policy workshops and debates",
+            "Leadership elections",
+            "Awards and recognition",
+            "Vendor expo",
+            "Evening socials and entertainment"
+          ],
+          "requirements": "All members encouraged to attend",
+          "frequency": "Annual",
+          "lead": "State Executive Committee"
+        },
+        {
+          "title": "Regional Conferences",
+          "tier": "Recommended",
+          "description": "Multi-chapter gatherings for training, coordination, and networking within regions.",
+          "activities": [
+            "Regional coordination meetings",
+            "Training workshops",
+            "Guest speakers",
+            "Best practices sharing",
+            "Joint action planning",
+            "Social activities"
+          ],
+          "requirements": "Open to all members in region",
+          "frequency": "Quarterly",
+          "lead": "Regional Directors"
+        },
+        {
+          "title": "Family-Friendly Events",
+          "tier": "Recommended",
+          "description": "Activities that bring families together and engage the next generation.",
+          "activities": [
+            "Family picnics and barbecues",
+            "Constitution Day celebrations",
+            "Independence Day events",
+            "Family camping trips",
+            "Youth civics activities",
+            "Community service projects"
+          ],
+          "requirements": "Open to all members and families",
+          "frequency": "Quarterly",
+          "lead": "Family Programs Coordinator"
+        },
+        {
+          "title": "Member Mixers & Networking",
+          "tier": "Optional",
+          "description": "Informal social gatherings to build relationships and expand networks.",
+          "activities": [
+            "Happy hours and dinner meetups",
+            "Professional networking events",
+            "Hobby and interest groups",
+            "Book clubs",
+            "Shooting sports outings",
+            "Outdoor recreation activities"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "As organized locally",
+          "lead": "Social Coordinators"
+        },
+        {
+          "title": "Leadership Retreats",
+          "tier": "Recommended",
+          "description": "Intensive retreats for chapter leaders, state officers, and emerging leaders.",
+          "activities": [
+            "Strategic planning sessions",
+            "Leadership development training",
+            "Governance and best practices",
+            "Conflict resolution skills",
+            "Team building exercises",
+            "Goal setting and accountability"
+          ],
+          "requirements": "For chapter officers and leadership track members",
+          "frequency": "Semi-annual",
+          "lead": "Leadership Development Director"
+        },
+        {
+          "title": "Virtual Community Events",
+          "tier": "Core",
+          "description": "Online events to connect members across geography and accommodate different schedules.",
+          "activities": [
+            "Virtual town halls with leadership",
+            "Online policy discussions",
+            "Webinars and training sessions",
+            "Virtual socials and game nights",
+            "Live Q&A sessions",
+            "Member spotlight interviews"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Monthly",
+          "lead": "Digital Engagement Coordinator"
+        }
+      ]
+    },
+    {
+      "id": "training-development",
+      "slug": "training-development",
+      "title": "Training & Self-Improvement",
+      "icon": "GraduationCap",
+      "color": "#8B5CF6",
+      "description": "Comprehensive training programs to develop members' skills in activism, leadership, and personal development.",
+      "programs": [
+        {
+          "title": "Activist Training Academy",
+          "tier": "Core",
+          "description": "Multi-day intensive training on grassroots organizing, advocacy, and effective activism.",
+          "activities": [
+            "Community organizing fundamentals",
+            "Public speaking and persuasion",
+            "Media relations and messaging",
+            "Digital organizing tools",
+            "Coalition building",
+            "Campaign planning and execution",
+            "Hands-on practicum projects"
+          ],
+          "requirements": "Commitment to complete full training program",
+          "frequency": "Quarterly cohorts",
+          "lead": "Training Director"
+        },
+        {
+          "title": "Leadership Development Program",
+          "tier": "Core",
+          "description": "Year-long program to develop next generation of chapter leaders and state officers.",
+          "activities": [
+            "Leadership theory and practice",
+            "Organizational management",
+            "Financial and legal compliance",
+            "Volunteer recruitment and retention",
+            "Conflict resolution",
+            "Public presentation skills",
+            "Mentorship from current leaders"
+          ],
+          "requirements": "Nomination or application required",
+          "frequency": "Annual cohort",
+          "lead": "Leadership Development Director"
+        },
+        {
+          "title": "Policy Deep-Dive Workshops",
+          "tier": "Recommended",
+          "description": "In-depth exploration of specific policy areas to develop expertise.",
+          "activities": [
+            "Expert presentations",
+            "Research and analysis training",
+            "Debate and discussion",
+            "Messaging development",
+            "Legislative language drafting",
+            "Advocacy strategy planning"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Monthly topics",
+          "lead": "Policy Committee Chairs"
+        },
+        {
+          "title": "Media & Communications Training",
+          "tier": "Recommended",
+          "description": "Learn to effectively communicate our message through traditional and digital media.",
+          "activities": [
+            "Interview skills and sound bites",
+            "Social media strategy",
+            "Writing op-eds and letters to editor",
+            "Video production basics",
+            "Podcasting fundamentals",
+            "Crisis communications",
+            "Mock interviews and feedback"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Quarterly",
+          "lead": "Communications Director"
+        },
+        {
+          "title": "Campaign School",
+          "tier": "Recommended",
+          "description": "Comprehensive training for members considering running for office or managing campaigns.",
+          "activities": [
+            "Campaign fundamentals",
+            "Fundraising strategies",
+            "Field operations",
+            "Digital campaigning",
+            "Debate and public forum prep",
+            "Opposition research",
+            "Compliance and reporting",
+            "Campaign simulations"
+          ],
+          "requirements": "For prospective candidates and campaign staff",
+          "frequency": "Pre-election cycle",
+          "lead": "Campaign Training Director"
+        },
+        {
+          "title": "Public Speaking & Debate",
+          "tier": "Optional",
+          "description": "Develop confidence and skill in public speaking, debate, and persuasion.",
+          "activities": [
+            "Toastmasters-style exercises",
+            "Structured debate practice",
+            "Impromptu speaking challenges",
+            "Body language and presence",
+            "Argumentation and logic",
+            "Handling hostile questions",
+            "Video review and feedback"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Bi-weekly",
+          "lead": "Public Speaking Coach"
+        },
+        {
+          "title": "Personal Preparedness & Skills",
+          "tier": "Optional",
+          "description": "Build practical skills for self-reliance and community resilience.",
+          "activities": [
+            "First aid and emergency medicine",
+            "Food preservation and gardening",
+            "Financial literacy and planning",
+            "Physical fitness programs",
+            "Firearms safety and training",
+            "Ham radio and communications",
+            "Emergency preparedness planning"
+          ],
+          "requirements": "Open to all members, varies by activity",
+          "frequency": "Ongoing workshops",
+          "lead": "Preparedness Committee"
+        }
+      ]
+    },
+    {
+      "id": "education-knowledge",
+      "slug": "education-knowledge",
+      "title": "Education & Civic Knowledge",
+      "icon": "BookOpen",
+      "color": "#F59E0B",
+      "description": "Educational programs to deepen understanding of history, civics, policy, and the philosophical foundations of liberty.",
+      "programs": [
+        {
+          "title": "Founding Documents Study Groups",
+          "tier": "Core",
+          "description": "Deep study of Constitution, Federalist Papers, and founding-era documents.",
+          "activities": [
+            "Chapter-by-chapter document analysis",
+            "Historical context discussions",
+            "Contemporary application",
+            "Guest scholar presentations",
+            "Document memorization challenges",
+            "Annual Constitution Day events"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Weekly or bi-weekly",
+          "lead": "Civics Education Committee"
+        },
+        {
+          "title": "Liberty University",
+          "tier": "Core",
+          "description": "Multi-week online course covering philosophy, economics, and history of liberty.",
+          "activities": [
+            "Video lectures from experts",
+            "Assigned readings and discussions",
+            "Live Q&A sessions",
+            "Research papers and projects",
+            "Final exam and certification",
+            "Alumni network and continuing education"
+          ],
+          "requirements": "Commitment to complete full course",
+          "frequency": "Quarterly cohorts",
+          "lead": "Education Director"
+        },
+        {
+          "title": "Policy Briefing Series",
+          "tier": "Core",
+          "description": "Regular briefings on current policy issues, legislation, and ALO positions.",
+          "activities": [
+            "Expert presentations on policy areas",
+            "Legislative updates and analysis",
+            "Q&A with policy experts",
+            "Written briefing materials",
+            "Member discussion and input",
+            "Action alerts and next steps"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Monthly",
+          "lead": "Policy Committee"
+        },
+        {
+          "title": "Book Club & Reading Groups",
+          "tier": "Recommended",
+          "description": "Structured reading and discussion of important books on liberty, history, and policy.",
+          "activities": [
+            "Monthly book selection and reading",
+            "Chapter discussions",
+            "Author interviews when possible",
+            "Reading lists and recommendations",
+            "In-person and virtual options",
+            "Annual book list and awards"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Monthly",
+          "lead": "Local Book Club Coordinators"
+        },
+        {
+          "title": "Economic Literacy Program",
+          "tier": "Recommended",
+          "description": "Build understanding of economics, markets, and sound policy.",
+          "activities": [
+            "Basic economics principles",
+            "Austrian economics introduction",
+            "Public choice theory",
+            "Monetary policy and Federal Reserve",
+            "Trade and globalization",
+            "Practical financial literacy",
+            "Economic policy analysis"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Six-week course, offered quarterly",
+          "lead": "Economics Committee"
+        },
+        {
+          "title": "American History Deep Dives",
+          "tier": "Optional",
+          "description": "Explore pivotal moments and figures in American history with focus on liberty.",
+          "activities": [
+            "Themed historical presentations",
+            "Primary source document analysis",
+            "Historical site visits and tours",
+            "Debates on historical controversies",
+            "Reenactments and living history",
+            "Connections to contemporary issues"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Monthly topics",
+          "lead": "History Committee"
+        },
+        {
+          "title": "Philosophy & Political Theory Study",
+          "tier": "Optional",
+          "description": "Explore the intellectual foundations of liberty and self-governance.",
+          "activities": [
+            "Classical liberal philosophy",
+            "Natural rights theory",
+            "Social contract and consent",
+            "Libertarian and conservative thought",
+            "Anti-statist philosophy",
+            "Contemporary debates",
+            "Original texts and commentaries"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Bi-weekly",
+          "lead": "Philosophy Study Coordinator"
+        },
+        {
+          "title": "Know Your Rights Workshops",
+          "tier": "Recommended",
+          "description": "Practical education on constitutional rights and how to assert them.",
+          "activities": [
+            "First Amendment rights and limits",
+            "Second Amendment law",
+            "Fourth Amendment and police encounters",
+            "Fifth Amendment and self-incrimination",
+            "Due process and fair trial rights",
+            "Religious freedom protections",
+            "Practical scenarios and role-play"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Quarterly",
+          "lead": "Legal Affairs Committee"
+        },
+        {
+          "title": "Healthcare Policy Education",
+          "tier": "Recommended",
+          "description": "In-depth understanding of healthcare system challenges and liberty-based solutions.",
+          "activities": [
+            "Healthcare system overview and history",
+            "Price transparency and market solutions",
+            "Insurance reform options",
+            "Regulatory barriers to care",
+            "Medical freedom issues",
+            "Comparative international systems",
+            "Advocacy strategy development"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Six-week course annually",
+          "lead": "Healthcare Policy Committee"
+        },
+        {
+          "title": "Tax Reform Education",
+          "tier": "Optional",
+          "description": "Understand the current tax system and explore comprehensive reform proposals.",
+          "activities": [
+            "How the tax code works",
+            "History of income tax",
+            "Alternative tax systems (flat tax, FairTax, etc.)",
+            "Economic impacts of taxation",
+            "Tax policy advocacy strategies",
+            "Personal tax planning basics"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Four-week course annually",
+          "lead": "Tax Policy Committee"
+        }
+      ]
+    },
+    {
+      "id": "professional-economic",
+      "slug": "professional-economic",
+      "title": "Professional & Economic Development",
+      "icon": "Briefcase",
+      "color": "#EC4899",
+      "description": "Support members' professional growth and economic opportunities through networking and resources.",
+      "programs": [
+        {
+          "title": "Member Business Network",
+          "tier": "Core",
+          "description": "Connect member-owned businesses with fellow members and supporters.",
+          "activities": [
+            "Business directory and marketplace",
+            "Member-to-member discounts",
+            "Referral network",
+            "Business showcase events",
+            "Joint marketing opportunities",
+            "Vendor relationships for chapter events"
+          ],
+          "requirements": "Open to all member business owners",
+          "frequency": "Ongoing",
+          "lead": "Business Network Coordinator"
+        },
+        {
+          "title": "Career Development & Mentorship",
+          "tier": "Recommended",
+          "description": "Career guidance, mentorship, and professional development opportunities.",
+          "activities": [
+            "One-on-one mentorship matching",
+            "Resume and interview coaching",
+            "Career transition support",
+            "Professional skills workshops",
+            "Industry networking events",
+            "Job opportunities board"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Ongoing",
+          "lead": "Member Services Committee"
+        },
+        {
+          "title": "Entrepreneurship Support",
+          "tier": "Recommended",
+          "description": "Resources and support for members starting or growing businesses.",
+          "activities": [
+            "Business planning workshops",
+            "Access to funding resources",
+            "Legal and regulatory guidance",
+            "Marketing and branding support",
+            "Peer advisory groups",
+            "Success story showcases"
+          ],
+          "requirements": "For aspiring and current entrepreneurs",
+          "frequency": "Monthly workshops",
+          "lead": "Entrepreneurship Committee"
+        },
+        {
+          "title": "Financial Literacy & Planning",
+          "tier": "Recommended",
+          "description": "Education on personal finance, investing, and wealth building.",
+          "activities": [
+            "Budgeting and debt management",
+            "Investment strategies",
+            "Retirement planning",
+            "Tax optimization",
+            "Estate planning basics",
+            "Sound money principles"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Quarterly workshops",
+          "lead": "Financial Education Committee"
+        },
+        {
+          "title": "Parallel Economy Building",
+          "tier": "Optional",
+          "description": "Develop alternative economic structures aligned with our values.",
+          "activities": [
+            "Alternative payment systems",
+            "Local barter networks",
+            "Member credit unions and financial co-ops",
+            "Faith-based and value-aligned businesses",
+            "Cryptocurrency education",
+            "Supply chain diversification"
+          ],
+          "requirements": "Open to interested members",
+          "frequency": "As initiatives develop",
+          "lead": "Economic Resilience Committee"
+        },
+        {
+          "title": "Professional Networking Events",
+          "tier": "Optional",
+          "description": "Industry-specific and general professional networking opportunities.",
+          "activities": [
+            "Industry meetups and roundtables",
+            "Professional conference attendance",
+            "Skills exchange events",
+            "Lunch-and-learn series",
+            "Executive briefings",
+            "Alumni network events"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Monthly",
+          "lead": "Professional Development Coordinator"
+        }
+      ]
+    },
+    {
+      "id": "preparedness-resilience",
+      "slug": "preparedness-resilience",
+      "title": "Preparedness & Self-Reliance",
+      "icon": "Shield",
+      "color": "#EF4444",
+      "description": "Build personal and community resilience through preparedness, practical skills, and mutual support.",
+      "programs": [
+        {
+          "title": "Emergency Preparedness Network",
+          "tier": "Core",
+          "description": "Coordinate preparation and response for natural disasters and emergencies.",
+          "activities": [
+            "Family emergency planning workshops",
+            "Community response team training",
+            "Supply and resource sharing networks",
+            "Communication systems (ham radio, etc.)",
+            "Disaster response coordination",
+            "Recovery assistance programs"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Quarterly preparedness drills",
+          "lead": "Emergency Preparedness Committee"
+        },
+        {
+          "title": "Skills & Self-Reliance Workshops",
+          "tier": "Recommended",
+          "description": "Learn practical skills for greater independence and resilience.",
+          "activities": [
+            "Food preservation and storage",
+            "Gardening and food production",
+            "Basic repairs and maintenance",
+            "Alternative energy systems",
+            "Water purification methods",
+            "Wilderness survival skills",
+            "Medical preparedness"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Monthly workshops",
+          "lead": "Self-Reliance Committee"
+        },
+        {
+          "title": "Firearms Safety & Training",
+          "tier": "Optional",
+          "description": "Responsible gun ownership, safety, and proficiency training.",
+          "activities": [
+            "Basic firearms safety courses",
+            "Concealed carry certification",
+            "Marksmanship training and practice",
+            "Home defense strategies",
+            "Legal use of force education",
+            "Group range days",
+            "Firearms maintenance workshops"
+          ],
+          "requirements": "Age and legal requirements apply",
+          "frequency": "Monthly",
+          "lead": "Second Amendment Committee"
+        },
+        {
+          "title": "Health & Fitness Programs",
+          "tier": "Optional",
+          "description": "Promote physical fitness and health as foundation for liberty and self-reliance.",
+          "activities": [
+            "Group fitness activities",
+            "Nutrition education",
+            "Mental health and resilience",
+            "Outdoor recreation groups",
+            "Fitness challenges",
+            "Wellness workshops",
+            "Member discounts at gyms"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Ongoing",
+          "lead": "Health & Wellness Committee"
+        }
+      ]
+    },
+    {
+      "id": "mutual-aid",
+      "slug": "mutual-aid",
+      "title": "Mutual Aid & Member Services",
+      "icon": "Heart",
+      "color": "#14B8A6",
+      "description": "Practical support and assistance among members in times of need.",
+      "programs": [
+        {
+          "title": "Member Assistance Fund",
+          "tier": "Core",
+          "description": "Financial assistance for members facing unexpected hardship.",
+          "activities": [
+            "Emergency grants for verified needs",
+            "Interest-free loans between members",
+            "Fundraising for major medical or disaster costs",
+            "Referrals to additional resources",
+            "Confidential application process",
+            "Member contributions welcomed"
+          ],
+          "requirements": "For members in good standing",
+          "frequency": "As needed",
+          "lead": "Member Services Committee"
+        },
+        {
+          "title": "Legal Defense & Support",
+          "tier": "Core",
+          "description": "Assistance for members facing legal challenges related to liberty issues.",
+          "activities": [
+            "Legal consultation and referrals",
+            "Representation fund for test cases",
+            "Amicus brief participation",
+            "Public awareness campaigns",
+            "Connection to allied legal organizations",
+            "Know-your-rights education"
+          ],
+          "requirements": "Case-by-case evaluation",
+          "frequency": "As needed",
+          "lead": "Legal Affairs Committee"
+        },
+        {
+          "title": "Peer Support & Counseling",
+          "tier": "Recommended",
+          "description": "Confidential peer support for personal challenges.",
+          "activities": [
+            "Trained peer counselors",
+            "Support groups for specific issues",
+            "Referrals to professional services",
+            "Mental health resources",
+            "Addiction recovery support",
+            "Grief and loss support"
+          ],
+          "requirements": "Confidential, open to all members",
+          "frequency": "Ongoing",
+          "lead": "Member Support Coordinator"
+        },
+        {
+          "title": "Job Loss & Career Transition Support",
+          "tier": "Recommended",
+          "description": "Practical assistance for members navigating unemployment or career changes.",
+          "activities": [
+            "Job leads and networking",
+            "Resume and interview prep",
+            "Temporary work opportunities",
+            "Skills training resources",
+            "Emotional support groups",
+            "Financial counseling"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "As needed",
+          "lead": "Career Services Committee"
+        },
+        {
+          "title": "Practical Service Exchange",
+          "tier": "Optional",
+          "description": "Member-to-member exchange of services and skills.",
+          "activities": [
+            "Service directory and requests",
+            "Skills matching system",
+            "Tool and equipment sharing",
+            "Childcare cooperatives",
+            "Elder care support",
+            "Home and vehicle repairs",
+            "Time banking system"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Ongoing",
+          "lead": "Mutual Aid Coordinator"
+        }
+      ]
+    },
+    {
+      "id": "community-service",
+      "slug": "community-service",
+      "title": "Community Service & Outreach",
+      "icon": "HandHeart",
+      "color": "#F97316",
+      "description": "Demonstrate our values through service and positive community engagement.",
+      "programs": [
+        {
+          "title": "Veterans Support Programs",
+          "tier": "Core",
+          "description": "Honor and assist those who served our country.",
+          "activities": [
+            "Veterans service projects",
+            "Job placement assistance",
+            "VA navigation support",
+            "Veteran family support",
+            "Memorial and honor events",
+            "Buddy check-in programs",
+            "Homeless veteran outreach"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Ongoing",
+          "lead": "Veterans Affairs Committee"
+        },
+        {
+          "title": "First Responder Appreciation",
+          "tier": "Recommended",
+          "description": "Support and thank police, fire, EMS, and other first responders.",
+          "activities": [
+            "Meal deliveries to stations",
+            "Equipment fundraising",
+            "Appreciation events",
+            "Ride-along programs",
+            "Family support services",
+            "Fallen responder memorials"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Monthly",
+          "lead": "First Responder Committee"
+        },
+        {
+          "title": "Community Clean-Up & Beautification",
+          "tier": "Recommended",
+          "description": "Improve local communities through volunteer clean-up and beautification.",
+          "activities": [
+            "Highway and park clean-ups",
+            "Graffiti removal",
+            "Community garden projects",
+            "Trail maintenance",
+            "Neighborhood improvement projects",
+            "Visible branded presence"
+          ],
+          "requirements": "Open to all members and families",
+          "frequency": "Monthly or quarterly",
+          "lead": "Community Service Committee"
+        },
+        {
+          "title": "Disaster Relief & Recovery",
+          "tier": "Core",
+          "description": "Rapid response and sustained support for disaster-affected communities.",
+          "activities": [
+            "Emergency response teams",
+            "Supply collection and distribution",
+            "Debris removal and cleanup",
+            "Temporary shelter assistance",
+            "Rebuilding projects",
+            "Long-term recovery support",
+            "Coordination with other relief organizations"
+          ],
+          "requirements": "Volunteers screened and trained",
+          "frequency": "As disasters occur",
+          "lead": "Disaster Response Coordinator"
+        },
+        {
+          "title": "Charitable Partnerships",
+          "tier": "Optional",
+          "description": "Partnerships with established charities for larger impact.",
+          "activities": [
+            "Food bank volunteering",
+            "Homeless shelter support",
+            "Foster care advocacy",
+            "Animal rescue partnerships",
+            "Children's hospital visits",
+            "Senior center programs",
+            "Joint fundraising events"
+          ],
+          "requirements": "Open to all members",
+          "frequency": "Varies by partnership",
+          "lead": "Outreach Committee"
+        }
+      ]
+    },
+    {
+      "id": "youth-next-generation",
+      "slug": "youth-next-generation",
+      "title": "Youth & Next Generation",
+      "icon": "Users",
+      "color": "#06B6D4",
+      "description": "Invest in the next generation of liberty-minded leaders and citizens.",
+      "programs": [
+        {
+          "title": "Youth Mentorship Program",
+          "tier": "Core",
+          "description": "Connect young people with adult mentors who share their values.",
+          "activities": [
+            "One-on-one mentorship matching",
+            "Life skills and career guidance",
+            "Leadership development",
+            "Values and character formation",
+            "Educational support",
+            "Family involvement encouraged",
+            "Quarterly mentor training"
+          ],
+          "requirements": "Background checks for mentors",
+          "frequency": "Ongoing relationships",
+          "lead": "Youth Programs Director"
+        },
+        {
+          "title": "Scholarship Program",
+          "tier": "Core",
+          "description": "Financial support for students pursuing education aligned with our values.",
+          "activities": [
+            "Annual scholarship applications",
+            "Essay competitions",
+            "Merit and need-based awards",
+            "Vocational training scholarships",
+            "Books and supplies assistance",
+            "Donor recognition",
+            "Scholar network and mentorship"
+          ],
+          "requirements": "Open to children of members and qualified youth",
+          "frequency": "Annual awards",
+          "lead": "Scholarship Committee"
+        },
+        {
+          "title": "Student Internship & Fellowship",
+          "tier": "Recommended",
+          "description": "Hands-on experience in political activism, policy work, and organizational leadership.",
+          "activities": [
+            "Summer internship programs",
+            "Academic year fellowships",
+            "Campaign placements",
+            "Policy research projects",
+            "Skills training",
+            "Professional development",
+            "Stipends for selected positions"
+          ],
+          "requirements": "High school and college students",
+          "frequency": "Summer and academic year",
+          "lead": "Internship Coordinator"
+        },
+        {
+          "title": "Youth Civics Camps",
+          "tier": "Recommended",
+          "description": "Summer day camps teaching civics, history, and leadership to youth.",
+          "activities": [
+            "Founding documents study",
+            "Mock legislative sessions",
+            "Debate and public speaking",
+            "Community service projects",
+            "Guest speakers and field trips",
+            "Fun activities and socialization",
+            "Parent involvement opportunities"
+          ],
+          "requirements": "Ages 10-17",
+          "frequency": "Summer programs",
+          "lead": "Youth Camp Director"
+        },
+        {
+          "title": "College Campus Outreach",
+          "tier": "Recommended",
+          "description": "Build presence and recruit members on college campuses.",
+          "activities": [
+            "Campus chapter development",
+            "Tabling and literature distribution",
+            "Speaker events",
+            "Debate watch parties",
+            "Student activism training",
+            "Connection to state organization",
+            "Graduate transition support"
+          ],
+          "requirements": "College students",
+          "frequency": "Ongoing during academic year",
+          "lead": "Campus Organizing Director"
+        }
+      ]
+    },
+    {
+      "id": "media-influence",
+      "slug": "media-influence",
+      "title": "Media & Public Influence",
+      "icon": "Megaphone",
+      "color": "#A855F7",
+      "description": "Amplify our message and influence public discourse through strategic communications.",
+      "programs": [
+        {
+          "title": "Member Communications",
+          "tier": "Core",
+          "description": "Regular communication to keep members informed and engaged.",
+          "activities": [
+            "Weekly email newsletters",
+            "Monthly print magazine or newspaper",
+            "Urgent action alerts",
+            "Social media updates",
+            "Member portal and app",
+            "Annual report",
+            "Leadership messages"
+          ],
+          "requirements": "All members receive",
+          "frequency": "Ongoing",
+          "lead": "Communications Director"
+        },
+        {
+          "title": "External Publishing & Media",
+          "tier": "Core",
+          "description": "Produce and place content in external media outlets.",
+          "activities": [
+            "Op-eds and letters to editor",
+            "Media releases and statements",
+            "Contributed articles",
+            "Guest blog posts",
+            "Infographics and shareable content",
+            "Media monitoring and response",
+            "Relationship building with journalists"
+          ],
+          "requirements": "Communications team and trained spokespeople",
+          "frequency": "Daily/weekly",
+          "lead": "Media Relations Manager"
+        },
+        {
+          "title": "Podcast & Video Production",
+          "tier": "Recommended",
+          "description": "Create engaging audio and video content for digital distribution.",
+          "activities": [
+            "Regular podcast series",
+            "Interview shows",
+            "Policy explainer videos",
+            "Member spotlights",
+            "Event coverage",
+            "Social media clips",
+            "YouTube channel management"
+          ],
+          "requirements": "Production team or volunteers",
+          "frequency": "Weekly episodes",
+          "lead": "Digital Media Producer"
+        },
+        {
+          "title": "Speakers Bureau",
+          "tier": "Recommended",
+          "description": "Train and place speakers at community events, clubs, and media.",
+          "activities": [
+            "Speaker training program",
+            "Speaker database and booking",
+            "Prepared presentations on key topics",
+            "Media interview training",
+            "Civic club and rotary outreach",
+            "School and library presentations",
+            "Conference participation"
+          ],
+          "requirements": "Application and training",
+          "frequency": "Ongoing bookings",
+          "lead": "Speakers Bureau Coordinator"
+        },
+        {
+          "title": "Rapid Response Team",
+          "tier": "Core",
+          "description": "Quick reaction to breaking news and policy developments.",
+          "activities": [
+            "Real-time monitoring of news",
+            "Rapid statement development",
+            "Media interview coordination",
+            "Social media response",
+            "Fact-checking and corrections",
+            "Coordinated member messaging",
+            "Crisis communication"
+          ],
+          "requirements": "Trained communication staff",
+          "frequency": "As needed, 24/7 capability",
+          "lead": "Rapid Response Director"
+        },
+        {
+          "title": "Counter-Narrative & Fact-Checking",
+          "tier": "Recommended",
+          "description": "Combat misinformation and provide factual rebuttals.",
+          "activities": [
+            "Fact-checking opposition claims",
+            "Myth-busting campaigns",
+            "Correcting media errors",
+            "Research and documentation",
+            "Educational content production",
+            "Partnership with fact-checkers",
+            "Social media corrections"
+          ],
+          "requirements": "Research team",
+          "frequency": "Ongoing",
+          "lead": "Research & Rebuttal Team"
+        },
+        {
+          "title": "Oral History & Storytelling",
+          "tier": "Optional",
+          "description": "Capture and share personal stories that illustrate our principles.",
+          "activities": [
+            "Member story collection",
+            "Video testimonials",
+            "Written narratives",
+            "Documentary projects",
+            "Archive development",
+            "Story-based marketing",
+            "Personal impact showcases"
+          ],
+          "requirements": "Volunteer storytellers",
+          "frequency": "Ongoing collection",
+          "lead": "Storytelling Coordinator"
+        }
+      ]
+    }
+  ]
+}

@@ -31,7 +31,9 @@ import {
   CheckCircle2,
   ArrowRight,
   Moon,
-  Sun
+  Sun,
+  Wifi,
+  TrendingUp
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -40,8 +42,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { useTheme } from "@/hooks/use-theme";
-import policyData from "../../policy-data.json";
-import programsData from "../../programs-data.json";
+import policyData from "@/data/policy-data.json";
+import programsData from "@/data/programs-data.json";
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -49,19 +51,22 @@ export default function Home() {
   const { theme, setTheme } = useTheme();
 
   const iconMap: Record<string, any> = {
-    "economic-freedom": DollarSign,
+    "economic-freedom": TrendingUp,
     "food-health-sovereignty": Apple,
     "property-rights": HomeIcon,
     "government-accountability": Scale,
     "election-integrity": Vote,
-    "constitutional-rights": ScrollText,
-    "technology-communications": Globe,
-    "monetary-reform": Bitcoin,
-    "political-reform": Receipt,
+    "constitutional-rights": Shield,
+    "technology-communications": Wifi,
+    "monetary-financial-reform": Bitcoin,
+    "political-system-reform": Users,
     "foreign-policy": Globe,
-    "healthcare-reform": Pill,
+    "healthcare-reform": Heart,
     "education-reform": BookOpen,
-    "social-security": Building2,
+    "social-security-reform": Building2,
+    "tax-reform": Receipt,
+    "drug-policy-reform": Pill,
+    "housing-reform": HomeIcon,
   };
 
   const policies = policyData.policies.map((policy: any) => ({
@@ -293,9 +298,15 @@ export default function Home() {
             <Accordion type="single" collapsible className="space-y-4">
               {programsData.programs.map((program: any) => {
                 const iconMap: Record<string, any> = {
-                  "member-support": Heart,
+                  "political-action": Vote,
+                  "community-building": Users,
+                  "training-development": GraduationCap,
+                  "education-knowledge": BookOpen,
+                  "professional-economic": DollarSign,
+                  "preparedness-resilience": Shield,
+                  "mutual-aid": Heart,
                   "community-service": HandHeart,
-                  "youth-programs": GraduationCap,
+                  "youth-next-generation": GraduationCap,
                   "media-influence": Radio,
                 };
                 const ProgramIcon = iconMap[program.slug] || Target;
@@ -309,12 +320,12 @@ export default function Home() {
                       </div>
                     </AccordionTrigger>
                     <AccordionContent className="text-base text-muted-foreground pt-4 space-y-3">
-                      <p className="mb-4">{program.shortDescription}</p>
+                      <p className="mb-4">{program.description}</p>
                       {program.programs.slice(0, 3).map((item: any, i: number) => (
                         <div key={i} className="flex items-start gap-2">
                           <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5" />
                           <div>
-                            <strong>{item.name}:</strong> {item.description}
+                            <strong>{item.title}:</strong> {item.description}
                           </div>
                         </div>
                       ))}
