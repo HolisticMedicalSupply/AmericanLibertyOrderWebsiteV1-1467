@@ -99,7 +99,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="mb-8"
           >
-            <img src="/logo.png" alt="ALO" className="h-32 w-32 mx-auto mb-8 animate-float" />
+            <img src="/logo-final.png" alt="ALO" className="h-32 w-32 mx-auto mb-8 animate-float" />
           </motion.div>
           
           <motion.h1
@@ -487,7 +487,7 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <img src="/logo.png" alt="ALO" className="h-10 w-10" />
+                <img src="/logo-final.png" alt="ALO" className="h-10 w-10" />
                 <span className="font-bold text-lg">American Liberty Order</span>
               </div>
               <p className="text-sm text-muted-foreground">
