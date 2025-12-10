@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ChevronLeft, Share2, Download, ChevronDown, ChevronUp, Mail } from 'lucide-react';
 import policyData from '@/data/policy-data.json';
 import { getIconComponent } from '@/lib/icon-mapper';
+import Navigation from '@/components/Navigation';
 
 const viabilityColors = {
   high: 'bg-green-500/20 text-green-400 border-green-500/30',
@@ -84,7 +85,8 @@ export default function PolicyDetail() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <Navigation />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
         <div className="mb-8">
           <Link
             to="/policies"

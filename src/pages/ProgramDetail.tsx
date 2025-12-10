@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronDown, ChevronUp, Mail, ExternalLink } from 'lucide-react';
 import programsData from '@/data/programs-data.json';
 import { getIconComponent } from '@/lib/icon-mapper';
+import Navigation from '@/components/Navigation';
 
 const tierColors = {
   Core: 'bg-blue-500/20 text-blue-400 border-blue-500/30',
@@ -56,7 +57,8 @@ export default function ProgramDetail() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <Navigation />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
         <div className="mb-8">
           <Link
             to="/programs"

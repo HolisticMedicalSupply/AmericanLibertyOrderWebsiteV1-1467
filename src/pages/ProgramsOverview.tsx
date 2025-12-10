@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Search, ArrowRight } from 'lucide-react';
 import programsData from '@/data/programs-data.json';
 import { getIconComponent } from '@/lib/icon-mapper';
+import Navigation from '@/components/Navigation';
 
 export default function ProgramsOverview() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -31,7 +32,8 @@ export default function ProgramsOverview() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <Navigation />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

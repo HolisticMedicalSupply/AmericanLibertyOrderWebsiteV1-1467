@@ -30,8 +30,6 @@ import {
   Flag,
   CheckCircle2,
   ArrowRight,
-  Moon,
-  Sun,
   Wifi,
   TrendingUp
 } from "lucide-react";
@@ -41,14 +39,13 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
-import { useTheme } from "@/hooks/use-theme";
 import policyData from "@/data/policy-data.json";
 import programsData from "@/data/programs-data.json";
+import Navigation from "@/components/Navigation";
 
 export default function Home() {
   const [email, setEmail] = useState("");
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-  const { theme, setTheme } = useTheme();
 
   const iconMap: Record<string, any> = {
     "economic-freedom": TrendingUp,
@@ -85,27 +82,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <nav className="fixed top-0 left-0 right-0 z-50 glass">
-        <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="American Liberty Order" className="h-12 w-12" />
-            <span className="text-xl font-bold text-foreground">American Liberty Order</span>
-          </div>
-          <div className="hidden md:flex items-center gap-8">
-            <a href="#about" className="text-foreground/80 hover:text-foreground transition-colors">About</a>
-            <Link to="/policies" className="text-foreground/80 hover:text-foreground transition-colors">Policies</Link>
-            <Link to="/programs" className="text-foreground/80 hover:text-foreground transition-colors">Programs</Link>
-            <a href="#get-involved" className="text-foreground/80 hover:text-foreground transition-colors">Get Involved</a>
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            >
-              {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </Button>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div 
@@ -220,7 +197,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="flex justify-center"
           >
-            <img src="/mission-updated.png" alt="Mission" className="max-w-2xl w-full rounded-lg shadow-2xl" />
+            <img src="/mission-we-people.png" alt="Mission" className="max-w-2xl w-full rounded-lg shadow-2xl" />
           </motion.div>
         </div>
       </section>
