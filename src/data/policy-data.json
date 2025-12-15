@@ -9,8 +9,8 @@
       "description": "Breaking up the cozy relationship between government and big business benefits all Americans. Government should not pick winners and losers. These policies find support across the political spectrum and represent realistic starting points.",
       "subPolicies": [
         {
-          "title": "Medicare Competitive Bidding",
-          "viability": "high",
+          "title": "Medicare Competitive Bidding Program Reform",
+          "viability": "moderate",
           "level": "Federal",
           "problem": [
             "Medicare pays fixed prices set by formula, not market competition",
@@ -112,7 +112,7 @@
           "opposition": "Law enforcement unions, prosecutors' associations, agencies that benefit from forfeiture funds"
         },
         {
-          "title": "ESG & Stakeholder Capitalism Opposition",
+          "title": "ESG & Corporate-Government Collusion",
           "viability": "mod-high",
           "level": "State (pension funds, state contracts), Federal (SEC rules)",
           "problem": [
@@ -166,7 +166,7 @@
           "opposition": "Hospital systems, some provider groups that benefit from price opacity"
         },
         {
-          "title": "Environmental Policy: Outcome-Based, State-Driven",
+          "title": "Environmental Policy: Polluter Pays Without Crushing Innovation",
           "viability": "moderate",
           "level": "Federal (framework), State (implementation)",
           "problem": [
