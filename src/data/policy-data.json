@@ -1994,43 +1994,112 @@
       "title": "Drug Policy Reform",
       "icon": "Pill",
       "color": "#EF4444",
-      "description": "End the failed war on drugs with evidence-based policies focused on treatment and liberty.",
+      "description": "The war on drugs is over — it lost. People will do drugs. The question is whether we help them or criminalize them. Full legalization with mandatory support services through licensed sellers. Education is key to saving the people who can be saved; the others didn't want to be saved in the first place.",
+      "politicalReality": "'You want to legalize fentanyl?' will be the attack. Response: Prohibition isn't stopping fentanyl deaths — it's making them worse through unregulated supply. Licensed sellers with support services save more lives than criminalization.",
       "subPolicies": [
         {
-          "title": "Decriminalize & Focus on Treatment",
-          "viability": "moderate",
+          "title": "Full Legalization Framework",
+          "viability": "low",
+          "level": "Federal + State",
+          "viabilityNote": "Controversial but principled",
           "problem": [
-            "War on drugs has failed for 50 years",
-            "Mass incarceration without reducing use",
-            "Ruined lives over nonviolent offenses",
-            "Lack of treatment options"
+            "Drug war has cost trillions, incarcerated millions, destroyed communities",
+            "Prohibition doesn't reduce drug use — it makes it more dangerous",
+            "Black markets fund violent cartels",
+            "Unregulated supply means unknown purity and contamination",
+            "Criminalization prevents people from seeking help",
+            "War on drugs disproportionately harms minority communities"
+          ],
+          "legalizationStructure": [
+            "All Substances Legal: War on drugs doesn't work — full legalization of all recreational substances",
+            "Age Restriction: 18+ for all substances (if old enough to go to war and die, old enough for anything else)",
+            "DUI Equivalents: Driving under influence remains criminal",
+            "No Advertising: Drug companies cannot advertise",
+            "Quality Standards: Purity and labeling requirements for all products"
           ],
           "positions": [
-            "Decriminalize personal drug possession",
-            "Expand treatment and recovery programs",
-            "Expunge nonviolent drug offenses",
-            "Focus enforcement on trafficking and violence",
-            "Treat addiction as health issue, not crime"
+            "Full legalization of all recreational substances for adults 18+",
+            "Maintain DUI laws and public safety restrictions",
+            "Prohibit advertising of recreational drugs",
+            "Require quality and purity standards for all products"
           ],
-          "framing": "Locking people up for addiction doesn't work. Treatment saves lives."
+          "framing": {
+            "forConservatives": "End the failed nanny state. Personal responsibility. Stop funding cartels.",
+            "forProgressives": "End mass incarceration. Racial justice. Harm reduction works.",
+            "forLibertarians": "Your body, your choice. Government has no business criminalizing personal decisions.",
+            "forParents": "Regulated, labeled products with education are safer than street drugs."
+          },
+          "allies": "Criminal justice reformers, libertarians, harm reduction advocates, some progressives",
+          "opposition": "Drug war apparatus, prison industry, pharma (on some issues), social conservatives"
         },
         {
-          "title": "Marijuana Legalization",
-          "viability": "high",
+          "title": "Licensed Sellers & Support Services",
+          "viability": "low-mod",
+          "level": "State",
           "problem": [
-            "Federal prohibition despite state legalization",
-            "Arrests for marijuana use continue",
-            "Lost tax revenue and economic opportunity",
-            "Inconsistent laws create confusion"
+            "Black market drugs have unknown purity and contamination",
+            "No education or support at point of sale",
+            "Drug users avoid seeking help due to criminalization",
+            "Profits go to cartels instead of legitimate businesses"
+          ],
+          "licensingRequirements": [
+            "License Required: All drug sales must be through licensed sellers",
+            "Support Services Mandatory: Licensed sellers must provide clinical support and life skills services",
+            "Education at Point of Sale: Sellers educate buyers about risks, addiction resources, harm reduction",
+            "Quality Assurance: Licensed sellers must meet purity and labeling standards"
+          ],
+          "blackMarketElimination": [
+            "Price Competition: If licensed sellers aren't taxed excessively, black market can't compete on price",
+            "Quality Competition: Regulated purity beats street product",
+            "Support Services: Black market doesn't offer addiction support",
+            "No Excessive Taxation: High taxes recreate black market incentive"
           ],
           "positions": [
-            "Legalize marijuana at federal level",
-            "Expunge marijuana convictions",
-            "Tax and regulate like alcohol",
-            "Allow states to set own policies",
-            "End federal interference in state-legal marijuana"
+            "Require licensing for all drug sales",
+            "Mandate support services and education at point of sale",
+            "Keep taxes low enough to eliminate black market incentive",
+            "Provide addiction resources and harm reduction information"
           ],
-          "framing": "Marijuana prohibition has failed. Legalize, regulate, and tax it."
+          "harmReductionModel": "At least if people come into the right place, the person selling to them can educate them. Education is key to stopping the people you can save. The support services aren't optional — they're the point. Legalization without education/support is incomplete.",
+          "framing": {
+            "forConservatives": "Regulated markets beat black markets. Defund the cartels.",
+            "forProgressives": "Harm reduction saves lives. Meet people where they are.",
+            "forEveryone": "Education and support, not criminalization and incarceration."
+          },
+          "allies": "Harm reduction organizations, public health advocates, some law enforcement",
+          "opposition": "Prohibitionists, prison industry, some pharma companies"
+        },
+        {
+          "title": "Prescription Carve-Outs: Societal Harm Exception",
+          "viability": "high",
+          "level": "Federal + State",
+          "problem": [
+            "Some substances create unavoidable societal harm beyond individual user",
+            "Antibiotic overuse creates superbugs affecting everyone",
+            "Need principled distinction between individual and collective harm"
+          ],
+          "prescriptionRequiredFor": [
+            "Antibiotics: Overuse creates antibiotic resistance (superbugs) — unavoidable societal harm",
+            "Other Societal Harm Substances: Anything where individual use creates collective harm everyone can't escape"
+          ],
+          "individualVsSocietalHarm": [
+            "Individual Harm: Addiction, overdose, personal consequences — legalize with support",
+            "Secondary Crime: Robbing your neighbor because you're hooked — criminal justice handles this",
+            "Societal Harm: Superbugs from antibiotic overuse — affects everyone, can't escape it — prescription required"
+          ],
+          "positions": [
+            "Maintain prescription requirements for antibiotics due to resistance risk",
+            "Apply prescription requirements only to substances with unavoidable societal harm",
+            "Individual harm is personal choice; societal harm justifies limited restriction"
+          ],
+          "corePrinciple": "Your body, your choice — until your choice creates unavoidable harm for others. Individual risk is your right. Creating inescapable collective risk (antibiotic resistance affecting everyone) justifies limited restriction.",
+          "framing": {
+            "forConservatives": "Principled distinction, not arbitrary prohibition.",
+            "forProgressives": "Protect public health from collective harm while respecting individual choice.",
+            "forEveryone": "Your choices are yours — unless they create harm others can't escape."
+          },
+          "allies": "Public health advocates, medical community, principled libertarians",
+          "opposition": "Those who want broader prescription requirements"
         }
       ]
     },
@@ -2040,43 +2109,127 @@
       "title": "Housing Reform",
       "icon": "Building",
       "color": "#06B6D4",
-      "description": "Address the housing affordability crisis through deregulation and market-based solutions.",
+      "description": "Housing shouldn't be treated primarily as an investment. The financialization of housing — where institutional investors and REITs treat homes as portfolio assets — has priced families out of homeownership. We need supply-side reform (end NIMBY zoning) and demand-side limits (corporate ownership caps).",
       "subPolicies": [
         {
-          "title": "Zoning & Land Use Reform",
-          "viability": "moderate",
+          "title": "End NIMBY Zoning",
+          "viability": "mod-high",
+          "level": "State + Local",
           "problem": [
-            "Restrictive zoning limits housing supply",
-            "Single-family-only zoning in most areas",
-            "NIMBYism blocks new development",
-            "Housing costs soar as supply constrained"
+            "Existing homeowners use zoning to block new construction",
+            "'Protect my view' and 'neighborhood character' restrict supply",
+            "Artificial scarcity drives up prices for everyone",
+            "Renters and would-be buyers have no voice in zoning decisions",
+            "People who don't own the land control what happens on it"
           ],
           "positions": [
-            "Legalize multi-family and accessory dwelling units (ADUs)",
-            "Reduce minimum lot sizes and setback requirements",
-            "Expedite permitting for housing",
-            "Override exclusionary zoning",
-            "Let supply meet demand"
+            "Core Principle: People can't stop building if they don't own the land, even if it damages their view",
+            "By-Right Development: If you own property and meet safety codes, you can build",
+            "Limit Exclusionary Zoning: Single-family-only zoning restrictions reduced",
+            "Streamline Permitting: Fast-track approvals for housing development",
+            "Legitimate Restrictions: Environmental protections (wetlands, etc.) remain — but 'I don't like it' is not a valid restriction"
           ],
-          "framing": "Build more housing, lower the cost. Zoning rules make housing unaffordable."
+          "framing": {
+            "forConservatives": "Property rights. If you own it, you can build on it. End government telling landowners what to do.",
+            "forProgressives": "More housing supply = lower prices. Help families afford homes.",
+            "forYoungPeople": "NIMBY homeowners are pulling the ladder up behind them. Fight back."
+          },
+          "allies": "YIMBY movement, renters, developers, affordability advocates",
+          "opposition": "Existing homeowners, NIMBY groups, some environmental groups"
         },
         {
-          "title": "Reduce Construction Costs & Regulations",
-          "viability": "mod-high",
+          "title": "Corporate Ownership Limits",
+          "viability": "moderate",
+          "level": "Federal + State",
           "problem": [
-            "Excessive building codes raise costs",
-            "Environmental reviews delay projects for years",
-            "Prevailing wage laws increase expenses",
-            "Regulatory compliance adds 20-30% to costs"
+            "Large institutional investors (Blackrock, Blackstone subsidiaries) buying thousands of homes",
+            "Cash buyers outbid families who need mortgages",
+            "Homes converted to permanent rentals, never return to sale market",
+            "Professional rent extraction maximizes returns, not community value",
+            "Algorithmic pricing drives rent increases across markets",
+            "Housing financialization benefits Wall Street at expense of families"
+          ],
+          "ownershipCap": [
+            "1,000 Unit Limit: No entity can own more than 1,000 residential units",
+            "Consolidated Counting: Limit applies across parent company + all subsidiaries + affiliated entities + common ownership",
+            "A House is a Unit: Single-family and multi-family counted the same (same cap for apartments)",
+            "REITs Included: Same cap applies — effectively eliminates large residential REITs",
+            "Commercial Cap: 10,000 unit cap for commercial real estate — prevent monopoly while allowing investment"
+          ],
+          "reitPosition": [
+            "Assessment: Residential REITs harm outweighs benefits (small investor access vs. pricing families out)",
+            "Large Residential REITs: Effectively eliminated by 1,000-unit cap",
+            "Commercial REITs: Preserved with higher cap — nobody has a right to own a shopping mall",
+            "Small Investor Alternative: Commercial REIT investment remains available"
           ],
           "positions": [
-            "Streamline building codes—adopt model codes",
-            "Expedite environmental reviews for housing",
-            "Reform or eliminate prevailing wage mandates",
-            "Allow innovative construction methods (modular, 3D printing)",
-            "Cut red tape to lower costs"
+            "Cap residential ownership at 1,000 units per entity",
+            "Apply cap across all subsidiaries and affiliated entities",
+            "Effectively eliminate large residential REITs",
+            "Preserve commercial REITs with 10,000 unit cap"
           ],
-          "framing": "Regulations price people out of homes. Cut the red tape and build."
+          "designRationale": "Housing is shelter first. Large-scale institutional ownership of single-family homes is a post-2008 phenomenon that has contributed to affordability crisis. The schoolteacher's portfolio diversification doesn't justify pricing families out of homeownership.",
+          "framing": {
+            "forConservatives": "Homes for families, not Wall Street portfolios.",
+            "forProgressives": "Stop corporate landlords from extracting wealth from communities.",
+            "forEveryone": "Housing is shelter first, investment second."
+          },
+          "allies": "Housing affordability advocates, YIMBY movement, populists (left and right), local housing activists",
+          "opposition": "Wall Street, REITs, real estate investment industry"
+        },
+        {
+          "title": "Foreign Ownership Restrictions",
+          "viability": "mod-high",
+          "level": "Federal + State",
+          "problem": [
+            "Foreign capital purchases US housing as investment/wealth storage",
+            "Absentee foreign owners leave properties vacant",
+            "Foreign purchases drive up prices in desirable markets",
+            "US land controlled by non-residents with no community stake"
+          ],
+          "positions": [
+            "Foreign Companies: Cannot own land in the United States",
+            "Foreign Individuals: Lease only — cannot own, only lease",
+            "Lease Limits: Maximum 1 property, maximum 99-year term",
+            "Enforcement: Existing foreign corporate holdings must be divested"
+          ],
+          "framing": {
+            "forConservatives": "American land for Americans. Foreign capital shouldn't price out American families.",
+            "forProgressives": "Housing should serve communities, not global capital flight.",
+            "forEveryone": "Why should a foreign corporation own your neighborhood?"
+          },
+          "allies": "Sovereignty advocates, housing affordability groups, populists",
+          "opposition": "Foreign investors, international real estate industry, some free market advocates"
+        },
+        {
+          "title": "Enforcement & Compliance",
+          "viability": "moderate",
+          "level": "Federal + State",
+          "problem": [
+            "Ownership limits easily evaded through shell companies",
+            "Beneficial ownership often hidden",
+            "Need robust enforcement mechanisms"
+          ],
+          "implementation": [
+            "36-Month Compliance: Entities must comply with ownership limits within 36 months",
+            "Forced Divestiture: After deadline, excess holdings must be sold",
+            "Penalties: Significant penalties for non-compliance",
+            "Shell Company Prevention: Beneficial ownership disclosure required",
+            "Ongoing Monitoring: Regular reporting requirements for large holders"
+          ],
+          "positions": [
+            "36-month compliance period for existing holders",
+            "Forced divestiture of excess holdings after deadline",
+            "Require beneficial ownership disclosure to prevent shell company evasion",
+            "Regular reporting for entities approaching ownership limits"
+          ],
+          "framing": {
+            "forConservatives": "Rules mean nothing without enforcement.",
+            "forProgressives": "Close the loopholes corporations use to evade limits.",
+            "forEveryone": "If we set limits, we enforce them."
+          },
+          "allies": "Housing affordability advocates, transparency advocates, populists",
+          "opposition": "Wall Street, REITs, real estate investment industry, foreign investors"
         }
       ]
     }
