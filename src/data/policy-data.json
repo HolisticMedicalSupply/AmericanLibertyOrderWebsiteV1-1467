@@ -323,6 +323,66 @@
           },
           "allies": "Medical freedom organizations, religious groups, civil liberties advocates",
           "opposition": "Public health establishment, some medical associations"
+        },
+        {
+          "title": "Healthy School Lunches",
+          "viability": "mod-high",
+          "level": "Federal (USDA standards) + State + Local",
+          "problem": [
+            "School lunch programs serve processed, low-nutrition foods",
+            "Industrial food suppliers prioritize cost over nutrition",
+            "Children develop poor eating habits from institutional food",
+            "Fresh, whole foods rarely available in school cafeterias",
+            "Sugar, seed oils, and ultra-processed ingredients dominate school menus",
+            "Childhood obesity and diabetes rates continue to rise"
+          ],
+          "positions": [
+            "Whole Foods Standard: School lunches must be prepared from whole, minimally processed ingredients",
+            "Eliminate Ultra-Processed Foods: Remove industrial seed oils, high fructose corn syrup, and artificial additives",
+            "Local Sourcing: Prioritize locally-grown produce and proteins",
+            "Fresh Preparation: Invest in kitchen facilities for on-site meal preparation",
+            "Nutrition Education: Integrate food literacy into school curriculum",
+            "Transparency: Full ingredient disclosure for all school meals",
+            "Farm-to-School Programs: Direct relationships between schools and local farmers"
+          ],
+          "framing": {
+            "forParents": "Your children deserve real food, not industrial products disguised as meals.",
+            "forConservatives": "Strong bodies build strong citizens. Invest in the next generation's health.",
+            "forProgressives": "Every child deserves access to nutritious food regardless of family income.",
+            "forEveryone": "We're feeding our children garbage and wondering why they're sick."
+          },
+          "allies": "Parent groups, nutrition advocates, local farmers, school food reformers",
+          "opposition": "Industrial food suppliers, processed food manufacturers, some school administrators (cost concerns)"
+        },
+        {
+          "title": "Fix American Grown Wheat",
+          "viability": "moderate",
+          "level": "Federal (USDA, FDA)",
+          "problem": [
+            "Modern American wheat varieties bred for yield, not nutrition or digestibility",
+            "Glyphosate (Roundup) used as pre-harvest desiccant on wheat crops — residue in final products",
+            "Many Americans report digestive issues with US wheat but tolerate European wheat",
+            "Dwarf wheat varieties have different protein structures than heritage varieties",
+            "Industrial processing strips nutrients; 'enrichment' adds back synthetic versions",
+            "EU bans or restricts practices common in US wheat production"
+          ],
+          "positions": [
+            "Ban Pre-Harvest Glyphosate: Prohibit glyphosate desiccation on wheat and grain crops",
+            "Heritage Variety Incentives: Support farmers growing heritage and ancient wheat varieties",
+            "Testing Requirements: Mandatory pesticide residue testing on wheat products",
+            "Labeling Standards: Clear labeling of wheat variety and growing practices",
+            "Research Funding: Fund research into digestibility differences between wheat varieties",
+            "Processing Standards: Review industrial milling practices and nutrient loss",
+            "Import Parity: Require imported wheat to meet same standards as domestic"
+          ],
+          "framing": {
+            "forConservatives": "American farmers can grow better wheat if we let them. End regulations that favor industrial practices.",
+            "forProgressives": "Protect consumers from pesticide residues and restore nutritional quality.",
+            "forFarmers": "Premium markets for heritage varieties and sustainable practices.",
+            "forEveryone": "Why can Americans eat bread in Europe without problems but not at home?"
+          },
+          "allies": "Organic farmers, heritage grain producers, digestive health advocates, clean food movement",
+          "opposition": "Industrial agriculture, chemical companies, commodity grain traders"
         }
       ]
     },
@@ -634,6 +694,66 @@
           "provenSuccess": "Post-COVID, numerous states have passed emergency powers reform: Ohio, Kansas, Pennsylvania, Kentucky, and others. This is a winning issue with demonstrated bipartisan support.",
           "allies": "Libertarians, civil liberties groups, business associations, constitutional scholars",
           "opposition": "Governors (both parties), public health establishment"
+        },
+        {
+          "title": "Tax Spending Audit & Refund",
+          "viability": "low-mod",
+          "level": "Federal",
+          "problem": [
+            "Taxpayers have no visibility into how their tax dollars are spent",
+            "Trillions in federal spending with inadequate tracking and accountability",
+            "GAO identifies billions in improper payments annually",
+            "No consequences when tax money is wasted or misallocated",
+            "Citizens pay taxes without any assurance money serves stated purposes",
+            "Inappropriate spending includes wasteful programs, fraud, and unauthorized uses"
+          ],
+          "positions": [
+            "Comprehensive Audit: Complete audit of all federal tax revenue and expenditures",
+            "Tracking Requirement: Every tax dollar must be traceable to specific expenditure",
+            "Refund for Untracked Spending: Taxpayers receive refund for portion of taxes that cannot be tracked to legitimate expenditure",
+            "Refund for Inappropriate Spending: Taxpayers receive refund for taxes spent inappropriately or on unauthorized purposes",
+            "Annual Accounting: Government must publish annual accounting showing where all tax revenue went",
+            "Real-Time Transparency: Publicly accessible database of all government expenditures",
+            "Independent Auditors: Third-party audits, not self-policing",
+            "Personal Accountability: Officials responsible for untracked or inappropriate spending face consequences"
+          ],
+          "framing": {
+            "forConservatives": "Government must account for every dollar. No more blank checks.",
+            "forProgressives": "Taxpayer money should serve the public, not disappear into waste and fraud.",
+            "forEveryone": "You deserve a receipt. If they can't show where your money went, you get it back."
+          },
+          "allies": "Taxpayer advocates, fiscal conservatives, transparency organizations, GAO",
+          "opposition": "Federal agencies, bureaucracy, those benefiting from opacity"
+        },
+        {
+          "title": "Politician Wealth Investigation",
+          "viability": "moderate",
+          "level": "Federal + State",
+          "problem": [
+            "Many politicians enter office middle-class and leave multi-millionaires",
+            "Net worth growth far exceeds salary and normal investment returns",
+            "Unexplained wealth suggests corruption, insider trading, or influence peddling",
+            "Current disclosure requirements have no teeth",
+            "No systematic investigation of suspicious wealth accumulation",
+            "Public servants becoming wealthy from 'public service' betrays the public trust"
+          ],
+          "positions": [
+            "Automatic Investigation Trigger: Any politician whose net worth grows more than double the rate of average American wealth growth while in office triggers investigation",
+            "Mandatory Asset Disclosure: Complete financial disclosure including family members and trusts",
+            "Source of Wealth Documentation: Must document legitimate source of all wealth increases",
+            "Independent Investigation: Non-partisan investigator, not congressional self-policing",
+            "Criminal Referral: Unexplained wealth referred for criminal investigation",
+            "Forfeiture: Ill-gotten gains subject to forfeiture",
+            "Post-Service Monitoring: Wealth monitoring continues for 5 years after leaving office",
+            "Public Database: All politician financial disclosures in searchable public database"
+          ],
+          "framing": {
+            "forConservatives": "Drain the swamp. Politicians shouldn't get rich off public service.",
+            "forProgressives": "End corruption. Public servants should serve the public, not themselves.",
+            "forEveryone": "If your net worth explodes while on a government salary, we're going to ask questions."
+          },
+          "allies": "Anti-corruption advocates, populists (left and right), good government groups",
+          "opposition": "Incumbent politicians, those with unexplained wealth"
         }
       ]
     },
@@ -1111,6 +1231,39 @@
           "emergingIssueNote": "AI governance is rapidly evolving. Focus on clear principles (transparency, due process, human oversight) rather than specific technical requirements that may become outdated. This is an area where early advocacy can shape the regulatory framework before it solidifies.",
           "allies": "Civil liberties groups, privacy advocates, algorithmic justice organizations, some tech reformers",
           "opposition": "AI vendors, some government agencies, surveillance-state advocates"
+        },
+        {
+          "title": "AI Regulation: State Primacy",
+          "viability": "mod-high",
+          "level": "State (primary) + Federal (limited framework)",
+          "problem": [
+            "Federal government may attempt one-size-fits-all AI regulation",
+            "Technology moves faster than federal regulatory process",
+            "Different states have different needs and risk tolerances",
+            "Centralized regulation risks capture by big tech incumbents",
+            "Federal regulation could entrench current AI leaders and block competition",
+            "Innovation requires regulatory experimentation — states as laboratories"
+          ],
+          "positions": [
+            "State Authority: States have primary authority over AI regulation within their borders",
+            "Federal Limitation: Federal government limited to interstate commerce and national security applications",
+            "No Federal Preemption: Federal AI rules should not preempt stronger state protections",
+            "Regulatory Experimentation: Allow states to try different approaches — learn from what works",
+            "Competitive Federalism: States compete on regulatory environment; businesses and citizens choose",
+            "Minimum Floor, Not Ceiling: Federal standards (if any) set minimum protections, states can exceed",
+            "Anti-Entrenchment: Prevent federal regulations designed to favor incumbent AI companies",
+            "Innovation Zones: States can create regulatory sandboxes for AI experimentation",
+            "Local Control: Municipalities can set additional AI use restrictions for local government"
+          ],
+          "framing": {
+            "forConservatives": "Federalism. States should lead on emerging technology regulation, not Washington bureaucrats.",
+            "forProgressives": "California and other states can set strong protections without waiting for gridlocked Congress.",
+            "forLibertarians": "Competition between state regulatory approaches. Vote with your feet.",
+            "forTechIndustry": "Regulatory experimentation is better than one-size-fits-all federal mandates that might get it wrong.",
+            "forEveryone": "Let states figure out what works before locking in federal rules we can't change."
+          },
+          "allies": "State legislators, federalism advocates, some tech companies, innovation advocates",
+          "opposition": "Federal agencies seeking jurisdiction, some big tech (prefer single federal regime they can influence)"
         }
       ]
     },
@@ -1282,6 +1435,68 @@
           "transitionNote": "This requires significant legal and institutional changes. Gresham's Law dynamics apply — people may hoard sound currency and spend USD, accelerating USD decline. This is a feature, not a bug, but the transition requires careful management.",
           "allies": "Cryptocurrency community, Austrian economists, sound money advocates, libertarians",
           "opposition": "Banking establishment, Federal Reserve, mainstream economists, regulators"
+        },
+        {
+          "title": "Fort Knox Audit",
+          "viability": "moderate",
+          "level": "Federal",
+          "problem": [
+            "Last comprehensive audit of Fort Knox gold reserves was in 1953",
+            "No independent verification of gold holdings in over 70 years",
+            "Claims of 147+ million ounces of gold worth hundreds of billions cannot be verified",
+            "Rumors and speculation undermine confidence in claimed reserves",
+            "Other countries have repatriated gold due to similar verification concerns",
+            "Public has no way to know if the gold is actually there"
+          ],
+          "positions": [
+            "Full Independent Audit: Complete physical audit of all gold held at Fort Knox and other depositories",
+            "Third-Party Verification: Audit conducted by independent third parties, not government self-reporting",
+            "Public Results: Full audit results published publicly with detailed accounting",
+            "Bar-by-Bar Verification: Physical verification of each gold bar, serial numbers, and weights",
+            "Chain of Custody: Complete documentation of all gold movements since last audit",
+            "Regular Audits: Establish ongoing audit schedule (minimum every 5 years)",
+            "Congressional Oversight: Congressional representatives present during audit",
+            "Live Streaming: Consider public broadcast of audit process for transparency"
+          ],
+          "framing": {
+            "forConservatives": "Trust but verify. If the gold is there, prove it.",
+            "forProgressives": "Transparency in government assets. The public has a right to know.",
+            "forEveryone": "The government claims to have $400+ billion in gold. When's the last time anyone checked?"
+          },
+          "allies": "Sound money advocates, transparency advocates, fiscal conservatives, gold standard supporters",
+          "opposition": "Federal Reserve, Treasury (institutional resistance to scrutiny)"
+        },
+        {
+          "title": "Debt Trading Restrictions",
+          "viability": "low-mod",
+          "level": "Federal",
+          "problem": [
+            "Debt packaged into complex securities (CDOs, CLOs, MBS) obscures risk",
+            "Packaging and reselling debt creates systemic risk — 2008 financial crisis",
+            "Original lenders have no stake in loan performance after selling",
+            "Borrowers don't know who owns their debt",
+            "Debt trading on open exchanges enables speculation and manipulation",
+            "Complexity benefits financial intermediaries at expense of borrowers and investors",
+            "Moral hazard: lenders make risky loans knowing they'll sell the risk"
+          ],
+          "positions": [
+            "No Packaging: Debt cannot be packaged into securities or bundled instruments",
+            "Loan-by-Loan Only: Debt can only be sold per outstanding loan as a whole asset",
+            "Bilateral Transactions: Debt can only be sold between two parties (seller and buyer)",
+            "No Exchange Trading: Debt assets cannot be traded on open exchanges",
+            "Holder Accountability: Debt holder must be identifiable and reachable by borrower",
+            "Originator Retention: Original lender must retain meaningful stake in loan performance",
+            "Transparency: Borrowers must be notified and know current debt holder",
+            "Servicing Standards: Loan servicer must act in borrower's interest, not just investor's"
+          ],
+          "framing": {
+            "forConservatives": "Restore accountability to lending. End the casino that crashed the economy in 2008.",
+            "forProgressives": "Protect borrowers from predatory lending. End Wall Street's exploitation of Main Street.",
+            "forEveryone": "If someone lends you money, they should care whether you can pay it back."
+          },
+          "designRationale": "The 2008 financial crisis was caused by debt securitization that divorced lending from risk. When lenders could immediately sell loans, they had no incentive to ensure borrowers could repay. This simple reform restores the natural incentive alignment of traditional lending.",
+          "allies": "Financial reform advocates, consumer protection groups, community banks, Main Street business",
+          "opposition": "Wall Street, investment banks, securitization industry, mortgage industry"
         }
       ]
     },
@@ -1366,6 +1581,40 @@
           },
           "allies": "Third parties, independent candidates, some media organizations",
           "opposition": "Commission on Presidential Debates, major parties"
+        },
+        {
+          "title": "Campaign Finance Reform: Citizen Sponsorship",
+          "viability": "low-mod",
+          "level": "Federal + State",
+          "problem": [
+            "Wealthy donors and corporations dominate campaign financing",
+            "Candidates spend most of their time fundraising instead of governing",
+            "Money determines who can run viable campaigns",
+            "Donor influence corrupts policy — politicians serve funders, not constituents",
+            "Small donors cannot compete with big money",
+            "PACs and dark money obscure true sources of campaign funding",
+            "Incumbents have massive fundraising advantages"
+          ],
+          "positions": [
+            "Public Campaign Fund: Static portion of government proceeds allocated to campaign funding",
+            "Citizen Sponsorship Platform: Government creates platform allowing citizens to sponsor candidates",
+            "Equal Sponsorship Value: Each citizen sponsorship carries equal funding value — billionaire and minimum wage worker identical",
+            "Share of Fund: Each sponsorship includes proportional share of earmarked campaign fund",
+            "Outside Funding Ban: Candidates caught receiving funding directly or indirectly outside this process are barred from elected office for 5 years",
+            "Reasonable Exceptions: Well-defined carve-outs for truly incidental support (volunteer time, small in-kind contributions)",
+            "Transparency: All sponsorships public record",
+            "Multi-Candidate Sponsorship: Citizens can split sponsorship across multiple candidates",
+            "Primary and General: System applies to both primary and general elections"
+          ],
+          "framing": {
+            "forConservatives": "End donor corruption. Politicians should answer to voters, not funders.",
+            "forProgressives": "Level the playing field. Every citizen's voice equal regardless of wealth.",
+            "forEveryone": "Your sponsorship counts the same as a billionaire's. One citizen, one equal voice in who runs."
+          },
+          "designRationale": "Current campaign finance 'reforms' create loopholes that sophisticated players exploit. This system replaces private funding entirely with citizen-directed public funding. The 5-year bar for violations creates real consequences. Equal sponsorship value means candidates must appeal to numbers of citizens, not size of wallets.",
+          "implementationChallenges": "Constitutional questions (Citizens United); defining 'indirect' funding; transition from current system; preventing gaming; ensuring adequate total funding",
+          "allies": "Campaign finance reformers, small-dollar candidates, democracy advocates, anti-corruption groups",
+          "opposition": "Wealthy donors, PACs, incumbent politicians, political consultants"
         }
       ]
     },
@@ -1581,6 +1830,40 @@
           "historicalRecord": "Last attack on US soil: Pearl Harbor (1941) — nation-state attack; 9/11 (2001) — non-state actors. Recent wars: Iraq, Afghanistan, Libya, Syria involvement — all choices, not defensive necessities. Results: Trillions spent, thousands of American lives lost, hundreds of thousands of foreign civilians killed, regions destabilized.",
           "allies": "Non-interventionist conservatives, anti-war progressives, libertarians, veterans groups (some), fiscal conservatives",
           "opposition": "Military-industrial complex, neoconservatives, foreign policy establishment, defense contractors"
+        },
+        {
+          "title": "Fair Trade: Environmental & Human Rights Parity",
+          "viability": "moderate",
+          "level": "Federal",
+          "problem": [
+            "Free trade agreements ignore environmental and labor standard differences",
+            "Countries with weak regulations can undercut American producers",
+            "American manufacturers face strict environmental rules; foreign competitors don't",
+            "Products made with slave labor or child labor compete with American goods",
+            "Offshoring pollution doesn't help global environment — just moves it",
+            "Race to the bottom: countries compete by lowering standards",
+            "American workers compete against workers with no protections"
+          ],
+          "positions": [
+            "Free Trade Requires Parity: Genuine free trade only with countries that have equivalent environmental and human rights standards",
+            "Tariff Adjustment: Tariffs placed on goods from countries without equivalent regulations and enforcement",
+            "Environmental Standards: Trading partners must have comparable environmental regulations AND enforcement",
+            "Labor Standards: Trading partners must prohibit forced labor, child labor, and protect basic worker rights",
+            "Enforcement Verification: Standards must be enforced, not just on paper — third-party verification",
+            "Tariff Calculation: Tariff rate reflects cost advantage gained from weaker standards",
+            "Revenue Use: Tariff revenue funds domestic environmental protection or worker retraining",
+            "Phase-In Period: New trading partners given time to bring standards up before tariffs apply"
+          ],
+          "framing": {
+            "forConservatives": "Level playing field. American businesses shouldn't compete against slave labor and pollution havens.",
+            "forProgressives": "Environmental justice goes global. Worker solidarity across borders. End the race to the bottom.",
+            "forLabor": "Stop competing against workers who have no rights. Fair trade means fair competition.",
+            "forEnvironmentalists": "Offshoring pollution helps no one. Hold trading partners to real environmental standards.",
+            "forEveryone": "Free trade should be fair trade. Same rules for everyone."
+          },
+          "designRationale": "This isn't protectionism — it's leveling the playing field. True free trade requires comparable regulatory costs. When one country externalizes environmental and human costs, they're not competing fairly. Tariffs restore the cost balance that regulations create.",
+          "allies": "Labor unions, environmental groups, domestic manufacturers, fair trade advocates, human rights organizations",
+          "opposition": "Multinational corporations, cheap import retailers, countries benefiting from regulatory arbitrage"
         }
       ]
     },
@@ -1861,6 +2144,16 @@
       "color": "#10B981",
       "description": "Income tax is oppressive — it's basically slavery when applied to labor, especially since the money isn't asset-backed. If we must tax, it should focus on excess and glut, not people just trying to survive. Tax should be based on money spent and money hoarded. Money only serves its purpose when it's spent — tax policy should incentivize spending rather than letting the wealthy stash it away while everyone else suffers.",
       "corePhilosophy": "We don't tax your labor, but you can't hoard dynastic wealth either. Work should be rewarded. Productivity should flow. Aristocratic accumulation across generations should be limited.",
+      "revenueModel": {
+        "summary": "Three primary revenue sources replace income tax: inheritance, tariffs, and consumption. This funds government including support services for drug policy reform and other programs.",
+        "primarySources": [
+          "Inheritance Tax: 100% above $5 million recycles dynastic wealth back into the system via government spending. It may take longer to accumulate, but it is recycled back continuously.",
+          "Tariffs: Revenue from imports, especially from countries without environmental/human rights parity. Fair trade tariffs level the playing field and generate revenue.",
+          "Consumption Tax: Tax on spending (not earning) with basic necessities excluded. Those who consume the most and have the most disposable income pay the most. Doesn't affect people while they're alive building wealth — only when they spend on non-essentials."
+        ],
+        "backupSource": "If primary sources prove insufficient, implement 1-2% wealth tax on stagnant funds above $10 million as supplementary revenue.",
+        "designPrinciple": "Taxes applied to excess and glut, not survival. Working people keep their earnings. Wealth recycled through inheritance and taxed on spending, not earning."
+      },
       "subPolicies": [
         {
           "title": "Eliminate Income Tax",
