@@ -10,7 +10,7 @@ This is the **American Liberty Order (ALO)** website - a modern, full-stack civi
 - **Database:** Cloudflare D1 (SQLite) + Drizzle ORM
 - **Styling:** Tailwind CSS 4 + shadcn/ui components
 - **Auth:** Better Auth with email/password
-- **AI:** Vercel AI SDK with Claude & GPT models via Runable gateway
+- **AI:** Vercel AI SDK with Claude & GPT models
 - **Billing:** Autumn.js
 - **Package Manager:** Bun (recommended)
 
@@ -108,17 +108,30 @@ export const myRoutes = new Hono<HonoContext>()  // ✅ Correct
 
 ## Design System
 
-### Color Palette (OKLCH)
-- **Primary (Navy):** Old Glory Blue `#3C3B6E` - Headers, primary actions
-- **Accent (Gold):** `#C9A227` - Highlights, CTAs, accents
-- **Destructive (Red):** Old Glory Red `#B22234` - Errors, destructive actions
-- **Background:** Cream `#FFFEF5` (light) / Dark navy (dark mode)
-- **Text:** Dark charcoal (light) / White/cream (dark)
+### Theme Modes (OKLCH Color Space)
+
+**Light Mode - "Parchment Old World":**
+- **Background:** Warm parchment `oklch(0.94 0.025 75)` with aged paper texture
+- **Primary:** Deep colonial navy `oklch(0.25 0.12 264)` for headers
+- **Accent:** Antique gold `oklch(0.65 0.15 85)` for highlights and CTAs
+- **Surface:** Lighter parchment `oklch(0.96 0.018 75)` for cards
+- **Text:** Sepia-toned dark `oklch(0.25 0.02 60)`
+
+**Dark Mode - "Tech Colonial":**
+- **Background:** Deep navy `oklch(0.14 0.035 264)` with subtle tech grid pattern
+- **Primary:** Luminous gold `oklch(0.78 0.16 85)` for headers (high visibility)
+- **Accent:** Bright amber `oklch(0.72 0.18 85)` for highlights
+- **Surface:** Navy glass `oklch(0.18 0.04 264)` with luminous borders
+- **Text:** Cream white `oklch(0.96 0.02 85)`
+
+### Special Classes
+- `.gradient-text` - Theme-adaptive gradient text with glow effects in dark mode
+- `.glass` - Glassmorphism effect, adapts to light/dark themes
 
 ### Theme Support
-- Dark mode by default (`defaultTheme: "dark"` in config)
-- Theme toggle in localStorage as `theme`
-- CSS variables in `src/styles/global.css`
+- Light mode by default (`defaultTheme: "light"` in config)
+- Theme toggle stored in localStorage as `theme`
+- CSS variables defined in `src/styles/global.css`
 
 ### Component Library
 Using shadcn/ui with Radix primitives. Add components:
@@ -234,12 +247,20 @@ Four core tables (Better Auth):
 
 ## Deployment
 
-Platform: Cloudflare Workers + D1 + Assets
+**Platform:** Cloudflare Workers + D1 + Pages (auto-deploy via GitHub)
 
+**Live Deployment:**
+- GitHub pushes to `main` auto-deploy to Cloudflare
+- Preview deployments created for PRs
+- D1 Database: `american-liberty-order-db`
+
+**Manual Commands:**
 ```bash
 bun run pre-deploy         # Prepare for deployment
 bunx wrangler deploy       # Deploy to Cloudflare
 ```
+
+**Configuration:** `wrangler.jsonc` contains D1 bindings and worker settings
 
 ## Troubleshooting
 
