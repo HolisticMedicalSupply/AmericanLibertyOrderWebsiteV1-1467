@@ -450,118 +450,190 @@
       "title": "Government Accountability & Reform",
       "icon": "Scale",
       "color": "#3B82F6",
-      "description": "Implement strict accountability measures to end corruption and restore public trust in government.",
+      "description": "Americans have lost trust in government institutions. Restoring accountability requires structural reforms that limit conflicts of interest, increase transparency, and return power to citizens. Those who govern should be accountable to those they govern.",
       "subPolicies": [
         {
           "title": "Congressional Stock Trading Ban",
           "viability": "high",
+          "level": "Federal",
           "problem": [
-            "Members of Congress trade stocks based on confidential information",
-            "Outperform market by suspicious margins",
-            "Massive conflicts of interest in policy-making",
-            "Erodes public trust",
-            "Current 'disclosure' rules are ineffective"
+            "Members of Congress trade stocks while having access to non-public information",
+            "Exposed trades during COVID-19 pandemic (insider information on economic impact)",
+            "Committee members trading stocks of companies they regulate",
+            "Defense committee members investing in defense contractors",
+            "STOCK Act (2012) has proven inadequate — weak enforcement, minor penalties"
           ],
           "positions": [
-            "Complete ban on stock trading for Members of Congress and immediate family",
-            "Require divestment or blind trusts upon taking office",
-            "Extend ban to senior executive branch officials",
-            "Criminal penalties for violations",
-            "Apply retroactively to recent suspicious trades"
+            "Full Trading Ban: Prohibit members and senior staff from trading individual stocks",
+            "Blind Trusts or Index Funds Only: Investments limited to diversified holdings without individual stock selection",
+            "Family Coverage: Extend restrictions to spouse and dependent children",
+            "Meaningful Penalties: Substantial fines (percentage of trade value), referral for prosecution",
+            "Disclosure Enhancement: Real-time disclosure of all trades (current law allows 45 days)",
+            "Independent Enforcement: Remove enforcement from congressional self-policing"
           ],
-          "framing": "If you serve in Congress, you shouldn't get rich trading on inside information. Ban it completely."
+          "framing": {
+            "forEveryone": "If you serve in Congress, you shouldn't get rich trading on inside information. Ban it completely."
+          },
+          "momentum": "Bipartisan support exists — bills introduced by both parties. Multiple competing proposals (strongest: full ban; weakest: enhanced disclosure). Public support exceeds 70% across party lines. Several members have voluntarily divested.",
+          "allies": "Good government groups, both progressive and conservative reformers",
+          "opposition": "Many current members benefit from status quo"
         },
         {
           "title": "Term Limits",
+          "viability": "varies",
+          "level": "Federal (constitutional amendment), State (statutory)",
+          "problem": [
+            "Career politicians become detached from constituents and beholden to permanent Washington",
+            "Average House tenure has increased dramatically over past century",
+            "Incumbent re-election rates exceed 90%",
+            "Seniority system concentrates power among longest-serving members",
+            "Permanent political class with different interests than constituents"
+          ],
+          "positions": [
+            "House of Representatives: 6 terms (12 years)",
+            "Senate: 2 terms (12 years)",
+            "Combined congressional service: 12-18 years total",
+            "Governor: 2 terms (already exists in most states)",
+            "State legislators: 8-12 years",
+            "Implementation via constitutional amendment (traditional path — requires 2/3 Congress + 3/4 states)",
+            "Article V Convention of States (34 states call convention; 38 ratify)",
+            "State-level first: term limits for state legislators build momentum"
+          ],
+          "framing": {
+            "forEveryone": "Public service shouldn't be a lifetime career. Term limits would break the stranglehold of career politicians."
+          },
+          "viabilityNote": "Federal: LOW (requires constitutional amendment) | State: HIGH (15 states have legislative term limits)",
+          "allies": "U.S. Term Limits, Convention of States, grassroots movements",
+          "opposition": "Incumbent politicians, congressional leadership"
+        },
+        {
+          "title": "End Lobbying: The Citizen Voice Portal",
           "viability": "low-mod",
+          "level": "Federal (constitutional amendment may be required for full implementation)",
           "problem": [
-            "Career politicians lose touch with constituents",
-            "Seniority system entrenches power",
-            "Incumbency advantage makes competition impossible",
-            "Lobbyists prey on long-term relationships",
-            "Congress becomes out-of-touch ruling class"
+            "Billions spent annually by corporations and special interests to influence legislation",
+            "Politicians claim they need lobbyists to understand issues — this is a solvable information problem",
+            "Rich entities hidden behind layers of PACs and organizations buy laws that hurt ordinary citizens",
+            "Technical expertise can come from public experts, academics, GAO — not paid advocates",
+            "Reform attempts get worked around; the only solution is replacement",
+            "Every citizen should have equal voice — not voice proportional to wealth"
           ],
           "positions": [
-            "12-year limit for House and Senate combined",
-            "No exemptions or exceptions",
-            "Requires constitutional amendment (Article V convention likely needed)",
-            "Primary focus: state-level advocacy for convention"
+            "Equal Voice: Every citizen gets 100 points annually — billionaire and minimum wage worker identical",
+            "Policy Positions: Allocate points to specific policy positions you support",
+            "Flexible Allocation: Put all 100 on one issue you care deeply about, or spread across many",
+            "Annual Cycle: Fresh allocation each year; priorities can shift",
+            "Three-Round Refinement: Citizens submit positions, top tier advances through rounds, final ranking determined",
+            "Top 3 Positions BINDING: Congress MUST introduce legislation and hold floor vote",
+            "Ban Paid Lobbying: No more professional lobbyists paid to influence legislation",
+            "Citizens Can Still Petition: First Amendment right preserved — individuals can contact representatives",
+            "Expert Testimony Preserved: Public expert panels, academic testimony, GAO analysis — not paid advocates",
+            "Revolving Door Closed: Lifetime ban on former officials becoming lobbyists",
+            "One Citizen One Voice: Tied to government credentials, encrypted and anonymized",
+            "Open Source Code: Everyone can see exactly how it works; no black boxes"
           ],
-          "framing": "Public service shouldn't be a lifetime career. Term limits would break the stranglehold of career politicians."
+          "framing": {
+            "forPopulistRight": "End the swamp. No more corporations buying laws. Your voice equals George Soros's voice.",
+            "forPopulistLeft": "End corporate capture. No more billionaires writing legislation. Democracy for actual people.",
+            "forEveryone": "Why should a hedge fund have more influence over YOUR government than you do? One citizen, one voice."
+          },
+          "implementationChallenges": "Constitutional questions on banning paid lobbying; $4+ billion lobbying industry will fight; many politicians benefit from status quo; digital divide requires non-digital access options",
+          "allies": "Populists left and right, anti-corruption advocates, democracy reform movements, ordinary citizens",
+          "opposition": "Lobbying industry, corporations with legislative agendas, politicians benefiting from status quo"
         },
         {
-          "title": "End Lobbying / Citizen Portal",
-          "viability": "low",
+          "title": "Regulatory State Reform",
+          "viability": "moderate",
+          "level": "Federal",
           "problem": [
-            "Lobbyists write legislation and control access to lawmakers",
-            "Ordinary citizens have no comparable influence",
-            "Corporate money dominates policy-making",
-            "Revolving door between government and lobbying firms"
+            "Unelected bureaucracies make rules with the force of law, violating separation of powers",
+            "Agencies issue thousands of rules annually; Congress passes hundreds of laws",
+            "Chevron deference allows agencies to interpret their own authority broadly",
+            "Cost of federal regulations estimated at $2+ trillion annually",
+            "Administrative law judges within agencies judge their own cases"
           ],
           "positions": [
-            "Create public 'Citizen Portal' for constituents to present bills",
-            "Require all bill drafts to be public before introduction",
-            "Ban former Members of Congress from lobbying for 10 years",
-            "Heavy penalties for undisclosed lobbying",
-            "Empower citizens to bypass lobbying gatekeepers"
+            "REINS Act: Major rules (>$100M impact) require congressional approval",
+            "End Chevron Deference: Courts should not defer to agency interpretation of ambiguous statutes",
+            "Regulatory Budget: Cap total regulatory costs; new rules require offsetting eliminations",
+            "Sunset Provisions: Regulations automatically expire unless reauthorized",
+            "Independent ALJs: Remove administrative law judges from agency control",
+            "Cost-Benefit Requirements: Rigorous, independent cost-benefit analysis for all rules"
           ],
-          "framing": "Why do corporations get to write laws, but citizens don't? Open the process to everyone."
+          "framing": {
+            "forEveryone": "Agencies should execute the law—not write it. Congress must reclaim its authority."
+          },
+          "allies": "Business groups, libertarian organizations, constitutional scholars",
+          "opposition": "Agencies, regulatory beneficiaries, administrative law establishment"
         },
         {
-          "title": "Regulatory Reform & Accountability",
+          "title": "Legislative Reform: Transparency, Sunset & Accountability",
           "viability": "mod-high",
+          "level": "State first, then federal",
           "problem": [
-            "Unelected bureaucrats make rules with force of law",
-            "No congressional approval required",
-            "Agencies reinterpret statutes to expand their power",
-            "Regulations accumulate endlessly—never removed",
-            "Costs hidden and never analyzed"
+            "Thousand-page bills passed with hours or minutes to review",
+            "Unrelated provisions attached to must-pass legislation",
+            "Laws remain on books indefinitely — never reviewed for effectiveness",
+            "Complex issues used to justify omnibus bills that escape scrutiny",
+            "Members vote on bills they haven't read",
+            "Lobbyists insert provisions that would fail as standalone bills"
           ],
           "positions": [
-            "Require congressional approval for all major regulations",
-            "Sunset clauses—regulations expire unless renewed",
-            "Cost-benefit analysis for every rule",
-            "Agencies cannot expand authority beyond clear statutory language",
-            "Citizens can challenge regulations in expedited judicial review"
+            "Single Subject Rule: Each bill addresses one subject (many state constitutions have this)",
+            "Title-Content Consistency: Bill contents must match the title/stated purpose",
+            "Minimum Review Period: No vote until bill text available for 72 hours minimum",
+            "Read the Bills Act: Require attestation that member (or senior staff) has read the bill",
+            "Separate Votes: Amendments voted separately from underlying bill",
+            "Plain Language Summaries: Non-lawyer readable summary required for every bill",
+            "Default Expiration: All non-constitutional laws expire automatically after set period",
+            "Tiered Renewal: Routine laws 5 years, major policy 10 years, foundational 20 years",
+            "Effectiveness Review: Before renewal, require assessment of whether law achieved purpose",
+            "Complex Issue Handling: Reform packages broken into separate single-subject bills with sequenced voting",
+            "Phase Gates: Complex reforms implemented in phases with review gates and abort mechanisms"
           ],
-          "framing": "Agencies should execute the law—not write it. Congress must reclaim its authority."
-        },
-        {
-          "title": "Legislative Transparency & Reform",
-          "viability": "mod-high",
-          "problem": [
-            "Bills dropped at midnight with no time to read",
-            "Massive omnibus bills hide controversial provisions",
-            "Last-minute amendments sneak through",
-            "No one knows what they're voting on"
-          ],
-          "positions": [
-            "Mandatory 72-hour public review period for all bills",
-            "Single-subject rule for legislation",
-            "No omnibus bills over 100 pages",
-            "All amendments public 24 hours before vote",
-            "Plain-language summaries required"
-          ],
-          "framing": "Representatives should read what they vote on. So should citizens."
+          "framing": {
+            "forConservatives": "Government must continuously justify its power. Bad laws die automatically.",
+            "forProgressives": "Regular review ensures laws adapt to changing conditions and actually work.",
+            "forEveryone": "No more thousand-page bills no one reads. Complexity handled transparently, not hidden."
+          },
+          "allies": "Good government groups, transparency advocates, libertarians, fiscal conservatives",
+          "opposition": "Legislative leadership (both parties), lobbyists who benefit from complexity"
         },
         {
           "title": "Emergency Powers Reform",
-          "viability": "moderate",
+          "viability": "high",
+          "level": "State (emergency powers are state-specific)",
           "problem": [
-            "Executive emergency powers used indefinitely",
-            "No meaningful congressional oversight or renewal",
-            "33+ 'emergencies' currently in effect",
-            "COVID showed executive overreach dangers",
-            "State governors wield unchecked emergency authority"
+            "COVID-19 revealed governors wielding near-unlimited emergency powers for years",
+            "Emergency declarations extended indefinitely without legislative review",
+            "Businesses destroyed by executive order without due process or compensation",
+            "Churches closed while liquor stores stayed open — arbitrary enforcement",
+            "Constitutional rights suspended by executive fiat",
+            "No mechanism for citizens to challenge emergency measures in real-time",
+            "Emergency powers designed for hurricanes used for indefinite social control"
           ],
           "positions": [
-            "Emergency orders expire after 30 days unless renewed by legislature",
-            "No emergency can suspend constitutional rights",
-            "Strict separation of powers—no executive lawmaking",
-            "Judicial review available immediately",
-            "Clear limits on what constitutes an emergency"
+            "Automatic Expiration: Emergency declarations expire after 30-60 days without legislative renewal",
+            "Legislative Approval Required: Any extension beyond initial period requires affirmative legislative vote",
+            "No Successive Declarations: Cannot declare new emergency for same event to circumvent time limits",
+            "Termination Authority: Legislature can terminate emergency by majority vote at any time",
+            "Enumerated Powers: Define specific powers available during emergency — no open-ended authority",
+            "Constitutional Carve-Outs: Certain rights cannot be suspended even during emergency (worship, assembly, speech)",
+            "Business Closure Standards: Clear criteria for which businesses can be closed and under what conditions",
+            "Geographic Limits: Emergency powers limited to affected areas, not statewide when localized",
+            "Compensation for Closures: Businesses closed by government order entitled to compensation",
+            "Expedited Judicial Review: Fast-track court review of emergency measures",
+            "Personal Liability: Officials who exceed emergency authority face personal liability"
           ],
-          "framing": "Emergencies shouldn't mean dictatorship. Restore checks and balances."
+          "framing": {
+            "forConservatives": "Separation of powers. Executive cannot rule by decree indefinitely.",
+            "forProgressives": "Protect civil liberties. Prevent future administrations from abusing emergency powers.",
+            "forBusinessOwners": "Never again will your livelihood be destroyed by indefinite executive order.",
+            "forEveryone": "Emergencies don't suspend the Constitution. Temporary means temporary."
+          },
+          "provenSuccess": "Post-COVID, numerous states have passed emergency powers reform: Ohio, Kansas, Pennsylvania, Kentucky, and others. This is a winning issue with demonstrated bipartisan support.",
+          "allies": "Libertarians, civil liberties groups, business associations, constitutional scholars",
+          "opposition": "Governors (both parties), public health establishment"
         }
       ]
     },
