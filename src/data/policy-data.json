@@ -1798,42 +1798,58 @@
       "title": "Social Security Reform",
       "icon": "Briefcase",
       "color": "#F59E0B",
-      "description": "Save Social Security for current retirees while giving younger workers better options.",
+      "description": "The current Social Security system is fiscally unsustainable and removes choice from citizens. It should be phased out and replaced with voluntary community pooling — people choosing to ally with communities they trust, not forced into government programs. We believe each philosophy (capitalism, socialism, federalism, libertarianism, etc.) has its place as tools in a toolbox, rather than predisposed responses to every question.",
+      "strategicReality": "Social Security reform is the 'third rail' of American politics. Any campaign must protect current retirees absolutely while offering genuine alternatives to younger workers. This is a generational education project, not a near-term legislative campaign. Build understanding first.",
       "subPolicies": [
         {
-          "title": "Voluntary Private Accounts for Younger Workers",
-          "viability": "moderate",
+          "title": "Phase-Out & Community Pooling",
+          "viability": "low",
+          "level": "Federal",
+          "viabilityNote": "Long-term generational project",
           "problem": [
-            "Social Security returns are negative for younger workers",
-            "Trust fund going broke",
-            "No ownership or inheritance of contributions",
-            "Younger workers pay for current retirees with no guarantee"
+            "Social Security is fiscally unsustainable — trust fund depletion projected",
+            "Payroll taxes take 12.4% of wages before workers can invest",
+            "Poor returns compared to private investment",
+            "No ownership — benefits can be reduced by Congress",
+            "Forced participation regardless of individual circumstances",
+            "Removes responsibility from families and communities"
+          ],
+          "phaseOutStructure": [
+            "Protect Current Retirees: Fund the program fully for everyone above age cutoff (details TBD)",
+            "Refund Younger Workers: Workers below age 40 receive discounted refund (50% of contributions)",
+            "New System: Newborns and those who received refunds participate in new voluntary system",
+            "Gradual Transition: Immediate deprecation before new system is proven is too risky for the elderly"
+          ],
+          "communityPoolingSystem": [
+            "Voluntary Pools: Any community can form a retirement pool — geographic, religious, affinity-based, online",
+            "Sold Anywhere: Join pools at stores, online, through organizations — any format works",
+            "Private Organizations: Pools are private organizations, not government programs",
+            "Market Regulation: Free market regulates through competition and reputation",
+            "Disclosure Requirements: Regulations require fair refund terms and financial disclosures",
+            "Exit Rights: If fraud occurs, people quit — pools that perform poorly lose members"
+          ],
+          "defaultOptOutOptions": [
+            "Default Government Pool: Everyone auto-enrolled in basic government pool",
+            "Opt-Out to Private: Can opt out into any private community pool",
+            "Full Opt-Out: Can opt out entirely with extensive application — full personal risk acceptance",
+            "No Forced Spending: We shouldn't force anyone to spend money they don't have"
           ],
           "positions": [
-            "Allow workers under 40 to opt into private retirement accounts",
-            "Keep Social Security for current and near-retirees",
-            "Private accounts earn market returns and are inheritable",
-            "Guarantee safety net for those who opt in",
-            "Transition over decades"
+            "Phase out Social Security over time — not immediate elimination",
+            "Protect current retirees absolutely during transition",
+            "Replace with voluntary community-based mutual aid pools",
+            "Allow opt-out for those who prefer full personal responsibility",
+            "Default enrollment with easy opt-out to alternatives"
           ],
-          "framing": "Younger workers deserve ownership and better returns. Reform now to save the system."
-        },
-        {
-          "title": "Means Testing & Benefit Adjustments",
-          "viability": "low-mod",
-          "problem": [
-            "Wealthy retirees receive full benefits",
-            "System unsustainable without changes",
-            "Benefits exceed contributions for high earners"
-          ],
-          "positions": [
-            "Reduce benefits for wealthy retirees (means testing)",
-            "Raise retirement age for younger workers",
-            "Adjust cost-of-living formulas",
-            "Protect benefits for low- and middle-income retirees",
-            "Phase in changes gradually"
-          ],
-          "framing": "Tough choices now prevent collapse later. Protect those who need it most."
+          "designPhilosophy": "This isn't pure individualism (401k-ification) — it's community-based mutual aid. People historically took care of their elderly through churches, fraternal organizations, and extended families. Government programs crowded out these organic support systems. We're restoring choice while ensuring a default safety net exists.",
+          "framing": {
+            "forConservatives": "End forced government dependency. Restore community and family responsibility.",
+            "forProgressives": "Community-based mutual aid chosen by participants, not forced bureaucracy.",
+            "forLibertarians": "Full opt-out option. No forced participation in government programs.",
+            "forEveryone": "Your retirement, your choice. Government default with freedom to choose alternatives."
+          },
+          "allies": "Libertarians, younger workers, fiscal conservatives, some conservatives",
+          "opposition": "AARP, progressives, union retirees, most seniors"
         }
       ]
     },
@@ -1843,43 +1859,132 @@
       "title": "Tax Reform",
       "icon": "Receipt",
       "color": "#10B981",
-      "description": "Simplify the tax code, lower rates, and eliminate special-interest loopholes.",
+      "description": "Income tax is oppressive — it's basically slavery when applied to labor, especially since the money isn't asset-backed. If we must tax, it should focus on excess and glut, not people just trying to survive. Tax should be based on money spent and money hoarded. Money only serves its purpose when it's spent — tax policy should incentivize spending rather than letting the wealthy stash it away while everyone else suffers.",
+      "corePhilosophy": "We don't tax your labor, but you can't hoard dynastic wealth either. Work should be rewarded. Productivity should flow. Aristocratic accumulation across generations should be limited.",
       "subPolicies": [
         {
-          "title": "Flat or Consumption Tax",
+          "title": "Eliminate Income Tax",
           "viability": "low",
+          "level": "Federal (constitutional amendment)",
+          "viabilityNote": "Long-term goal requiring 16th Amendment repeal",
           "problem": [
-            "Complex tax code favors those who can afford accountants",
-            "Loopholes and carve-outs distort economy",
-            "Income tax punishes productivity",
-            "IRS enforcement burdens ordinary taxpayers"
+            "Income tax penalizes work and productivity",
+            "Forces citizens to give hours of their time against their will",
+            "Complex tax code benefits wealthy who can afford accountants",
+            "IRS enforcement creates adversarial relationship with citizens",
+            "Tax on non-asset-backed currency is doubly offensive"
           ],
           "positions": [
-            "Replace income tax with flat tax or national sales tax (FairTax)",
-            "Abolish IRS or drastically reduce its size",
-            "Universal deduction to protect low earners",
-            "Eliminate all deductions and credits",
-            "Simplicity and transparency"
+            "Repeal 16th Amendment: You shouldn't be forced to give hours of your time against your will",
+            "No Wage Taxation: Income from labor should not be taxed",
+            "Replace, Not Just Cut: Alternative revenue sources must be in place",
+            "Transition Period: Phased implementation to allow adjustment"
           ],
-          "framing": "Tax everyone fairly at the same rate. No more loopholes, no more IRS abuses."
+          "framing": {
+            "forConservatives": "End government confiscation of your labor. Keep what you earn.",
+            "forProgressives": "Income tax hits working people hardest. The wealthy avoid it with loopholes.",
+            "forEveryone": "You shouldn't be forced to give hours of your time against your will."
+          },
+          "allies": "FairTax advocates, libertarians, some conservatives",
+          "opposition": "Tax industry, progressives, government dependency advocates"
         },
         {
-          "title": "Eliminate Carve-Outs & Special Interests",
-          "viability": "moderate",
+          "title": "Consumption Tax System",
+          "viability": "low-mod",
+          "level": "Federal",
           "problem": [
-            "Tax code riddled with special-interest breaks",
-            "Corporations and wealthy exploit loopholes",
-            "Complexity hides handouts",
-            "Ordinary taxpayers pay more"
+            "Current system taxes earning instead of spending",
+            "No incentive to save and invest",
+            "Complex deductions and credits favor the sophisticated",
+            "Need alternative revenue if income tax eliminated"
+          ],
+          "revenueSources": [
+            "Consumption Tax: Tax on spending, not earning",
+            "Tariffs: On imported goods",
+            "User Fees: For government services used",
+            "Asset Returns: Revenue from government holdings",
+            "Self-Funded Operations: Government enterprises that generate revenue"
+          ],
+          "exemptionsNecessities": [
+            "Food: Groceries and basic food items exempt",
+            "Medicine: Prescription and OTC medications exempt",
+            "Basic Utilities: Essential utilities at basic level exempt",
+            "Children's Essentials: Basic children's clothing, school supplies exempt"
           ],
           "positions": [
-            "Eliminate all corporate tax breaks and subsidies",
-            "No targeted tax credits for specific industries",
-            "Lower rates, broaden base",
-            "Treat all income equally (wages, capital gains, dividends)",
-            "Transparency in tax expenditures"
+            "Replace income tax with consumption-based taxation",
+            "Exempt necessities to protect low-income families",
+            "Tax spending choices, not productivity",
+            "Simple, transparent system without complex deductions"
           ],
-          "framing": "Lower rates for everyone—not special deals for insiders. Simplify and level the playing field."
+          "framing": {
+            "fairnessPrinciple": "Tax on excess and glut, not survival. Those spending more on luxuries pay more.",
+            "forWorkingClass": "Keep your paycheck. Pay tax only when you choose to spend on non-essentials.",
+            "forProgressives": "Wealthy spend more, pay more. Exemptions protect low-income families."
+          },
+          "allies": "FairTax advocates, fiscal conservatives, simplification advocates",
+          "opposition": "Tax preparers, accountants, complex tax code beneficiaries"
+        },
+        {
+          "title": "Wealth & Inheritance Tax",
+          "viability": "moderate",
+          "level": "Federal",
+          "problem": [
+            "Dynastic wealth creates permanent aristocracy",
+            "Wealth hoarding removes capital from productive use",
+            "Inheritance of massive fortunes perpetuates inequality across generations",
+            "Current estate tax easily avoided by the wealthy"
+          ],
+          "wealthTaxStagnantFunds": [
+            "Rate: 1% annually on stagnant funds above $10 million",
+            "Definition of Stagnant: Passive investments — anything you aren't actively involved in managing as an employee",
+            "Active Management Exempt: If you're working in the company, not passive",
+            "Purpose: Incentivize productive use of capital, not hoarding"
+          ],
+          "inheritanceTaxStructure": [
+            "$0 - $3 million: 0% tax (protects family farms, small businesses)",
+            "$3 million - $5 million: 50% tax",
+            "Above $5 million: 100% tax",
+            "Inflation Adjustment: $3M threshold adjusted annually for stated inflation of that currency"
+          ],
+          "positions": [
+            "1% annual wealth tax on passive investments above $10 million",
+            "Progressive inheritance tax: 0% up to $3M, 50% from $3-5M, 100% above $5M",
+            "Protect family farms and small businesses with generous exemption",
+            "Prevent dynastic wealth accumulation across generations"
+          ],
+          "designRationale": "This prevents dynastic wealth accumulation while protecting genuine family inheritance. $3 million allows substantial transfer — more than most Americans will ever have. Above that, wealth returns to productive circulation rather than creating permanent aristocracy.",
+          "framing": {
+            "forConservatives": "Prevent aristocracy. Reward work, not inheritance. Keep capital productive.",
+            "forProgressives": "End dynastic wealth. Level the playing field across generations.",
+            "forEveryone": "Everyone should start with opportunity, not massive inherited advantage."
+          },
+          "allies": "Populists (left and right), small business, working class advocates",
+          "opposition": "Wealth holders, estate planning industry, some conservatives"
+        },
+        {
+          "title": "Business Taxation",
+          "viability": "moderate",
+          "level": "Federal",
+          "problem": [
+            "Current system taxes business profits regardless of use",
+            "No distinction between extraction and reinvestment",
+            "Incentivizes financial engineering over productive investment",
+            "Complex corporate tax code with many loopholes"
+          ],
+          "positions": [
+            "Distributions Taxed: Money given to owners is taxed",
+            "Expatriation Taxed: Money leaving the country is taxed",
+            "Reinvestment Not Taxed: Money spent on operational expansion, employees, products, etc. is NOT taxed",
+            "Incentive Structure: Encourages reinvestment in business, workers, and growth over extraction"
+          ],
+          "framing": {
+            "forBusiness": "Reinvest and grow tax-free. Only pay when you extract.",
+            "forWorkers": "Companies rewarded for hiring and investing in employees.",
+            "forEconomy": "Capital stays productive instead of being extracted."
+          },
+          "allies": "Small businesses, workers, productive investors",
+          "opposition": "Private equity, wealth extractors, offshore haven users"
         }
       ]
     },
