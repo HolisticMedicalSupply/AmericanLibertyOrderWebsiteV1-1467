@@ -200,9 +200,44 @@ export default function PolicyDetail() {
 
                         <div>
                           <h4 className="font-semibold text-primary mb-3">How We Frame It</h4>
-                          <p className="text-muted-foreground italic border-l-2 border-primary pl-4">
-                            {subPolicy.framing}
-                          </p>
+                          {typeof subPolicy.framing === 'string' ? (
+                            <p className="text-muted-foreground italic border-l-2 border-primary pl-4">
+                              {subPolicy.framing}
+                            </p>
+                          ) : (
+                            <div className="space-y-3">
+                              {subPolicy.framing.forConservatives && (
+                                <div className="border-l-2 border-red-400 pl-4">
+                                  <span className="text-xs font-semibold text-red-400 uppercase tracking-wide">For Conservatives</span>
+                                  <p className="text-muted-foreground italic mt-1">{subPolicy.framing.forConservatives}</p>
+                                </div>
+                              )}
+                              {subPolicy.framing.forProgressives && (
+                                <div className="border-l-2 border-blue-400 pl-4">
+                                  <span className="text-xs font-semibold text-blue-400 uppercase tracking-wide">For Progressives</span>
+                                  <p className="text-muted-foreground italic mt-1">{subPolicy.framing.forProgressives}</p>
+                                </div>
+                              )}
+                              {subPolicy.framing.forEveryone && (
+                                <div className="border-l-2 border-primary pl-4">
+                                  <span className="text-xs font-semibold text-primary uppercase tracking-wide">For Everyone</span>
+                                  <p className="text-muted-foreground italic mt-1">{subPolicy.framing.forEveryone}</p>
+                                </div>
+                              )}
+                              {subPolicy.framing.forFarmers && (
+                                <div className="border-l-2 border-green-400 pl-4">
+                                  <span className="text-xs font-semibold text-green-400 uppercase tracking-wide">For Farmers</span>
+                                  <p className="text-muted-foreground italic mt-1">{subPolicy.framing.forFarmers}</p>
+                                </div>
+                              )}
+                              {subPolicy.framing.forParents && (
+                                <div className="border-l-2 border-purple-400 pl-4">
+                                  <span className="text-xs font-semibold text-purple-400 uppercase tracking-wide">For Parents</span>
+                                  <p className="text-muted-foreground italic mt-1">{subPolicy.framing.forParents}</p>
+                                </div>
+                              )}
+                            </div>
+                          )}
                         </div>
                       </motion.div>
                     )}
