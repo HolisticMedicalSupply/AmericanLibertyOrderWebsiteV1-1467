@@ -332,63 +332,115 @@
       "title": "Property Rights",
       "icon": "Home",
       "color": "#F59E0B",
-      "description": "Strengthen individual property rights against government overreach and private restrictions.",
+      "description": "Property rights are foundational to liberty. Government and private entities increasingly infringe on what Americans can do with their own property. When you buy something, you should own it — fully.",
       "subPolicies": [
         {
-          "title": "HOA Reform",
-          "viability": "mod-high",
+          "title": "Homeowners Association Reform",
+          "viability": "high",
+          "level": "State (HOA law is state-specific)",
           "problem": [
-            "HOAs wield unchecked power over homeowners",
-            "Fines and liens for minor violations (wrong paint color, grass height)",
-            "Lack of due process and accountability",
-            "Difficult to change rules or remove bad boards",
-            "Creates hostile living environments"
+            "Mandatory membership with no opt-out option for existing communities",
+            "Broad, vague restrictions enforced arbitrarily",
+            "Fines and penalties with limited due process",
+            "Foreclosure authority for unpaid assessments (including minor amounts)",
+            "Selective enforcement based on board member relationships",
+            "Limited transparency in financial management",
+            "Elections subject to manipulation by management companies",
+            "Restrictions that conflict with state/federal law (solar panels, flags, etc.)"
           ],
           "positions": [
-            "Limit HOA fine and lien authority",
-            "Require majority approval for new restrictions",
-            "Provide homeowner bill of rights with due process protections",
-            "Prohibit foreclosure for unpaid fines under $5,000",
-            "Allow opt-out for certain restrictions (solar, gardens, political signs)"
+            "Require open meetings and access to financial records",
+            "Mandate competitive bidding for contracts",
+            "Prohibit board members from self-dealing",
+            "Require independent audits for HOAs above certain size",
+            "Term limits for board members",
+            "Cap fines; require escalating warnings before penalties",
+            "Prohibit foreclosure for fines (assessments only, with limits)",
+            "Require due process before any penalty (notice, hearing, appeal)",
+            "Statute of limitations on violations",
+            "Selective enforcement as affirmative defense",
+            "Protect solar panels and energy equipment",
+            "Protect flag display (US flag already protected; extend to state/military)",
+            "Allow political signs (time-limited during elections)",
+            "Allow vegetable gardens (reasonable backyard use)",
+            "Strengthen disability accommodations enforcement",
+            "Protect reasonable religious expression",
+            "Mandatory disclosure to buyers before purchase",
+            "CC&R plain language requirements",
+            "Online access to all governing documents"
           ],
-          "framing": "You should own your home—not the other way around. HOAs need limits."
+          "framing": {
+            "forConservatives": "Property rights — you bought it, you should be able to use it.",
+            "forHomeowners": "Protection from petty tyranny and arbitrary enforcement.",
+            "forEveryone": "HOAs exercise government-like power without government-like accountability."
+          },
+          "allies": "Property rights groups, homeowner advocates, real estate consumer groups",
+          "opposition": "HOA management companies, some HOA boards"
         },
         {
           "title": "Eminent Domain Reform",
-          "viability": "high",
+          "viability": "mod-high",
+          "level": "State (many reformed after Kelo; some need strengthening)",
           "problem": [
-            "Government can seize private property for private development",
-            "Low-ball compensation",
-            "Abuse in urban renewal projects",
-            "'Public use' interpreted far too broadly",
-            "Little recourse for property owners"
+            "Since Kelo v. City of New London (2005), 'public use' stretched to allow takings for private development",
+            "Property can be taken and given to private developers if it might increase tax revenue",
+            "Low-income neighborhoods targeted for 'redevelopment'",
+            "Compensation often inadequate (fair market value may not cover relocation costs)",
+            "Threat of eminent domain used to coerce below-market sales"
           ],
           "positions": [
-            "Restrict eminent domain to genuine public use (roads, utilities)",
-            "Ban takings for private development or tax revenue",
-            "Require fair market value plus 50% premium for forced sales",
-            "Strong protections for homes, farms, and small businesses",
-            "Burden of proof on government"
+            "Public Use Restriction: Limit eminent domain to true public use (roads, utilities, public buildings)",
+            "No Private-to-Private Transfers: Prohibit taking property to give to another private party",
+            "Just Compensation Plus: Compensation must include relocation costs, not just market value",
+            "Blight Definition: Tighten definition of 'blight' to prevent abuse",
+            "Right of First Refusal: If taken property not used for stated purpose, original owner can repurchase"
           ],
-          "framing": "Your home isn't a revenue opportunity for developers. Eminent domain should be rare and compensated fairly."
+          "framing": {
+            "forEveryone": "Your home isn't a revenue opportunity for developers. Eminent domain should be rare and compensated fairly."
+          },
+          "allies": "Property rights groups, Castle Coalition, affected communities",
+          "opposition": "Developers, municipal governments, economic development agencies"
         },
         {
-          "title": "Mineral and Subsurface Rights",
-          "viability": "moderate",
+          "title": "Mineral Rights Protection",
+          "viability": "mod-high",
+          "level": "State (property law is state-specific)",
           "problem": [
-            "Property owners don't control mineral rights under their land",
-            "Energy companies can drill without surface owner consent",
-            "Split estates create conflicts and unfair outcomes",
-            "Landowners bear costs but don't share profits"
+            "Mineral rights severed from surface rights on vast majority of American land",
+            "Most property buyers have no opportunity to purchase mineral rights — already owned by corporations",
+            "Corporations sit on mineral rights indefinitely without productive use — 'mineral right squatting'",
+            "Similar market failure to patent trolls and domain name squatters",
+            "Landowners have limited rights when mineral owners access their property",
+            "Foreign corporations increasingly own American mineral rights",
+            "Concentrated ownership enables market manipulation and speculation"
           ],
           "positions": [
-            "Require surface owner consent for mineral extraction",
-            "Reunify split estates where feasible",
-            "Fair compensation for surface damage",
-            "Protect groundwater and surface property",
-            "Respect both surface and mineral rights holders"
+            "Active Development Requirement: Mineral rights must show active exploration, development, or production within defined period (e.g., 10 years)",
+            "Holding Fees: Escalating annual fees for undeveloped mineral rights — discourages pure speculation",
+            "Reversion to Surface Owner: Abandoned or long-inactive mineral rights revert to surface property owner",
+            "Bona Fide Development Standard: Token drilling/exploration doesn't satisfy requirement — must be genuine commercial activity",
+            "Exemption for Active Leases: Rights under active lease with producing operator are protected",
+            "Access Compensation: Fair compensation for surface disruption, not just mineral value",
+            "Restoration Bonds: Mineral operators must post bonds for full site restoration",
+            "Notice Requirements: Advance notice and negotiation before surface access",
+            "Damage Liability: Strict liability for surface damage, groundwater contamination",
+            "Right of First Refusal: Surface owners have first right to purchase mineral rights when sold",
+            "Reunification Incentives: Tax incentives for reunifying mineral and surface rights",
+            "Disclosure Requirements: Clear disclosure of severed mineral rights in all property transactions",
+            "Anti-Concentration Limits: Prevent single entities from controlling dominant share of regional mineral rights",
+            "Foreign Ownership Restrictions: Limit or prohibit foreign ownership of mineral rights (national security)",
+            "Transparency Registry: Public registry of all mineral rights ownership",
+            "Shell Company Disclosure: Require disclosure of beneficial owners behind corporate mineral owners"
           ],
-          "framing": "If it's your land, you should have a say in what happens on it and under it."
+          "framing": {
+            "forConservatives": "Property rights — if you own the land, you should have opportunity to own what's under it. End corporate squatting.",
+            "forProgressives": "Environmental protection through landowner empowerment. End extractive industry exploitation.",
+            "forRuralCommunities": "Give families control over their land. Stop absentee corporations from dictating land use.",
+            "forEnergyIndependence": "Active development requirements increase domestic production; speculation decreases it."
+          },
+          "note": "This policy must carefully balance protecting current property rights (mineral owners have legitimate ownership) with preventing market failures. Focus on use requirements and access reforms rather than confiscation. Model on successful 'use it or lose it' precedents in water rights, spectrum allocation, and mining claims.",
+          "allies": "Farm bureaus, rural landowners, environmental groups, energy independence advocates",
+          "opposition": "Oil/gas companies, mineral speculators, some property rights absolutists"
         }
       ]
     },
