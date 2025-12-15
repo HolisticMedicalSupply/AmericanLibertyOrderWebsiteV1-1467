@@ -782,115 +782,219 @@
       "title": "Constitutional Rights",
       "icon": "Shield",
       "color": "#EF4444",
-      "description": "Defend fundamental constitutional liberties against government and corporate overreach.",
+      "description": "The Bill of Rights protects fundamental liberties from government infringement. These rights face ongoing threats and require active defense. The Constitution means what it says.",
       "subPolicies": [
         {
-          "title": "Free Speech & Anti-Censorship",
-          "viability": "moderate",
+          "title": "Free Speech Protection",
+          "viability": "mod-high",
+          "level": "State (campus speech, anti-SLAPP) + Federal (jawboning, financial)",
           "problem": [
-            "Tech platforms censor speech under government pressure",
-            "Viewpoint-based content moderation",
-            "Deplatforming and shadow-banning",
-            "Collusion between government and big tech",
-            "Loss of digital public square"
+            "Government pressure on platforms to censor (jawboning)",
+            "Campus speech codes and 'free speech zones'",
+            "Employment consequences for political speech",
+            "Strategic lawsuits to silence critics (SLAPPs)",
+            "Financial deplatforming for legal speech",
+            "Government-funded 'disinformation' monitoring"
           ],
           "positions": [
-            "Ban government from pressuring platforms to censor lawful speech",
-            "Classify major platforms as common carriers (neutrality requirements)",
-            "Transparency in content moderation decisions",
-            "Right to appeal and judicial review for deplatforming",
-            "Protect anonymous speech"
+            "Anti-Jawboning: Prohibit government officials from pressuring platforms to censor legal speech",
+            "Campus Free Speech: Protect free expression at public universities; no 'free speech zones'",
+            "Anti-SLAPP Laws: Strengthen protections against lawsuits designed to silence speech",
+            "Viewpoint Neutrality: Government programs cannot discriminate based on viewpoint",
+            "Financial Access: Banks and payment processors cannot discriminate against legal speech/activities",
+            "Transparency: Require disclosure of government-platform communications about content moderation"
           ],
-          "framing": "Free speech doesn't end online. Big Tech shouldn't be the speech police."
+          "framing": {
+            "forEveryone": "Free speech is the foundation of all other rights. Protect it everywhere."
+          },
+          "allies": "Civil liberties organizations, academic freedom advocates",
+          "opposition": "Platform companies, some advocacy groups"
         },
         {
-          "title": "Individual Liberty & Conscience Protections",
-          "viability": "moderate",
+          "title": "Individual Liberty & Freedom of Conscience",
+          "viability": "mod-high",
+          "level": "State (most applications) + Federal (constitutional framework)",
+          "corePrinciple": "Every individual has the right to live according to their own beliefs, identity, and choices — and every individual has the right NOT to be compelled to affirm, participate in, or express beliefs they do not hold. Your freedom to be yourself does not create an obligation for others to validate you.",
           "problem": [
-            "Religious and conscience objections overridden by mandates",
-            "Private beliefs punished through civil penalties",
-            "Compelled speech (pronouns, statements)",
-            "Loss of professional licenses for beliefs"
+            "Government and private entities compelling speech and affirmation",
+            "Religious and conscience objections overridden",
+            "Activists on both sides seeking to use government to impose their views",
+            "Lack of consistent application of liberty principles"
           ],
           "positions": [
-            "Strong religious freedom protections (RFRA-style)",
-            "No compelled speech",
-            "Conscience protections for medical professionals",
-            "Protect employment and education from viewpoint discrimination",
-            "Right to opt out of ideologically-driven training or statements"
+            "Marriage: Right to marry any consenting adult; government recognition of all marriages",
+            "Identity: Right to identify, present, and live as you choose",
+            "Belief: Right to hold any religious, philosophical, or personal beliefs",
+            "No Compelled Speech: Cannot be forced to use specific words, pronouns, or affirmations",
+            "No Compelled Participation: Cannot be forced to participate in ceremonies or events that violate conscience",
+            "Religious Exercise: Religious individuals and organizations can operate according to their beliefs",
+            "Creative Expression: Artists, writers, and creators cannot be compelled to create content that violates their beliefs",
+            "Professional Conscience: Professionals can decline services that violate deeply held beliefs (with referral obligation)",
+            "Marriage Equality + Religious Liberty: Government recognizes all marriages; religious institutions choose which to solemnize",
+            "Public Accommodations: General services available to all; custom expressive services protected"
           ],
-          "framing": "You shouldn't lose your job for your beliefs. Conscience and liberty go hand-in-hand."
+          "framing": {
+            "forConservatives": "Your religious beliefs and conscience are protected. No one can force you to affirm what you don't believe.",
+            "forProgressives": "LGBTQ+ individuals have full legal equality and protection from government discrimination.",
+            "forLibertarians": "Maximum liberty for everyone. Your rights end where compulsion of others begins.",
+            "forEveryone": "We don't have to agree on everything to live peacefully together. Tolerance means tolerating difference, not demanding uniformity."
+          },
+          "allies": "Classical liberals, libertarians, religious liberty advocates, civil liberties groups (selectively)",
+          "opposition": "Activists on both extremes who want to use government to impose their views"
         },
         {
-          "title": "Reproductive Rights & Bodily Autonomy",
+          "title": "Reproductive Rights: First Trimester Access + Adoption Investment",
+          "viability": "moderate",
+          "level": "Federal framework + State implementation",
+          "compromiseNote": "This position will not satisfy pro-life absolutists who believe life begins at conception, nor pro-choice absolutists who believe abortion should be unrestricted until birth. It attempts to find the position that most Americans actually hold — legal access early in pregnancy, restrictions later, with real investment in alternatives.",
+          "problem": [
+            "Post-Dobbs patchwork of state laws creates confusion",
+            "Neither extreme position matches majority public opinion",
+            "Restrictions without alternatives force impossible choices",
+            "Current adoption system inadequate to provide real alternatives"
+          ],
+          "positions": [
+            "First Trimester Legal: Abortion legal and accessible through end of first trimester (12 weeks)",
+            "After First Trimester: Abortion illegal except for defined exceptions",
+            "Exceptions: Life of Mother, Severe Fetal Abnormality, Rape (with documentation), Incest (with documentation), Very Young Girls (under 15)",
+            "Both Parties Accountable: Both the person seeking and the provider performing illegal abortion face penalties",
+            "Mandatory Adoption Infrastructure: Federal mandate requiring states to provide robust adoption pathways",
+            "No-Questions Safe Surrender: Safe haven laws in all states — surrender newborn without prosecution",
+            "Guaranteed Placement: Every child surrendered guaranteed pathway to adoption",
+            "Streamlined Adoption: Reduce bureaucratic barriers; expedite process",
+            "Adoption Support: Financial support for adoptive families; remove cost as barrier",
+            "Birth Mother Support: Medical care, counseling, and support for women choosing adoption"
+          ],
+          "framing": {
+            "forProLife": "Meaningful restriction after first trimester. Both parties face real consequences. Investment in adoption makes 'choose life' viable.",
+            "forProChoice": "Preserves access during the period when 93% of abortions occur. Exceptions for hard cases. No forced birth without real alternatives.",
+            "forModerates": "This is what most Americans actually believe — and what most of Europe does. Legal early, restricted later, with support for alternatives.",
+            "forEveryone": "Reduces abortions through support, not just restriction. Takes 'what happens after' seriously."
+          },
+          "allies": "Moderates, adoption advocates, those exhausted by culture war absolutism",
+          "opposition": "Pro-life absolutists, pro-choice absolutists, single-issue voters on both sides"
+        },
+        {
+          "title": "Second Amendment",
           "viability": "varies",
-          "problem": [
-            "Post-Roe patchwork of state laws",
-            "Access to abortion and contraception varies widely",
-            "Government interference in personal medical decisions"
-          ],
-          "positions": [
-            "Support state-level decision-making post-Dobbs",
-            "Protect access to contraception",
-            "Oppose late-term abortion restrictions with exceptions for health/life",
-            "Ensure informed consent and safety standards",
-            "Respect diverse views within membership"
-          ],
-          "framing": "Personal medical decisions should remain personal. Common-sense laws respect both life and liberty."
-        },
-        {
-          "title": "Second Amendment Rights",
-          "viability": "high",
+          "level": "State (most policy) + Federal (reciprocity, industry protection)",
           "problem": [
             "Incremental restrictions on gun ownership",
-            "Red flag laws without due process",
-            "Arbitrary 'assault weapon' bans",
-            "Restrictions on law-abiding citizens, not criminals"
+            "Red flag laws often lack due process",
+            "Arbitrary 'assault weapon' definitions and bans",
+            "Restrictions target law-abiding citizens, not criminals"
           ],
           "positions": [
-            "Defend individual right to bear arms",
-            "Oppose arbitrary bans and magazine limits",
-            "Due process required for any restriction (red flag reforms)",
-            "National concealed-carry reciprocity",
-            "Focus enforcement on criminals, not lawful owners"
+            "Right to keep and bear arms is an individual right",
+            "Second Amendment applies to modern firearms",
+            "Self-defense is a fundamental right",
+            "Shall-issue (or constitutional carry) for concealed carry permits",
+            "National reciprocity for carry permits",
+            "Opposition to assault weapons bans, magazine restrictions, registration schemes",
+            "Constitutional Carry: No permit required for law-abiding citizens to carry",
+            "Preemption: State law preempts local gun regulations",
+            "Range Protection: Protect shooting ranges from nuisance lawsuits",
+            "School Protection: Allow trained staff to carry; enhance school security",
+            "Due Process: Red flag laws (if they exist) must include robust due process protections",
+            "Industry Protection: Prohibit lawsuits against manufacturers for criminal misuse"
           ],
-          "framing": "The Second Amendment isn't negotiable. Enforce existing laws—don't punish law-abiding citizens."
+          "framing": {
+            "forEveryone": "The Second Amendment is an individual right. Self-defense is fundamental."
+          },
+          "allies": "NRA, GOA, state organizations, sheriffs' associations",
+          "opposition": "Gun control organizations, some law enforcement leadership"
         },
         {
-          "title": "Parental Rights in Education",
+          "title": "Parental Rights & Due Process",
           "viability": "high",
+          "level": "State (primary) + Federal",
           "problem": [
             "Schools withhold information from parents",
             "Parents excluded from curriculum decisions",
-            "Gender and sexuality instruction without parental consent",
-            "Schools override parental authority"
+            "Government overreach in family matters",
+            "Administrative proceedings lack meaningful due process"
           ],
           "positions": [
-            "Parents have final authority over their children's education and medical care",
-            "Transparent curriculum with opt-out rights",
-            "No gender transition without parental knowledge and consent",
-            "Right to know what schools teach",
-            "Protect teachers who respect parental rights"
+            "Parents have fundamental right to direct upbringing of children",
+            "Educational choice — school selection without government restriction",
+            "Curriculum transparency — right to know what children are taught",
+            "Medical decisions — parental consent for child medical treatment",
+            "Protection from state overreach in family matters",
+            "Notification requirements before school involvement in sensitive matters",
+            "Administrative proceedings must provide meaningful due process",
+            "Right to confront accusers in all consequential proceedings",
+            "Qualified immunity reform — accountability for constitutional violations"
           ],
-          "framing": "Parents—not bureaucrats—raise children. Schools should educate, not indoctrinate."
+          "framing": {
+            "forEveryone": "Parents — not bureaucrats — direct the upbringing of their children. Due process protects everyone."
+          },
+          "allies": "Parents' organizations, educational choice advocates",
+          "opposition": "Teachers unions (some issues), government agencies"
         },
         {
-          "title": "Homeschool Freedom & Educational Choice",
+          "title": "Homeschool & Educational Freedom",
           "viability": "high",
+          "level": "State (education law is state-specific)",
           "problem": [
-            "Excessive homeschool regulations in some states",
-            "Barriers to educational choice",
-            "Homeschoolers excluded from extracurriculars",
-            "Lack of education savings accounts"
+            "Some states imposing increasing regulations on homeschooling families",
+            "Attempts to require government curriculum approval",
+            "Homeschooling used as pretext for CPS investigations",
+            "College admissions discrimination against homeschool graduates",
+            "Employer discrimination against homeschool credentials",
+            "Regulatory burden making homeschooling difficult for working families"
           ],
           "positions": [
-            "Protect homeschooling with minimal regulation",
-            "Education savings accounts (ESAs) for all families",
-            "Open extracurriculars and sports to homeschoolers",
-            "Tax credits for educational expenses",
-            "Support charter, private, and alternative education options"
+            "Fundamental Right: Recognize parental right to direct education as fundamental right",
+            "State Constitutional Amendment: Enshrine homeschool rights in state constitutions",
+            "No Prior Approval: Parents should not need government permission to homeschool",
+            "Curriculum Freedom: No government approval of homeschool curriculum required",
+            "Testing Optional: Standardized testing should not be mandatory for homeschoolers",
+            "College Admission: Prohibit discrimination against homeschool credentials in public university admissions",
+            "Employment: Homeschool diplomas treated equally with public school diplomas for employment",
+            "Athletic/Extracurricular Access: Homeschoolers can participate in public school activities",
+            "No CPS Presumption: Homeschooling alone is not grounds for CPS investigation",
+            "Education Not Abuse: Educational choices (curriculum, approach) cannot constitute neglect",
+            "Reporter Training: Train mandatory reporters that homeschooling is legal and normal"
           ],
-          "framing": "Parents know what's best for their kids. School choice empowers families."
+          "framing": {
+            "forConservatives": "Parental rights. Educational freedom. Government has no business dictating curriculum.",
+            "forProgressives": "Respect diverse educational approaches. Not all learning happens in traditional classrooms.",
+            "forParents": "You know your children better than bureaucrats. Freedom to tailor education to your child."
+          },
+          "momentum": "Homeschool community is large, organized, and politically active. HSLDA and state organizations provide model legislation and advocacy support. Post-COVID homeschooling increased dramatically — expanded constituency.",
+          "allies": "HSLDA, state homeschool organizations, religious liberty groups, parental rights organizations",
+          "opposition": "Teachers unions, some education bureaucracies"
+        },
+        {
+          "title": "Jury Rights & Nullification Awareness",
+          "viability": "low-mod",
+          "level": "State (jury instructions are state-specific)",
+          "problem": [
+            "Jurors not informed of their historical right to judge the law as well as facts",
+            "Judges instruct juries they 'must' follow the law as given — historically inaccurate",
+            "Citizens serving as jurors unaware of their power as check on unjust laws",
+            "Jury nullification — while legal — is actively suppressed by courts",
+            "Jurors can be dismissed or even punished for expressing nullification views",
+            "Defense attorneys prohibited from arguing nullification in most courts"
+          ],
+          "positions": [
+            "Fully Informed Jury: Require courts to inform jurors they may vote conscience, not just facts",
+            "Historical Context: Inform jurors of jury's traditional role as check on government power",
+            "No Punishment for Verdicts: Explicitly protect jurors from prosecution for their verdicts",
+            "Defense Argument: Allow defense to argue jury may consider justice of the law",
+            "School Curriculum: Include jury rights in civics education",
+            "Voter Information: Inform citizens of jury rights in voter information materials",
+            "Public Awareness: Support public education campaigns about jury rights"
+          ],
+          "framing": {
+            "forConservatives": "Jury is the final check on government overreach. Citizens, not judges, have ultimate power.",
+            "forProgressives": "Juries have historically protected against unjust laws — fugitive slave laws, prohibition, etc.",
+            "forLibertarians": "Victimless crime convictions require jury consent. Informed juries protect liberty.",
+            "historical": "John Adams, Thomas Jefferson, and the Founders explicitly endorsed jury nullification."
+          },
+          "viabilityNote": "Jury nullification is controversial within legal establishment. Courts actively resist. More achievable: (1) educate public about jury rights outside courtroom, (2) pursue Fully Informed Jury legislation in receptive states, (3) protect jurors from punishment for verdicts.",
+          "allies": "Fully Informed Jury Association, libertarians, criminal justice reformers, some civil liberties groups",
+          "opposition": "Judicial establishment, prosecutors, legal establishment"
         }
       ]
     },
@@ -900,41 +1004,113 @@
       "title": "Technology & Communications Freedom",
       "icon": "Wifi",
       "color": "#06B6D4",
-      "description": "Protect digital rights, privacy, and free expression in the modern technology landscape.",
+      "description": "Technology infrastructure should serve citizens, not entrench monopolies. Regulatory barriers that protect incumbents must be removed to enable competition and innovation. This is not about regulating tech — it's about removing government-created barriers to competition.",
       "subPolicies": [
         {
-          "title": "Digital Privacy & Data Protection",
+          "title": "Community Broadband Freedom",
+          "viability": "mod-high",
+          "level": "State (primary — repeal bans); Federal (preemption, subsidies)",
+          "problem": [
+            "~20 states have laws restricting or banning municipal broadband",
+            "Pole attachment rules favor incumbents and block new entrants",
+            "Franchise agreements create local monopolies",
+            "Billions in public subsidies given without open access requirements",
+            "Rural areas underserved because incumbents won't build",
+            "Prices artificially high due to lack of competition",
+            "Incumbents sue community projects into submission"
+          ],
+          "positions": [
+            "Repeal municipal broadband bans (19 states have restrictions)",
+            "Pole attachment reform: Standardize rates and timelines for competitive access",
+            "Dig-once policies: Install conduit when roads are opened for any construction",
+            "Streamline permitting for new entrants",
+            "End exclusive franchise arrangements",
+            "Subsidy accountability: Any ISP receiving public funds must provide open access to that infrastructure",
+            "Public infrastructure sharing: Fiber on public rights-of-way available to competitors",
+            "Middle-mile open access: Backbone infrastructure (often publicly subsidized) open to retail competitors",
+            "Federal: Preempt state bans on municipal broadband",
+            "Federal: Condition federal broadband subsidies on open access",
+            "Federal: Dedicated funding for community-owned networks",
+            "Federal: Spectrum allocation for community wireless projects"
+          ],
+          "framing": {
+            "forConservatives": "Anti-crony capitalism — incumbents used government to crush competition. This is NOT regulation; it's DEREGULATION of barriers incumbents created.",
+            "forRuralAmerica": "Monopolists won't serve you; community networks will.",
+            "forEveryone": "Lower prices through actual competition. You hate your ISP because they have no competition."
+          },
+          "successfulModels": "Chattanooga, TN (EPB): City-owned utility provides gigabit fiber — among fastest and cheapest internet in US. Rural Electric Co-op Broadband: Rural electric co-ops in multiple states adding fiber to existing infrastructure. Utopia Fiber (Utah): Public entity builds infrastructure; private ISPs compete for retail customers. Community Wireless: NYC Mesh, Detroit Community Technology — mesh networks built by volunteers.",
+          "allies": "Municipal associations, rural communities, digital equity advocates",
+          "opposition": "ISP lobby (extremely well-funded)"
+        },
+        {
+          "title": "Digital Rights & Platform Accountability",
           "viability": "moderate",
+          "level": "State (privacy laws proliferating) + Federal",
           "problem": [
             "Companies collect and sell personal data without meaningful consent",
             "Government surveillance programs lack oversight",
-            "Data breaches expose millions",
-            "No right to deletion or portability"
+            "No transparency in content moderation",
+            "Users locked into platforms with no data portability",
+            "Algorithmic manipulation without user knowledge"
           ],
           "positions": [
-            "Require explicit opt-in consent for data collection",
-            "Right to access, delete, and port personal data",
-            "Heavy penalties for data breaches and misuse",
-            "Limit government data collection without warrant",
-            "Transparency in algorithmic decision-making"
+            "Data Privacy: Right to know what data is collected",
+            "Data Privacy: Right to delete personal data",
+            "Data Privacy: Right to opt out of data sale",
+            "Data Privacy: Data minimization requirements",
+            "Data Privacy: Special protections for children's data",
+            "Platform Accountability: Transparency in content moderation (what rules, how enforced)",
+            "Platform Accountability: Appeals process for account actions",
+            "Platform Accountability: Prohibition on government-directed censorship",
+            "Platform Accountability: User right to chronological feed options",
+            "Platform Accountability: Data portability and interoperability",
+            "Algorithm Transparency: Disclosure of how recommendation algorithms work",
+            "Algorithm Transparency: Ability to opt out of algorithmic curation",
+            "Algorithm Transparency: Independent auditing of algorithmic bias"
           ],
-          "framing": "Your data is yours. Companies should ask permission—not forgiveness."
+          "framing": {
+            "forEveryone": "Your data is yours. You deserve to know how platforms are manipulating what you see."
+          },
+          "allies": "Privacy advocates, civil liberties groups (on different aspects)",
+          "opposition": "Big Tech"
         },
         {
-          "title": "Net Neutrality & Common Carrier Rules",
+          "title": "AI & Algorithmic Accountability",
           "viability": "moderate",
+          "level": "State (for state agencies) + Federal (for federal agencies, broad standards)",
           "problem": [
-            "ISPs can throttle or block content",
-            "Paid prioritization creates two-tier internet",
-            "Limited competition gives ISPs monopoly power"
+            "AI systems increasingly making consequential decisions (credit, employment, criminal justice)",
+            "'Black box' algorithms with no transparency or appeal process",
+            "Government agencies adopting AI without due process protections",
+            "Predictive policing and pre-crime risk assessments without accountability",
+            "No requirement to disclose when AI is making decisions about citizens",
+            "Algorithmic bias baked into systems with no correction mechanism",
+            "Social scoring potential — China's system as cautionary tale"
           ],
           "positions": [
-            "Treat ISPs as common carriers—no blocking, throttling, or paid prioritization",
-            "Encourage infrastructure competition",
-            "Local governments shouldn't grant monopolies",
-            "Transparent network management practices"
+            "Right to Human Review: Any consequential government AI decision must have human appeal option",
+            "Algorithm Disclosure: Government agencies must disclose when AI is used in decisions affecting citizens",
+            "Bias Auditing: Require independent audits of government AI systems",
+            "Explainability Requirement: Government AI must be able to explain basis for decisions",
+            "No Predictive Punishment: Cannot penalize citizens based on predicted future behavior",
+            "Ban Social Scoring: Prohibit government use of social credit-style scoring systems",
+            "No Behavioral Scoring: Government services cannot be conditioned on behavioral scores",
+            "Private Score Restrictions: Limit use of third-party social scores by government contractors",
+            "Data Aggregation Limits: Restrict government aggregation of personal data for scoring purposes",
+            "Private Sector Disclosure: Companies must disclose when AI makes consequential decisions",
+            "Explanation Rights: Right to explanation when denied credit, employment, housing based on AI",
+            "Human Alternative: Option for human review when AI makes adverse decisions",
+            "Bias Testing: Require testing for discriminatory outcomes in high-stakes AI"
           ],
-          "framing": "The internet should be open and equal. No corporate gatekeepers."
+          "framing": {
+            "forConservatives": "Government should not use opaque algorithms to control citizens. Due process applies to AI decisions.",
+            "forProgressives": "AI bias perpetuates discrimination. Protect marginalized communities from algorithmic injustice.",
+            "forLibertarians": "Prevent surveillance state from using AI for social control. China's system is the warning.",
+            "forEveryone": "You deserve to know when a computer is making decisions about your life."
+          },
+          "emergingIssueNote": "AI governance is rapidly evolving. Focus on clear principles (transparency, due process, human oversight) rather than specific technical requirements that may become outdated. This is an area where early advocacy can shape the regulatory framework before it solidifies.",
+          "allies": "Civil liberties groups, privacy advocates, algorithmic justice organizations, some tech reformers",
+          "opposition": "AI vendors, some government agencies, surveillance-state advocates"
         }
       ]
     },
