@@ -199,47 +199,104 @@
       "title": "Food & Health Sovereignty",
       "icon": "Heart",
       "color": "#10B981",
-      "description": "Restore individuals' rights to make their own food and health choices without excessive government interference.",
+      "description": "Americans should have the freedom to make their own food and health choices, access products from local producers, and be protected from harmful substances that other developed nations have banned. Food freedom and medical freedom are fundamental rights.",
       "subPolicies": [
         {
-          "title": "Raw Dairy Freedom",
-          "viability": "moderate",
+          "title": "Unpasteurized (Raw) Dairy Legalization",
+          "viability": "mod-high",
+          "level": "State (primary), Federal (long-term)",
           "problem": [
-            "Many states ban sale of raw milk despite consumer demand",
-            "Federal regulations restrict interstate commerce in raw dairy",
-            "Families forced to buy 'shares' in cows to access raw milk legally",
-            "Paternalistic regulations ignore informed consumer choice"
+            "Federal law prohibits interstate sale of raw milk",
+            "Many states ban or heavily restrict intrastate sales",
+            "Small dairy farmers cannot sell directly to willing consumers",
+            "Raw dairy consumed for millennia; many countries allow regulated sale",
+            "Enforcement includes armed raids on small farms"
           ],
           "positions": [
-            "Legalize raw milk sales with clear labeling requirements",
-            "Allow farmers to sell directly to informed consumers",
-            "Remove federal barriers to interstate raw dairy commerce",
-            "Require warnings but respect consumer autonomy",
-            "Protect small dairies from one-size-fits-all regulations"
+            "Legalize on-farm sales (consumer can inspect conditions)",
+            "Legalize retail sales with appropriate labeling and consumer acknowledgment",
+            "Allow herd-share arrangements (consumer owns portion of animal)",
+            "Reasonable food safety testing without prohibitive costs",
+            "Repeal federal ban on interstate raw milk sales",
+            "Allow states to determine their own raw dairy policies",
+            "End FDA enforcement actions against small producers selling to informed consumers"
           ],
-          "framing": "Adults should be free to buy raw milk if they understand the risks. This is about freedom and informed choice."
+          "framing": {
+            "forEveryone": "Adults should be free to buy raw milk if they understand the risks. This is about freedom and informed choice."
+          },
+          "currentStatus": "Legal for retail sale: ~13 states | On-farm sales only: ~17 states | Herd-shares only: ~10 states | Illegal: ~10 states",
+          "allies": "Farm-to-Consumer Legal Defense Fund, Weston A. Price Foundation, libertarian groups",
+          "opposition": "Industrial dairy, some public health officials"
         },
         {
-          "title": "Cottage Food Freedom",
+          "title": "Local Food & Cottage Food Reform",
           "viability": "high",
+          "level": "State (primary), some federal action",
           "problem": [
-            "Home bakers and cooks face criminal charges for selling food",
-            "Unnecessary commercial kitchen requirements block small businesses",
-            "Regulations designed for factories applied to home operations",
-            "Prevents entrepreneurship and local food systems"
+            "Cottage food laws (home-based food businesses) vary widely and are often restrictive",
+            "Small farmers face same regulatory burden as large operations",
+            "Direct-to-consumer sales restricted by rules designed for wholesale distribution",
+            "On-farm processing facilities subject to industrial-scale requirements",
+            "Small meat processors nearly eliminated by USDA inspection requirements"
           ],
           "positions": [
-            "Legalize home food businesses with gross sales cap (e.g., $50k/year)",
-            "Allow direct sales at farmers markets and online",
-            "Require labeling, not commercial kitchens",
-            "Protect traditional home food businesses",
-            "Focus on disclosure, not prohibition"
+            "Expand list of allowed cottage food products",
+            "Increase or eliminate sales caps",
+            "Allow online and delivery sales, not just farmers markets",
+            "Clear labeling requirements instead of outright bans",
+            "Exempt direct farm-to-consumer sales from regulations designed for wholesale",
+            "Allow on-farm poultry processing up to reasonable limits (1,000-20,000 birds/year)",
+            "Support custom-exempt meat processing for farm-direct sales",
+            "Producer-only farmers markets with streamlined requirements",
+            "Support for small-scale USDA-inspected processing facilities",
+            "Mobile slaughter units for rural areas",
+            "Shared-use commercial kitchens for cottage food producers"
           ],
-          "framing": "A grandmother shouldn't need a $50,000 commercial kitchen to sell cookies. Let people cook."
+          "framing": {
+            "forEveryone": "A grandmother shouldn't need a $50,000 commercial kitchen to sell cookies. Let people cook."
+          },
+          "modelLegislation": "Wyoming, Maine, and Utah have passed Food Freedom Acts that allow direct producer-to-consumer sales with informed consent, exempt from licensing and inspection requirements.",
+          "allies": "Farm bureaus, local food movements, homesteading communities",
+          "opposition": "Industrial food processors, some health departments"
+        },
+        {
+          "title": "Removing Toxic Chemicals from Food Supply",
+          "viability": "moderate",
+          "level": "Federal (FDA regulatory action or congressional legislation)",
+          "problem": [
+            "Red Dye No. 3 — banned in cosmetics since 1990 but still in food; linked to cancer",
+            "Red Dye No. 40 — linked to hyperactivity; requires warning labels in EU",
+            "Yellow No. 5 & 6 — require warnings in EU; linked to behavioral issues",
+            "Brominated vegetable oil (BVO) — banned in EU and Japan; neurological concerns",
+            "Potassium bromate — banned in EU, UK, Canada, Brazil; classified as possible carcinogen",
+            "Azodicarbonamide — banned in EU and Australia; used in US bread products",
+            "BHA/BHT preservatives — restricted in many countries; potential carcinogens",
+            "rBGH/rBST (bovine growth hormone) — banned in EU, Canada, Australia; linked to health concerns"
+          ],
+          "positions": [
+            "Immediate ban on Red Dye No. 3 (already banned in cosmetics — extend to food)",
+            "Immediate ban on Brominated vegetable oil",
+            "Immediate ban on Potassium bromate",
+            "EU-style warning labels for artificial dyes linked to behavioral issues",
+            "Clear disclosure of all artificial additives",
+            "Country of origin labeling expansion",
+            "Review all GRAS (Generally Recognized as Safe) substances grandfathered from old regulations",
+            "End industry self-certification for new food additives",
+            "Adopt precautionary principle — burden of proof on manufacturer",
+            "Harmonize with EU/international standards where appropriate"
+          ],
+          "framing": {
+            "forParents": "Protect children from additives linked to behavioral and health problems.",
+            "forConsumers": "Americans deserve the same protections as Europeans.",
+            "forConservatives": "Informed consent — let people know what's in their food."
+          },
+          "allies": "Consumer advocacy groups, parents' organizations, reformulating food companies",
+          "opposition": "Food industry associations, chemical manufacturers"
         },
         {
           "title": "Medical Freedom & Informed Consent",
-          "viability": "varies",
+          "viability": "mod-high",
+          "level": "Primarily state, some federal",
           "problem": [
             "Medical mandates override individual autonomy",
             "Vaccine requirements for employment and education expanding",
@@ -248,13 +305,24 @@
             "One-size-fits-all mandates ignore individual health conditions"
           ],
           "positions": [
-            "Protect medical choice and informed consent",
-            "Ban vaccine passports and employment mandates",
-            "Preserve religious and conscience exemptions",
-            "Ensure access to alternative treatments (right to try)",
-            "No emergency orders that bypass informed consent"
+            "Individuals have the right to make their own medical decisions",
+            "Informed consent requires full disclosure of risks, benefits, and alternatives",
+            "Government mandates should be limited and subject to robust exemption rights",
+            "Medical decisions should remain between patient and provider",
+            "Access to treatments should not be contingent on accepting other treatments",
+            "Require meaningful informed consent for all medical interventions",
+            "Protect religious, philosophical, and medical exemptions to mandates",
+            "Prohibit termination based solely on medical treatment decisions",
+            "No medical requirements for public education beyond genuine public health necessities",
+            "Protect healthcare providers who conscientiously object to procedures",
+            "Right to try experimental treatments with informed consent",
+            "Strengthen medical privacy protections; limit employer/government access to records"
           ],
-          "framing": "Your body, your choice. Medical freedom is fundamental—not negotiable."
+          "framing": {
+            "forEveryone": "Your body, your choice. Medical freedom is fundamental—not negotiable."
+          },
+          "allies": "Medical freedom organizations, religious groups, civil liberties advocates",
+          "opposition": "Public health establishment, some medical associations"
         }
       ]
     },
