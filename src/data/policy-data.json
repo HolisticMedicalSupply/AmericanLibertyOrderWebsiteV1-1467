@@ -1120,43 +1120,168 @@
       "title": "Monetary & Financial Reform",
       "icon": "DollarSign",
       "color": "#F97316",
-      "description": "Reform the financial system to end manipulation, restore sound money, and protect savers.",
+      "description": "Our debt-based fiat monetary system creates structural problems. While fundamental reform is a generational project, intermediate steps can increase transparency and accountability. Distinguish between near-term achievable reforms and long-term educational/movement-building goals.",
+      "strategicReality": "Fundamental monetary reform requires broad public understanding and significant political change. Going straight at the Federal Reserve is tilting at windmills until there's a massive movement. Focus on transparency and education first while pursuing achievable state-level sound money policies.",
+      "systemProblems": [
+        "Money created through debt — expansion requires more borrowing",
+        "Federal Reserve operates with limited transparency",
+        "Currency debasement through inflation transfers wealth",
+        "Boom-bust cycles amplified by monetary policy",
+        "Dollar as global reserve currency distorts domestic economy",
+        "National debt mathematically unsustainable under current system"
+      ],
       "subPolicies": [
         {
-          "title": "Federal Reserve Audit & Reform",
-          "viability": "low-mod",
+          "title": "Federal Reserve Transparency & Sound Money Steps",
+          "viability": "moderate",
+          "level": "Federal (transparency) + State (sound money)",
           "problem": [
-            "Federal Reserve operates with minimal oversight",
-            "Inflation taxes savers and wage-earners",
-            "Monetary policy favors asset-holders",
-            "Lack of transparency and accountability"
+            "Federal Reserve operates with limited transparency",
+            "Minimal accountability for monetary policy decisions",
+            "State pension funds and reserves cannot diversify into sound assets",
+            "Gold and silver transactions taxed despite being money alternatives"
           ],
           "positions": [
-            "Full audit of Federal Reserve operations",
-            "Congressional oversight of monetary policy",
-            "End or limit quantitative easing",
-            "Stabilize currency value",
-            "Explore alternatives to fiat monetary system"
+            "Federal Reserve Transparency: Audit the Fed — full, comprehensive audit of Federal Reserve operations",
+            "Real-Time Disclosure: Immediate disclosure of Fed interventions and transactions",
+            "Inspector General Authority: Strengthen IG oversight of Federal Reserve",
+            "Congressional Testimony: More frequent, more substantive reporting to Congress",
+            "State Gold Depositories: State-level gold reserves (Texas model)",
+            "Legal Tender Laws: Remove sales tax and capital gains tax on gold/silver",
+            "Sound Money Defense: Protect right to transact in alternative currencies",
+            "State Reserve Diversification: Allow states to hold reserves in gold/silver"
           ],
-          "framing": "Why is the Fed the only agency Congress won't audit? Transparency is accountability."
+          "framing": {
+            "forEveryone": "Why is the Fed the only agency Congress won't audit? Transparency is accountability."
+          },
+          "strategicApproach": "Phase 1 — Education: Build public understanding of monetary system. Phase 2 — Transparency: Audit the Fed, require disclosure. Phase 3 — Alternatives: Enable competing currencies, state sound money. Phase 4 — Reform: Build toward fundamental restructuring.",
+          "allies": "Sound money advocates, state legislators, fiscal conservatives",
+          "opposition": "Federal Reserve, banking establishment"
         },
         {
-          "title": "Sound Money & Inflation Control",
-          "viability": "low",
+          "title": "Central Bank Digital Currency (CBDC) Opposition",
+          "viability": "high",
+          "level": "State (immediate) + Federal (longer-term)",
           "problem": [
-            "Persistent inflation erodes purchasing power",
-            "Savings lose value over time",
-            "Debt-based economy punishes savers",
-            "No constraint on money creation"
+            "Federal Reserve actively exploring digital dollar",
+            "CBDCs enable unprecedented financial surveillance — government sees every transaction",
+            "Programmable money: government could restrict what you can buy (no ammunition, no donations to disfavored groups)",
+            "Expiring money: government could program currency to expire, forcing spending",
+            "Instant account freezing: no due process needed to cut off your finances",
+            "Social credit potential: link financial access to behavior scores",
+            "China already implementing digital yuan with these features"
           ],
           "positions": [
-            "Return to sound money principles",
-            "Limit money supply growth",
-            "Explore gold standard or commodity backing",
-            "Protect value of savings and wages",
-            "End bailouts and moral hazard"
+            "State-Level CBDC Ban: Prohibit state agencies from accepting or requiring CBDC for payments",
+            "Anti-Surveillance: Prohibit state use of CBDC transaction data for surveillance",
+            "Cash Preservation: Mandate businesses accept cash; prohibit 'cashless' mandates",
+            "Financial Privacy: Strengthen state financial privacy protections",
+            "Alternative Currency Protection: Protect right to transact in gold, silver, cryptocurrency",
+            "Federal: Require Congressional Approval — No CBDC implementation without explicit congressional authorization",
+            "Federal: Privacy Requirements — Any digital dollar must have cash-equivalent privacy protections",
+            "Federal: Non-Programmable — Prohibit programmable features that restrict spending",
+            "Federal: Voluntary Only — CBDC cannot be mandatory; cash must remain legal tender",
+            "Federal: No Surveillance — Transaction data cannot be used for surveillance, profiling, or social scoring"
           ],
-          "framing": "Your paycheck should hold its value. Inflation is a hidden tax on working people."
+          "framing": {
+            "forConservatives": "Government surveillance of every purchase. Social credit score. Financial cancel culture.",
+            "forProgressives": "What happens when Trump or DeSantis controls programmable money? Protect marginalized communities from financial exclusion.",
+            "forLibertarians": "End of financial privacy. Government control of every transaction.",
+            "forEveryone": "Your money, your business. Keep cash. Preserve financial freedom."
+          },
+          "momentum": "Florida, North Carolina, and other states have already passed CBDC restrictions. This is a high-viability issue with active legislative momentum. Model legislation is available from multiple liberty-focused organizations.",
+          "allies": "Privacy advocates, libertarians, cryptocurrency community, cash advocates",
+          "opposition": "Federal Reserve, financial surveillance interests, some fintech"
+        },
+        {
+          "title": "Sound Currency System",
+          "viability": "low-mod",
+          "level": "Federal",
+          "problem": [
+            "USD debt is past the point of no return — stopping it now would crash the economy",
+            "National debt denominated in USD must go untethered; it's too late to fix",
+            "Currency debasement through inflation is inevitable under current system",
+            "No amount of fiscal discipline can solve a structural monetary problem",
+            "Citizens need an alternative that preserves purchasing power"
+          ],
+          "positions": [
+            "Asset-Backed Currency: Treasury issues new currency backed by basket of real assets",
+            "Backing Basket: Gold, commodities, digital commodities (crypto), land, and other tangible assets",
+            "Debt Ceiling: Sound currency debt cannot exceed 10% of domestic production (GNP)",
+            "No Unbacked Issuance: Cannot create sound currency without corresponding assets",
+            "Transparency: Full disclosure of backing assets and their valuation",
+            "USD Continues: Existing USD remains in circulation, will inflate away naturally",
+            "Parallel Systems: Sound currency runs alongside USD during transition",
+            "Market Rates: Exchange rate between currencies floats freely",
+            "Government Operations: Taxes, tariffs, and salaries paid in Treasury-issued sound currency"
+          ],
+          "framing": {
+            "coreInsight": "The patient (USD) is terminal. Rather than pretend we can save it, build a lifeboat (sound currency) while managing the decline.",
+            "forSavers": "Protect your purchasing power from inflation with real asset backing.",
+            "forFiscalConservatives": "Enforced discipline — cannot issue sound currency debt beyond 10% of production.",
+            "forEveryone": "Honest money that measures what the dollar is actually worth."
+          },
+          "allies": "Sound money advocates, gold standard supporters, fiscal conservatives, Austrian economists",
+          "opposition": "Federal Reserve, banking establishment, deficit spenders, MMT advocates"
+        },
+        {
+          "title": "Federal Reserve Privatization",
+          "viability": "low",
+          "level": "Federal",
+          "problem": [
+            "Fed operates in quasi-governmental gray zone with special privileges",
+            "Not subject to normal regulatory oversight despite controlling money supply",
+            "Ownership structure is opaque and unique",
+            "Profits from money creation accrue to private member banks",
+            "Accountability to neither markets nor democratic institutions"
+          ],
+          "positions": [
+            "Private Corporation: Federal Reserve becomes formally private, no longer quasi-governmental",
+            "Current Ownership: Member banks retain ownership (or true owners step forward)",
+            "Standard Regulation: Subject to same regulatory environment as all other financial institutions",
+            "No Special Privileges: Competes with other currency issuers on equal footing",
+            "Ownership Disclosure: Publicly disclosed within 100 days of enactment",
+            "Ongoing Disclosure: Ownership disclosed annually for 100 years (special case for this entity)",
+            "Financial Reporting: Same requirements as public companies",
+            "Regulatory Audits: Subject to standard banking examinations"
+          ],
+          "framing": {
+            "designRationale": "If the Fed is going to continue printing USD and managing that currency's decline, it should do so as a private entity competing in the market, not as a privileged quasi-governmental institution. Let it sink or swim with its monetary decisions."
+          },
+          "allies": "End the Fed movement, sound money advocates, libertarians, some populists",
+          "opposition": "Federal Reserve, banking establishment, mainstream economists"
+        },
+        {
+          "title": "Currency Competition & Banking Reform",
+          "viability": "low-mod",
+          "level": "Federal",
+          "problem": [
+            "Legal tender laws force use of depreciating currency",
+            "Fractional reserve banking creates money through lending reserves banks don't have",
+            "Depository and investment banking functions dangerously mixed",
+            "Cryptocurrency treated as securities rather than currency",
+            "No meaningful competition for government-issued currency"
+          ],
+          "positions": [
+            "Repeal Legal Tender Laws: Citizens choose which currencies to accept",
+            "Free Market Currency: Any organization can issue currency subject to fraud laws",
+            "No Forced Adoption: Government cannot force citizens to use specific currency",
+            "Cryptocurrency Status: Crypto treated as currency, not securities",
+            "Contract Enforcement: Courts enforce contracts at stated rates",
+            "End Fractional Reserve: No more creating money through lending reserves you don't have",
+            "Clear Separation: Depository banks (custody, fees, no risk) vs. Investment banks (risk, returns)",
+            "Bank-Issued Currency: Banks can issue currency following standard regulations",
+            "No Muddying: Treating depository banks as investment banks creates systemic risk — stop it"
+          ],
+          "framing": {
+            "historical": "Free banking worked in America before 1913. Multiple currencies competed. Bad money failed; good money succeeded.",
+            "forConservatives": "Market competition beats government monopoly — including for money.",
+            "forProgressives": "Break the bank cartel. End too-big-to-fail by ending the practices that create it.",
+            "forLibertarians": "Monetary freedom. Use whatever money you want."
+          },
+          "transitionNote": "This requires significant legal and institutional changes. Gresham's Law dynamics apply — people may hoard sound currency and spend USD, accelerating USD decline. This is a feature, not a bug, but the transition requires careful management.",
+          "allies": "Cryptocurrency community, Austrian economists, sound money advocates, libertarians",
+          "opposition": "Banking establishment, Federal Reserve, mainstream economists, regulators"
         }
       ]
     },
@@ -1166,43 +1291,81 @@
       "title": "Political System Reform",
       "icon": "Users",
       "color": "#A855F7",
-      "description": "Break the two-party duopoly and restore competitive, representative democracy.",
+      "description": "The two-party duopoly limits voter choice and accountability. While parties cannot be banned (freedom of association), structural reforms can weaken party control and enable alternatives. The goal is more competition and accountability, not picking winners.",
       "subPolicies": [
         {
-          "title": "Ballot Access & Third-Party Representation",
+          "title": "Ballot Access Reform",
           "viability": "moderate",
+          "level": "State",
           "problem": [
-            "Two-party system entrenched by ballot access laws",
-            "Difficult for independents and third parties to compete",
-            "Arbitrary signature requirements and deadlines",
-            "Voters lack real choice"
+            "Major parties write ballot access laws to exclude competitors",
+            "Third parties need hundreds of thousands of signatures in some states",
+            "Petition deadlines months before election",
+            "Signature verification designed to disqualify"
           ],
           "positions": [
-            "Lower ballot access thresholds",
-            "Standardize signature requirements",
-            "Allow fusion voting (multiple parties nominating same candidate)",
-            "Public funding or vouchers for all qualified candidates",
-            "End two-party debate monopoly"
+            "Equal requirements for all parties and candidates",
+            "Reasonable signature requirements (low percentage of voters)",
+            "Reasonable deadlines (not 6+ months before election)",
+            "Clear, fair signature verification process",
+            "Automatic ballot access if received minimum vote percentage in prior election"
           ],
-          "framing": "Two parties don't represent everyone. Open the system to competition."
+          "framing": {
+            "forEveryone": "Two parties don't represent everyone. Open the system to competition."
+          },
+          "allies": "Third parties, independent candidates, electoral reform groups",
+          "opposition": "Major parties benefit from status quo"
         },
         {
-          "title": "Campaign Finance Reform",
-          "viability": "low-mod",
+          "title": "Electoral System Alternatives",
+          "viability": "moderate",
+          "level": "State (primarily) + Local",
           "problem": [
-            "Unlimited money in politics",
-            "Super PACs and dark money dominate",
-            "Small donors irrelevant",
-            "Candidates beholden to wealthy donors"
+            "Winner-take-all voting creates spoiler effect",
+            "Voters afraid to 'waste' vote on third-party candidates",
+            "Primaries reward appealing to partisan base, not general electorate",
+            "Two-party dominance entrenched by electoral mechanics"
           ],
           "positions": [
-            "Public financing option for candidates",
-            "Matching funds for small donations",
-            "Full transparency—no dark money",
-            "Limits on corporate and union political spending",
-            "Strengthen anti-coordination rules"
+            "Ranked Choice Voting (RCV): Voters rank candidates in order of preference",
+            "RCV Benefits: Eliminates 'spoiler' concern; encourages more civil campaigns",
+            "RCV Status: Used in Alaska, Maine, and many localities",
+            "Open/Nonpartisan Primaries: All candidates on single primary ballot regardless of party",
+            "Top-N Advance: Top 2, 4, or 5 advance to general election",
+            "Open Primary Benefits: Reduces incentive to appeal only to partisan base",
+            "Open Primary Examples: California, Washington (top-two); Alaska (top-four + RCV)",
+            "Approval Voting: Vote for any/all candidates you approve of (no ranking required)",
+            "Approval Voting Benefits: Simpler than RCV — no complex counting or runoffs; eliminates spoiler effect",
+            "Approval Voting Status: Successfully used in Fargo, ND and St. Louis, MO",
+            "Approval Voting Advantage: Easier to explain, count, and audit than RCV"
           ],
-          "framing": "Big money shouldn't buy elections. Amplify small donors, expose dark money."
+          "framing": {
+            "forEveryone": "Better voting systems give voters real choices without fear of wasting their vote."
+          },
+          "allies": "Electoral reform organizations, FairVote, third parties",
+          "opposition": "Major parties, some election administrators concerned about complexity"
+        },
+        {
+          "title": "Debate Access Reform",
+          "viability": "low",
+          "level": "Federal (presidential) + State",
+          "problem": [
+            "Presidential debate commission controlled by two major parties",
+            "15% polling threshold effectively excludes all third-party candidates",
+            "Debates treated as private events rather than public forums",
+            "Voters denied opportunity to hear alternative perspectives"
+          ],
+          "positions": [
+            "Lower threshold for debate inclusion (not just major party nominees)",
+            "Objective, transparent criteria for participation",
+            "Independent commission (not controlled by two parties)",
+            "Multiple debate formats to provide access to more candidates"
+          ],
+          "framing": {
+            "forEveryone": "Voters deserve to hear from all serious candidates, not just the two-party picks."
+          },
+          "allies": "Third parties, independent candidates, some media organizations",
+          "opposition": "Commission on Presidential Debates, major parties"
         }
       ]
     },
