@@ -1375,43 +1375,212 @@
       "title": "Foreign Policy & National Interest",
       "icon": "Globe",
       "color": "#EC4899",
-      "description": "Put American interests first, end forever wars, and restore constitutional war powers.",
+      "description": "America's foreign policy should prioritize American interests, security, and sovereignty. Resources spent abroad should be accountable and justified. We are not isolationists — we are nationalists who believe American policy should serve American citizens.",
       "subPolicies": [
         {
-          "title": "End Forever Wars & Restrain Military Interventionism",
-          "viability": "moderate",
+          "title": "Foreign Aid Accountability",
+          "viability": "low-mod",
+          "level": "Federal",
           "problem": [
-            "Endless military commitments with no clear goals",
-            "Trillions spent on nation-building abroad",
-            "Thousands of American lives lost",
-            "Congress abdicates war-making authority"
+            "US provides ~$50+ billion annually in foreign assistance",
+            "Limited accountability for how money is spent",
+            "Aid often goes to corrupt governments",
+            "Some aid undermines stated US interests",
+            "Domestic needs unmet while billions flow overseas"
           ],
           "positions": [
-            "No military action without congressional declaration of war",
-            "Withdraw from indefinite deployments",
-            "Focus military on defense, not nation-building",
-            "Sunset all authorizations for use of military force (AUMFs)",
-            "Prioritize diplomacy and restraint"
+            "Comprehensive Audit: Full audit of all foreign aid programs and recipients",
+            "Country-by-Country Review: Annual justification for aid to each country",
+            "Outcome Metrics: Measurable goals and consequences for failure",
+            "Corruption Conditions: No aid to governments failing anti-corruption standards",
+            "Sunset Provisions: Aid programs expire unless reauthorized with justification",
+            "Congressional Approval: Major aid packages require congressional vote"
           ],
-          "framing": "Our military defends America—not the world. End forever wars and bring troops home."
+          "longerTermGoals": [
+            "Substantial reduction in overall foreign aid (50%+ reduction)",
+            "Redirect savings to domestic priorities",
+            "Maintain only aid with clear national security justification",
+            "End aid to nations hostile to US interests",
+            "Phase-out timeline for dependent nations"
+          ],
+          "framing": {
+            "forConservatives": "America first. Stop sending billions abroad while American communities struggle.",
+            "forProgressives": "Demand accountability for how our tax dollars are spent overseas.",
+            "forEveryone": "Foreign aid should serve American interests, not prop up corrupt governments."
+          },
+          "allies": "Fiscal conservatives, America-first groups",
+          "opposition": "Foreign policy establishment, recipient governments, contractors"
         },
         {
-          "title": "Trade & Economic Sovereignty",
-          "viability": "moderate",
+          "title": "Immigration Reform: Open Borders with Accountability",
+          "viability": "mod-high",
+          "level": "Federal (requires comprehensive reform)",
+          "compromiseNote": "This position synthesizes legitimate concerns from both conservative and progressive perspectives. Conservative concerns: Rule of law, national sovereignty, fiscal burden, assimilation. Progressive concerns: Human dignity, economic opportunity, family unity, avoiding draconian enforcement. Our position: Open doors, high expectations, zero tolerance for failure.",
           "problem": [
-            "Trade agreements favor multinational corporations",
-            "Job losses to offshoring",
-            "Dependence on adversarial nations for critical goods",
-            "Trade deficits drain wealth"
+            "Broken immigration system serves no one well",
+            "Current illegal presence must be addressed — no amnesty, no permanent underclass",
+            "Legal immigration process is slow, unpredictable, and arbitrary",
+            "Border security undermined by inconsistent enforcement"
           ],
           "positions": [
-            "Fair trade—not unconditional free trade",
-            "Prioritize American manufacturing and workers",
-            "End dependence on China for critical supplies",
-            "Use tariffs to protect strategic industries",
-            "No trade agreements that override U.S. law"
+            "Sovereignty + Openness: Nations have the right to control borders AND to welcome those who will contribute",
+            "Rule of Law: Current illegal presence must be addressed — no amnesty, no permanent underclass",
+            "Merit through Behavior: Judge immigrants by what they DO, not where they're from",
+            "Self-Sufficiency: America welcomes contributors, not dependents",
+            "Second Chances, Not Infinite Chances: Opportunity comes with accountability"
           ],
-          "framing": "Trade should benefit Americans—not just corporations. Economic security is national security."
+          "phaseOneEnforcement": [
+            "Remove All Current Illegal Residents: Systematic, humane removal of those present illegally",
+            "Secure Physical Border: Physical barriers, technology, and personnel where effective",
+            "End Catch-and-Release: Detain or return — no release into interior",
+            "Interior Enforcement: E-Verify mandatory; employer penalties; visa overstay tracking",
+            "No Sanctuary Policies: State/local cooperation with federal immigration enforcement"
+          ],
+          "phaseTwoOpenImmigration": [
+            "Minimal Barriers to Entry: Anyone may enter legally who is not convicted of violent/serious crimes, known terrorist, carrying communicable diseases, or previously deported for cause",
+            "Streamlined Processing: Days or weeks, not years",
+            "No Country Quotas: Judge individuals, not nationalities",
+            "No Lottery: Predictable, merit-based (behavior merit, not credential merit)"
+          ],
+          "probationaryPeriod": [
+            "2-year probationary period with clear expectations",
+            "No Public Benefits: Zero access to welfare, food stamps, housing assistance, Medicaid",
+            "Full Tax Obligation: Pay all taxes from day one — same as citizens",
+            "Self-Sufficiency Required: Must maintain housing and employment",
+            "Criminal Accountability: Any conviction for non-trivial offense = immediate deportation",
+            "No Chain Migration: Cannot sponsor relatives during probationary period"
+          ],
+          "afterProbation": [
+            "Full Resident Status: Eligible for permanent residency",
+            "Benefit Eligibility: Access to social safety net (having contributed for 2 years)",
+            "Path to Citizenship: Standard naturalization process available",
+            "Family Sponsorship: May sponsor immediate family (who also enter probationary status)"
+          ],
+          "framing": {
+            "forConservatives": "Rule of law restored. No more illegal immigration. No free ride. Immigrants must prove themselves.",
+            "forProgressives": "Genuinely open borders for anyone willing to work. No discrimination by country. Humane, legal pathway.",
+            "forLibertarians": "Free movement of labor. Minimal government barriers. Self-selection of productive individuals.",
+            "forEveryone": "We get immigrants who WANT to contribute and prove it through action, not paperwork."
+          },
+          "challenges": [
+            "Mass removal: Logistically complex, emotionally difficult, legally contested",
+            "Defining 'contribution': Who decides? What standards? Bureaucratic discretion concerns",
+            "Enforcement gaps: Probationary violations require robust tracking and enforcement",
+            "Political will: Neither party fully embraces this — too open for right, too accountable for left"
+          ],
+          "allies": "Rule-of-law conservatives, libertarians, legal immigrants, working-class Americans",
+          "opposition": "Open-borders absolutists, amnesty advocates, some business interests (want cheap exploitable labor)"
+        },
+        {
+          "title": "Dual Citizenship in Government",
+          "viability": "low-mod",
+          "level": "Federal (legislation)",
+          "framingNote": "This is NOT about ethnicity, religion, or national origin. This is about formal legal obligations to foreign governments that create potential conflicts of interest. A naturalized citizen who has renounced prior citizenship has no such conflict.",
+          "problem": [
+            "Dual citizens may owe military service, taxes, or other obligations to foreign governments",
+            "Security clearance standards already consider foreign ties",
+            "Elected officials and senior appointees make decisions affecting foreign nations",
+            "Appearance of divided loyalty undermines public trust"
+          ],
+          "positions": [
+            "Elected Officials: Federal elected officials should not hold citizenship of any foreign nation",
+            "Senior Appointees: Cabinet members and senior officials should renounce foreign citizenship",
+            "Security Positions: Apply existing security clearance standards consistently",
+            "Disclosure: At minimum, require disclosure of any foreign citizenships",
+            "Judicial Nominees: Federal judges should not hold foreign citizenship"
+          ],
+          "implementationChallenges": [
+            "Constitutional questions: Can citizenship requirements be added to elected office?",
+            "Political sensitivity: Will be mischaracterized regardless of framing",
+            "Enforcement: Some countries don't recognize renunciation",
+            "Scope: How far down the government hierarchy?"
+          ],
+          "framing": {
+            "forConservatives": "American officials should have undivided loyalty to America.",
+            "forProgressives": "Transparency and accountability in government — know who your leaders serve.",
+            "forEveryone": "Those who make decisions for America should be accountable only to America."
+          },
+          "allies": "National security hawks, sovereignty advocates",
+          "opposition": "Civil liberties groups (framing concerns), affected communities"
+        },
+        {
+          "title": "War & Military Intervention: Defense Only",
+          "viability": "mod-high",
+          "level": "Federal (Congress must reclaim war powers)",
+          "corePrinciple": "No War Unless American Lives Are At Risk. War means killing people — including inevitable innocent bystanders. This requires justification beyond 'interests.' No nation-state has attacked American soil since Pearl Harbor. Our recent wars have been choices, not necessities. Economic reasons are not sufficient justification to kill people.",
+          "problem": [
+            "Forever wars with no clear exit strategy or measurable victory conditions",
+            "Congress has abdicated war-making authority to the executive branch",
+            "Military-industrial complex profits from endless conflict",
+            "American blood and treasure spent on other nations' conflicts",
+            "Last attack on US soil by nation-state: Pearl Harbor (1941)"
+          ],
+          "noWarPositions": [
+            "No war in the Middle East — Not our conflict; not worth American lives",
+            "No war with China — Competition yes, war no",
+            "No war with Russia — Not our border, not our war",
+            "No war with Iran — Containment and deterrence, not invasion",
+            "No war with North Korea — Deterrence works",
+            "No war with Venezuela — Not a threat to American lives",
+            "No 'humanitarian' interventions — Our military exists to protect Americans, not remake the world",
+            "No regime change operations — History shows these fail catastrophically"
+          ],
+          "whenWarIsJustified": [
+            "Attack on American soil: Direct attack on US territory triggers full defensive response",
+            "Attack on Americans: Large-scale attack killing American citizens (e.g., 9/11-scale terrorism)",
+            "Imminent verified threat: Confirmed imminent attack on American soil — not speculative 'WMD' claims",
+            "Defense of territories: Attack on US territories, possessions, or military installations"
+          ],
+          "notJustifiedFor": [
+            "Economic interests: Oil, trade routes, resources — not worth killing for",
+            "Spreading democracy: Not our job; doesn't work anyway",
+            "Humanitarian concerns: Tragic, but not a military mission",
+            "Protecting 'interests' abroad: Vague 'interests' have justified every failed war",
+            "Honoring alliance commitments: Alliances should be defensive, not offensive",
+            "Maintaining 'credibility': Credibility doesn't require endless war",
+            "Preemption based on speculation: 'They might attack someday' is not justification"
+          ],
+          "defenseInvestment": [
+            "Mainland Defense: Anti-missile systems, air defense, coastal defense — make attacking US soil impossible",
+            "Satellite Locations: Defend territories (Guam, Puerto Rico, etc.) with serious defensive capability",
+            "Cyber Defense: Protect critical infrastructure from cyber attack",
+            "Border Security: Actual security, not just enforcement theater",
+            "Nuclear Deterrent: Maintain credible second-strike capability",
+            "Domestic Manufacturing: Defense industrial base should not depend on foreign supply chains"
+          ],
+          "protectingAmericansAbroad": [
+            "Consular Services: Robust embassy/consular support for Americans in trouble",
+            "Evacuation Capability: Ability to extract Americans from dangerous situations",
+            "Legal Assistance: Help Americans navigate foreign legal systems",
+            "Diplomatic Pressure: Use diplomatic channels to protect American citizens",
+            "Hostage Recovery: Negotiation, intelligence, targeted operations — not invasion",
+            "NOT War: An American getting in trouble abroad does not justify invading countries"
+          ],
+          "allianceReform": [
+            "Defensive Only: US alliances should be defensive — we defend allies if attacked, not if they start wars",
+            "Burden Sharing: Allies must contribute meaningfully to their own defense",
+            "No Tripwire Forces: Don't station troops where their death automatically triggers war",
+            "Congressional Approval: No president can commit US to war without Congress",
+            "Treaty Review: Review all defense commitments — which still serve American interests?",
+            "Withdrawal Timelines: Phase out forward deployments that serve allies more than America"
+          ],
+          "taiwanPosition": [
+            "Taiwan is NOT American soil. Taiwanese are not American citizens.",
+            "Strategic Reality: Current interest is semiconductor supply chain, not Taiwan itself",
+            "Solution: Broker a 20-year transition deal with China",
+            "During 20 Years: Build complete domestic chip manufacturing capability",
+            "After 20 Years: Exit Taiwan in totality. The fate of Taiwan is between China and the Taiwanese.",
+            "Principle: We don't fight wars over other people's territory. We solve our strategic vulnerabilities through investment, not blood."
+          ],
+          "framing": {
+            "forConservatives": "Put America first. Stop spending American blood and treasure on other people's wars. Rebuild military for defense, not empire.",
+            "forProgressives": "End the forever wars. Stop killing innocent civilians abroad. Invest in America instead of bombs.",
+            "forVeterans": "Your lives are too valuable to waste on wars of choice. We should only send you to fight when America is actually threatened.",
+            "forEveryone": "War means killing people, including innocent bystanders. That requires real justification. 'Interests' isn't enough."
+          },
+          "historicalRecord": "Last attack on US soil: Pearl Harbor (1941) — nation-state attack; 9/11 (2001) — non-state actors. Recent wars: Iraq, Afghanistan, Libya, Syria involvement — all choices, not defensive necessities. Results: Trillions spent, thousands of American lives lost, hundreds of thousands of foreign civilians killed, regions destabilized.",
+          "allies": "Non-interventionist conservatives, anti-war progressives, libertarians, veterans groups (some), fiscal conservatives",
+          "opposition": "Military-industrial complex, neoconservatives, foreign policy establishment, defense contractors"
         }
       ]
     },
@@ -1421,43 +1590,110 @@
       "title": "Healthcare System Reform",
       "icon": "Activity",
       "color": "#14B8A6",
-      "description": "Lower costs, increase choice, and restore market forces to healthcare.",
+      "description": "Healthcare markets should not be consolidated to a few large players. No government policy should enrich a subset of companies in an industry. If a function that generates significant revenue is unavoidable to properly regulate, it must be an open and competitive process. Government can't pick winners. Marketplaces provide the best results.",
       "subPolicies": [
         {
-          "title": "Price Transparency & Competition",
-          "viability": "high",
+          "title": "Competitive Healthcare Markets",
+          "viability": "moderate",
+          "level": "State (CON repeal) + Federal (Medicare bidding)",
           "problem": [
-            "Patients can't get prices before care",
-            "No ability to shop for healthcare",
-            "Insurance hides negotiated rates",
-            "Costs spiral without market discipline"
+            "Hospital systems consolidated into regional monopolies",
+            "PBMs (pharmacy benefit managers) control drug pricing with no transparency",
+            "Certificate of Need laws prevent new hospitals from opening",
+            "Regulatory capture protects incumbents from competition",
+            "Prices obscured — patients can't shop for value",
+            "Government programs pick winners, enriching connected companies"
           ],
           "positions": [
-            "Require upfront, binding price quotes for all non-emergency care",
-            "Publish negotiated rates between insurers and providers",
-            "Allow patients to shop and keep savings",
-            "Increase competition by removing restrictions",
-            "Standardize billing and coding"
+            "Certificate of Need Repeal: Eliminate laws requiring government permission to open healthcare facilities",
+            "Price Transparency: All healthcare providers must publish prices upfront (builds on existing federal requirements)",
+            "PBM Transparency: Require disclosure of rebates, spreads, and pricing arrangements",
+            "Anti-Consolidation: Strengthen antitrust enforcement in healthcare mergers",
+            "Competitive Bidding: Any government healthcare spending must use competitive bidding — no sole-source contracts",
+            "Cash Pay Options: Providers must offer cash prices; payments in any currency accepted"
           ],
-          "framing": "You can't have a free market without prices. Healthcare transparency is common sense."
+          "emergencyCare": [
+            "Emergency care is a business — businesses compete",
+            "If costs aren't obscured and payments are made in cash (any currency), working emergency systems are achievable",
+            "Rural areas can have single facilities; if rates rise too high, competition is enabled",
+            "No special exemptions for emergency care from price transparency requirements"
+          ],
+          "framing": {
+            "corePrinciple": "Government can't pick winners to enrich. Every company should compete on equal footing.",
+            "forConservatives": "End crony capitalism in healthcare. Let markets work.",
+            "forProgressives": "Break up healthcare monopolies that gouge patients.",
+            "forEveryone": "You deserve to know prices before treatment, not after."
+          },
+          "allies": "Direct primary care, patient advocates, small practices, fiscal conservatives",
+          "opposition": "Hospital systems, PBMs, entrenched healthcare corporations"
         },
         {
-          "title": "Insurance & Care Decoupling",
-          "viability": "moderate",
+          "title": "Insurance Market Reform",
+          "viability": "low-mod",
+          "level": "Federal (interstate commerce) + State (insurance regulation)",
           "problem": [
-            "Insurance tied to employment",
-            "Lose job, lose coverage",
-            "No portability or choice",
-            "Tax code subsidizes employer plans, penalizes individuals"
+            "Insurance tied to employment — distorts market, locks workers into jobs",
+            "Can't buy insurance across state lines or from unconventional sources",
+            "Complex regulations benefit large insurers, crush small entrants",
+            "Pre-existing conditions create coverage gaps",
+            "Mandates and regulations make policies expensive"
+          ],
+          "retailInsuranceSales": [
+            "Anywhere Sales: Insurance should be purchasable like any other good — at Costco, Walmart, online, or your neighborhood shop",
+            "Operational Standards: Any seller must meet operational standards, but no artificial barriers to entry",
+            "Affiliation Benefits: Your affiliations can get you access to different insurance options, but shouldn't be required",
+            "Interstate Purchase: Buy insurance from any state that allows it"
+          ],
+          "preExistingConditions": [
+            "Cannot Deny Coverage: Insurance companies cannot deny coverage to anyone",
+            "Age-Banded Pricing: Policies priced by age band — younger people pay less (actuarially justified)",
+            "Continuous Coverage Rule: 6-month grace period — if your last policy was within 6 months (and prior coverage exceeded 12 months), you stay in normal age-band pricing",
+            "Lapse Penalty: If coverage lapses >6 months, can be assessed for prior conditions and placed at high end of age band",
+            "Rate Cap: Cannot charge more than 20× average rate OR 40× lowest rate (whichever is lower)"
+          ],
+          "designRationale": "This system prevents the adverse selection death spiral (where only sick people buy insurance) while avoiding mandates. Continuous coverage incentivizes staying insured. Age-banding keeps premiums affordable for young people. Rate caps ensure no one is priced out entirely.",
+          "positions": [
+            "Allow retail insurance sales from any qualified seller",
+            "Enable interstate insurance purchases",
+            "Protect pre-existing conditions with continuous coverage incentives",
+            "Use age-banded pricing instead of community rating",
+            "Cap rates to prevent pricing out the sick"
+          ],
+          "framing": {
+            "forConservatives": "Free market insurance without mandates. Personal responsibility rewarded.",
+            "forProgressives": "No one denied coverage. Rate caps protect the sick.",
+            "forEveryone": "Buy insurance anywhere, keep it when you change jobs, and know you can't be priced out."
+          },
+          "allies": "Health sharing ministries, direct primary care, free market healthcare advocates",
+          "opposition": "Large insurers, healthcare establishment, ACA defenders"
+        },
+        {
+          "title": "Medicare & Medicaid: Phase-Out",
+          "viability": "low",
+          "level": "Federal",
+          "viabilityNote": "Long-term generational project",
+          "problem": [
+            "Government programs ARE government picking winners",
+            "Medicare prices distort entire healthcare market",
+            "Medicaid creates dependency and crowds out private alternatives",
+            "Fraud, waste, and abuse endemic to both programs",
+            "Unfunded liabilities threaten fiscal sustainability"
           ],
           "positions": [
-            "End tax preference for employer-based insurance",
-            "Universal tax deduction for health expenses",
-            "Portable, individually-owned plans",
-            "Health savings accounts (HSAs) for all",
-            "Allow purchase across state lines"
+            "Phase-Out, Not Elimination: Programs phased out over time — not immediate deprecation",
+            "Protect Current Beneficiaries: Those currently dependent on programs protected during transition",
+            "Tied to Alternative System Maturity: Phase-out timeline contingent on proof that alternative market-based system is working",
+            "Beneficial Change Requirement: Must demonstrate beneficial change before each phase-out step",
+            "No Cliff: Gradual transition with off-ramps if problems emerge"
           ],
-          "framing": "Health insurance should follow you—not your job. Decouple coverage from employment."
+          "strategicReality": "This is a generational project, not a near-term campaign. Medicare is politically popular and seniors vote. Focus on (1) competitive alternatives that demonstrate market healthcare can work, (2) transparency reforms that expose program waste, (3) building public understanding of fiscal unsustainability. Immediate 'abolish Medicare' campaigns are political suicide.",
+          "framing": {
+            "forConservatives": "End government distortion of healthcare markets. Let competition work.",
+            "forProgressives": "The current system enriches corporations. A competitive system could serve patients better.",
+            "forEveryone": "We need sustainable healthcare, not programs heading toward bankruptcy."
+          },
+          "allies": "Fiscal conservatives, free market think tanks, some libertarians",
+          "opposition": "AARP, healthcare industry (major revenue source), seniors, progressives"
         }
       ]
     },
@@ -1467,43 +1703,92 @@
       "title": "Education Reform",
       "icon": "BookOpen",
       "color": "#8B5CF6",
-      "description": "Empower parents, expand choice, and refocus education on knowledge and skills.",
+      "description": "Education belongs to families and communities, not federal bureaucrats. You should not be forced to attend any school. The Department of Education should be at the state level. Curriculums are determined by the state and municipality, with those freedoms guaranteed by the federal level.",
       "subPolicies": [
         {
-          "title": "School Choice & Education Savings Accounts",
-          "viability": "high",
+          "title": "School Choice & Vouchers",
+          "viability": "mod-high",
+          "level": "State (education is state power)",
           "problem": [
-            "Families trapped in failing schools",
-            "Public education monopoly",
-            "No alternatives for low-income families",
-            "One-size-fits-all approach"
+            "Children assigned to schools based on zip code",
+            "Families with means can move or pay for private school; others are trapped",
+            "Public school monopoly has no competitive pressure to improve",
+            "One-size-fits-all approach fails diverse student needs",
+            "Teacher unions prioritize adult interests over student outcomes"
           ],
           "positions": [
-            "Universal education savings accounts (ESAs)",
-            "Money follows the student",
-            "Support public, charter, private, and homeschool options",
-            "Tax credits for educational expenses",
-            "Let parents choose what's best"
+            "Universal Vouchers: Every student receives voucher worth current per-pupil spending",
+            "Portable Funding: Money follows the student to any school they choose",
+            "State Schools: Any school that meets state standards and accepts vouchers qualifies as 'state school'",
+            "Curriculum Freedom: Schools can teach anything — but only get vouchers if they meet state standards",
+            "Special Needs: Higher voucher amount for special needs students — let the market create specialized schools",
+            "No Forced Attendance: Families choose; no child forced to attend any particular school"
           ],
-          "framing": "Every family deserves school choice—not just the wealthy. Fund students, not systems."
+          "standardsAccountability": [
+            "State Standards: Each state sets its own curriculum standards for voucher eligibility",
+            "Municipal Flexibility: Municipalities can add requirements within state framework",
+            "Federal Role: Guarantee the freedom of states and localities to set standards — no federal curriculum",
+            "Transparency: All schools receiving vouchers must publish outcomes data"
+          ],
+          "framing": {
+            "forConservatives": "Parents, not bureaucrats, decide where children learn.",
+            "forProgressives": "Low-income families deserve the same choices wealthy families have.",
+            "forEveryone": "Competition improves quality. Let schools compete for students."
+          },
+          "allies": "School choice organizations, parental rights groups, many conservatives, urban education reformers",
+          "opposition": "Teacher unions, public school establishment, some progressives"
         },
         {
-          "title": "Curriculum Transparency & Parental Rights",
-          "viability": "high",
+          "title": "Eliminate Federal Department of Education",
+          "viability": "low-mod",
+          "level": "Federal",
           "problem": [
-            "Parents don't know what schools teach",
-            "Controversial content without notification",
-            "Schools override parental authority",
-            "No meaningful input or opt-out"
+            "Federal involvement in education began in 1979 — outcomes have not improved",
+            "Federal mandates impose one-size-fits-all requirements on diverse states",
+            "Money flows to Washington, bureaucracy takes its cut, remainder returns with strings attached",
+            "No constitutional authority for federal education involvement",
+            "Removes education decisions from parents and communities"
           ],
           "positions": [
-            "All curriculum materials publicly available online",
-            "Parental notification and opt-out rights",
-            "No gender or sexuality instruction without explicit consent",
-            "Ban critical race theory and divisive ideologies",
-            "Refocus on knowledge, not activism"
+            "Abolish Federal DoE: Return all education authority to states",
+            "Block Grant Transition: If federal money continues, block grants with no strings attached",
+            "State DoE: Education departments operate at state level where they belong",
+            "Federal Role Limited To: Protecting state/local freedoms, civil rights enforcement, data collection (optional)"
           ],
-          "framing": "Parents have a right to know—and approve—what their kids are taught."
+          "historicalContext": "The federal Department of Education was created in 1979. U.S. educational outcomes have not improved relative to other developed nations since its creation. Federal spending has increased dramatically while results have stagnated. The experiment has failed.",
+          "framing": {
+            "forConservatives": "Restore constitutional order. Education is a state and local matter.",
+            "forProgressives": "Stop sending money to Washington bureaucracy. Keep it in communities.",
+            "forEveryone": "Forty-five years of federal involvement haven't improved outcomes. Try something different."
+          },
+          "allies": "State sovereignty advocates, fiscal conservatives, many Republicans",
+          "opposition": "Education establishment, teacher unions, federal bureaucracy"
+        },
+        {
+          "title": "Higher Education Reform",
+          "viability": "moderate",
+          "level": "Federal",
+          "problem": [
+            "Federal student loans have inflated tuition massively",
+            "$1.7+ trillion in student debt, much of it for low-value degrees",
+            "Universities captured unlimited government-backed money flow",
+            "Administrative bloat funded by easy credit",
+            "Students take on debt without understanding ROI"
+          ],
+          "positions": [
+            "End Federal Guarantees: Government should not fund or guarantee higher education loans",
+            "K-12 First: Government must make primary and secondary education work properly before getting involved in higher ed",
+            "Skin in the Game: If loans continue, universities should share default risk",
+            "Outcome Disclosure: Require schools to disclose graduate employment and earnings data by major",
+            "Alternative Pathways: Support vocational training, apprenticeships, and non-degree credentials"
+          ],
+          "framing": {
+            "corePrinciple": "Fix K-12 first. A broken foundation can't support a good system above it.",
+            "forYoungPeople": "Stop the debt trap. Make colleges compete on value, not access to government money.",
+            "forTaxpayers": "Why should plumbers subsidize philosophy degrees with poor job outcomes?"
+          },
+          "allies": "Fiscal conservatives, vocational education advocates, some young people",
+          "opposition": "Universities, student loan industry, progressive advocates"
         }
       ]
     },
