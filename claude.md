@@ -198,19 +198,28 @@ const mutation = useMutation({
 
 ## Content Data Structure
 
-### Policies (10 pillars)
+### Policies (16 pillars)
 Located in `src/data/policy-data.json`:
-- Economic Freedom & Anti-Cronyism
-- Food & Health Sovereignty
-- Property Rights
-- Government Accountability
-- Election Integrity
-- Constitutional Rights Suite
-- Foreign Policy & National Interest
-- Monetary & Currency Reform
-- Tax Reform
-- Drug Policy Reform
-- Housing Reform
+1. Economic Freedom & Anti-Cronyism (7 sub-policies)
+2. Food & Health Sovereignty (4 sub-policies)
+3. Property Rights (3 sub-policies)
+4. Government Accountability & Reform (6 sub-policies)
+5. Election Integrity (5 sub-policies)
+6. Constitutional Rights (7 sub-policies)
+7. Technology & Communications Freedom (3 sub-policies)
+8. Monetary & Financial Reform (5 sub-policies)
+9. Political System Reform (3 sub-policies)
+10. Foreign Policy & National Interest (4 sub-policies)
+11. Healthcare System Reform (3 sub-policies)
+12. Education Reform (3 sub-policies)
+13. Social Security Reform (1 sub-policy)
+14. Tax Reform (4 sub-policies)
+15. Drug Policy Reform (3 sub-policies)
+16. Housing Reform (4 sub-policies)
+
+**Policy Data Structure:**
+Each policy includes: `id`, `slug`, `title`, `icon`, `color`, `description`, and `subPolicies[]`.
+Each sub-policy includes: `title`, `viability`, `level`, `problem[]`, `positions[]`, `framing{}`, `allies`, `opposition`.
 
 ### Programs (11 categories)
 Located in `src/data/programs-data.json`:
