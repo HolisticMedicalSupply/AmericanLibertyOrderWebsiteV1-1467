@@ -162,7 +162,7 @@ export default function ProgramsOverview() {
           transition={{ delay: 0.3 }}
           className="mt-12 glass-effect rounded-xl p-8 border border-border/50 text-center"
         >
-          <h2 className="text-2xl font-bold mb-4">Get Involved Today</h2>
+          <h2 className="text-2xl font-bold mb-4 gradient-text">Get Involved Today</h2>
           <p className="text-muted-foreground mb-6">
             Join the American Liberty Order and gain access to all our programs and resources.
           </p>

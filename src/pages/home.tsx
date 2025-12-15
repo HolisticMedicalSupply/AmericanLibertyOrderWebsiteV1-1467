@@ -157,7 +157,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Mission</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Our Mission</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               The American Liberty Order is a citizen-driven organization dedicated to defending constitutional principles, 
               limited government, and individual liberty through education, advocacy, and practical reform.
@@ -211,7 +211,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Policy Platform</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Policy Platform</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Our comprehensive approach to restoring American liberty through practical, principle-driven policy reforms
             </p>
@@ -260,7 +260,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Programs</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Our Programs</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Structured pathways for members to engage, grow, and make an impact
             </p>
@@ -331,7 +331,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Principles</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Our Principles</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               The foundational values that guide everything we do
             </p>
@@ -370,7 +370,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Get Involved</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Get Involved</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Join the movement and help defend liberty in your community
             </p>

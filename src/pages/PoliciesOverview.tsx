@@ -153,7 +153,7 @@ export default function PoliciesOverview() {
           transition={{ delay: 0.3 }}
           className="mt-12 glass-effect rounded-xl p-8 border border-border/50 text-center"
         >
-          <h2 className="text-2xl font-bold mb-4">Ready to Take Action?</h2>
+          <h2 className="text-2xl font-bold mb-4 gradient-text">Ready to Take Action?</h2>
           <p className="text-muted-foreground mb-6">
             Join us in fighting for these policies and restoring liberty across America.
           </p>

@@ -1,94 +1,120 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* ============================================
+   LIGHT MODE - Parchment/Old World Aesthetic
+   Warm, aged paper tones with colonial heritage
+   ============================================ */
 :root {
   --radius: 0.75rem;
-  --background: oklch(0.96 0.015 70);
-  --foreground: oklch(0.25 0.04 264);
 
-  --card: oklch(0.98 0.008 65);
-  --card-foreground: oklch(0.25 0.04 264);
+  /* Warm parchment backgrounds */
+  --background: oklch(0.94 0.025 75);
+  --foreground: oklch(0.22 0.05 45);
 
-  --popover: oklch(0.99 0.005 70);
-  --popover-foreground: oklch(0.25 0.04 264);
+  /* Aged paper card surfaces */
+  --card: oklch(0.96 0.022 72);
+  --card-foreground: oklch(0.22 0.05 45);
 
-  --primary: oklch(0.30 0.10 264);
-  --primary-foreground: oklch(0.98 0.003 70);
+  --popover: oklch(0.97 0.018 70);
+  --popover-foreground: oklch(0.22 0.05 45);
 
-  --secondary: oklch(0.48 0.20 15);
-  --secondary-foreground: oklch(0.98 0.003 70);
+  /* Deep colonial navy for authority */
+  --primary: oklch(0.25 0.12 264);
+  --primary-foreground: oklch(0.97 0.015 75);
 
-  --muted: oklch(0.94 0.012 65);
-  --muted-foreground: oklch(0.5 0.025 264);
+  /* Old Glory Red - dignified, muted */
+  --secondary: oklch(0.45 0.18 20);
+  --secondary-foreground: oklch(0.97 0.015 75);
 
-  --accent: oklch(0.70 0.12 80);
-  --accent-foreground: oklch(0.15 0.03 264);
+  /* Soft sepia muted tones */
+  --muted: oklch(0.90 0.025 70);
+  --muted-foreground: oklch(0.42 0.04 55);
 
-  --destructive: oklch(0.48 0.2 15);
-  --destructive-foreground: oklch(0.98 0.003 70);
-  --border: oklch(0.85 0.015 70);
-  --input: oklch(0.94 0.012 70);
-  --ring: oklch(0.30 0.10 264);
+  /* Rich antique gold accent */
+  --accent: oklch(0.65 0.15 85);
+  --accent-foreground: oklch(0.18 0.05 45);
 
-  --chart-1: oklch(0.30 0.10 264);
-  --chart-2: oklch(0.48 0.20 15);
-  --chart-3: oklch(0.70 0.12 80);
-  --chart-4: oklch(0.45 0.1 220);
-  --chart-5: oklch(0.55 0.15 30);
+  --destructive: oklch(0.45 0.18 20);
+  --destructive-foreground: oklch(0.97 0.015 75);
 
-  --sidebar: oklch(0.98 0.008 65);
-  --sidebar-foreground: oklch(0.25 0.04 264);
-  --sidebar-primary: oklch(0.30 0.10 264);
-  --sidebar-primary-foreground: oklch(0.98 0.003 70);
-  --sidebar-accent: oklch(0.94 0.012 70);
-  --sidebar-accent-foreground: oklch(0.3 0.04 264);
-  --sidebar-border: oklch(0.85 0.015 70);
-  --sidebar-ring: oklch(0.30 0.10 264);
+  /* Warm sepia borders */
+  --border: oklch(0.82 0.035 70);
+  --input: oklch(0.92 0.02 72);
+  --ring: oklch(0.25 0.12 264);
+
+  --chart-1: oklch(0.25 0.12 264);
+  --chart-2: oklch(0.45 0.18 20);
+  --chart-3: oklch(0.65 0.15 85);
+  --chart-4: oklch(0.40 0.1 220);
+  --chart-5: oklch(0.50 0.12 35);
+
+  --sidebar: oklch(0.93 0.028 72);
+  --sidebar-foreground: oklch(0.22 0.05 45);
+  --sidebar-primary: oklch(0.25 0.12 264);
+  --sidebar-primary-foreground: oklch(0.97 0.015 75);
+  --sidebar-accent: oklch(0.88 0.03 70);
+  --sidebar-accent-foreground: oklch(0.25 0.05 45);
+  --sidebar-border: oklch(0.82 0.035 70);
+  --sidebar-ring: oklch(0.25 0.12 264);
 }
 
+/* ============================================
+   DARK MODE - Tech Colonial Aesthetic
+   Deep navy with luminous gold tech accents
+   ============================================ */
 :root[data-theme="dark"] {
   --radius: 0.75rem;
-  --background: oklch(0.18 0.025 264);
-  --foreground: oklch(0.92 0.008 70);
 
-  --card: oklch(0.22 0.03 264);
-  --card-foreground: oklch(0.92 0.008 70);
+  /* Deep colonial navy - rich and sophisticated */
+  --background: oklch(0.14 0.035 264);
+  --foreground: oklch(0.94 0.015 75);
 
-  --popover: oklch(0.22 0.03 264);
-  --popover-foreground: oklch(0.92 0.008 70);
+  /* Slightly lighter navy cards with subtle warmth */
+  --card: oklch(0.18 0.04 264);
+  --card-foreground: oklch(0.94 0.015 75);
 
-  --primary: oklch(0.45 0.14 264);
-  --primary-foreground: oklch(0.96 0.008 70);
+  --popover: oklch(0.20 0.04 264);
+  --popover-foreground: oklch(0.94 0.015 75);
 
-  --secondary: oklch(0.58 0.24 15);
-  --secondary-foreground: oklch(0.96 0.008 70);
+  /* Bright luminous gold for headers - tech glow effect */
+  --primary: oklch(0.78 0.16 85);
+  --primary-foreground: oklch(0.14 0.035 264);
 
-  --muted: oklch(0.26 0.02 264);
-  --muted-foreground: oklch(0.70 0.01 70);
+  /* Vibrant Old Glory Red */
+  --secondary: oklch(0.58 0.22 18);
+  --secondary-foreground: oklch(0.96 0.01 75);
 
-  --accent: oklch(0.75 0.14 80);
-  --accent-foreground: oklch(0.18 0.025 264);
+  /* Deep navy muted tones */
+  --muted: oklch(0.22 0.03 264);
+  --muted-foreground: oklch(0.68 0.02 75);
 
-  --destructive: oklch(0.58 0.24 15);
-  --destructive-foreground: oklch(0.96 0.008 70);
-  --border: oklch(0.32 0.02 264);
-  --input: oklch(0.32 0.02 264);
-  --ring: oklch(0.45 0.14 264);
+  /* Bright tech gold accent */
+  --accent: oklch(0.82 0.18 82);
+  --accent-foreground: oklch(0.14 0.035 264);
 
-  --chart-1: oklch(0.45 0.14 264);
-  --chart-2: oklch(0.58 0.24 15);
-  --chart-3: oklch(0.75 0.14 80);
-  --chart-4: oklch(0.5 0.1 220);
-  --chart-5: oklch(0.6 0.15 30);
+  --destructive: oklch(0.55 0.22 18);
+  --destructive-foreground: oklch(0.96 0.01 75);
 
-  --sidebar: oklch(0.22 0.03 264);
-  --sidebar-foreground: oklch(0.92 0.008 70);
-  --sidebar-primary: oklch(0.45 0.14 264);
-  --sidebar-primary-foreground: oklch(0.96 0.008 70);
-  --sidebar-accent: oklch(0.26 0.02 264);
-  --sidebar-accent-foreground: oklch(0.88 0.008 70);
-  --sidebar-border: oklch(0.32 0.02 264);
-  --sidebar-ring: oklch(0.45 0.14 264);
+  /* Subtle gold-tinted borders for tech feel */
+  --border: oklch(0.30 0.04 270);
+  --input: oklch(0.24 0.03 264);
+  --ring: oklch(0.78 0.16 85);
+
+  --chart-1: oklch(0.78 0.16 85);
+  --chart-2: oklch(0.58 0.22 18);
+  --chart-3: oklch(0.82 0.18 82);
+  --chart-4: oklch(0.55 0.12 220);
+  --chart-5: oklch(0.62 0.15 35);
+
+  --sidebar: oklch(0.16 0.035 264);
+  --sidebar-foreground: oklch(0.94 0.015 75);
+  --sidebar-primary: oklch(0.78 0.16 85);
+  --sidebar-primary-foreground: oklch(0.14 0.035 264);
+  --sidebar-accent: oklch(0.22 0.03 264);
+  --sidebar-accent-foreground: oklch(0.90 0.015 75);
+  --sidebar-border: oklch(0.30 0.04 270);
+  --sidebar-ring: oklch(0.78 0.16 85);
 }
 
 /* Map CSS variables to Tailwind color tokens and radii */
@@ -145,47 +171,118 @@
     height: 100%;
   }
 
+  /* Light mode body - parchment paper texture */
   body {
     @apply bg-background text-foreground antialiased;
-    background-image: 
+    background-image:
+      /* Subtle paper grain texture */
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E"),
+      /* Gold thread pattern */
       repeating-linear-gradient(
         0deg,
         transparent,
-        transparent 2px,
-        rgba(194, 162, 39, 0.015) 2px,
-        rgba(194, 162, 39, 0.015) 4px
+        transparent 3px,
+        rgba(180, 140, 50, 0.018) 3px,
+        rgba(180, 140, 50, 0.018) 4px
       ),
       repeating-linear-gradient(
         90deg,
         transparent,
-        transparent 2px,
-        rgba(194, 162, 39, 0.015) 2px,
-        rgba(194, 162, 39, 0.015) 4px
+        transparent 3px,
+        rgba(180, 140, 50, 0.018) 3px,
+        rgba(180, 140, 50, 0.018) 4px
       );
+    background-blend-mode: overlay, normal, normal;
+  }
+
+  /* Dark mode body - tech grid pattern */
+  :root[data-theme="dark"] body {
+    background-image:
+      /* Subtle digital grid */
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 40px,
+        rgba(200, 170, 80, 0.03) 40px,
+        rgba(200, 170, 80, 0.03) 41px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 40px,
+        rgba(200, 170, 80, 0.03) 40px,
+        rgba(200, 170, 80, 0.03) 41px
+      ),
+      /* Corner accent glow */
+      radial-gradient(ellipse at top left, rgba(200, 170, 80, 0.06) 0%, transparent 50%),
+      radial-gradient(ellipse at bottom right, rgba(200, 170, 80, 0.04) 0%, transparent 50%);
   }
 }
 
+/* ============================================
+   LIGHT MODE - Glass Effects (Parchment/Vellum)
+   ============================================ */
 .glass {
-  background: rgba(245, 235, 224, 0.65);
+  background: rgba(245, 238, 225, 0.8);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(194, 162, 39, 0.15);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(160, 130, 80, 0.2);
+  box-shadow:
+    0 4px 6px rgba(80, 60, 30, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .glass-card {
-  background: rgba(248, 240, 230, 0.75);
+  background: rgba(250, 245, 235, 0.85);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(194, 162, 39, 0.2);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(160, 130, 80, 0.25);
+  box-shadow:
+    0 2px 8px rgba(80, 60, 30, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 .glass-effect {
-  background: rgba(245, 235, 224, 0.5);
+  background: rgba(248, 242, 230, 0.7);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(194, 162, 39, 0.12);
+  border: 1px solid rgba(160, 130, 80, 0.15);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* ============================================
+   DARK MODE - Glass Effects (Tech Colonial)
+   ============================================ */
+:root[data-theme="dark"] .glass {
+  background: rgba(20, 25, 45, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(200, 170, 80, 0.15);
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(200, 170, 80, 0.03),
+    inset 0 1px 0 rgba(200, 170, 80, 0.1);
+}
+
+:root[data-theme="dark"] .glass-card {
+  background: rgba(25, 30, 50, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(200, 170, 80, 0.12);
+  box-shadow:
+    0 2px 12px rgba(0, 0, 0, 0.25),
+    0 0 30px rgba(200, 170, 80, 0.02),
+    inset 0 1px 0 rgba(200, 170, 80, 0.08);
+}
+
+:root[data-theme="dark"] .glass-effect {
+  background: rgba(22, 27, 48, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(200, 170, 80, 0.1);
+  box-shadow:
+    0 0 20px rgba(200, 170, 80, 0.02),
+    inset 0 1px 0 rgba(200, 170, 80, 0.06);
 }
 
 @keyframes float {
@@ -226,10 +323,110 @@
   display: none;
 }
 
-/* Gradient text utility - professional navy to gold gradient */
+/* ============================================
+   GRADIENT TEXT - Theme Adaptive
+   ============================================ */
+
+/* Light Mode: Deep navy to antique gold */
 .gradient-text {
-  @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  background: linear-gradient(
+    135deg,
+    oklch(0.22 0.12 264) 0%,
+    oklch(0.30 0.10 264) 30%,
+    oklch(0.55 0.14 80) 70%,
+    oklch(0.65 0.15 85) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
   line-height: 1.2;
+}
+
+/* Dark Mode: Luminous gold to cream - tech glow effect */
+:root[data-theme="dark"] .gradient-text {
+  background: linear-gradient(
+    135deg,
+    oklch(0.92 0.04 75) 0%,
+    oklch(0.85 0.14 82) 40%,
+    oklch(0.78 0.18 85) 70%,
+    oklch(0.70 0.16 88) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 20px rgba(200, 170, 80, 0.15));
+}
+
+/* Additional header glow for dark mode */
+:root[data-theme="dark"] h1.gradient-text,
+:root[data-theme="dark"] h2.gradient-text {
+  filter: drop-shadow(0 0 30px rgba(200, 170, 80, 0.2));
+}
+
+/* ============================================
+   SECTION HEADERS - Theme Adaptive
+   ============================================ */
+
+/* Light mode section titles - ink on parchment */
+.section-title {
+  @apply text-foreground;
+  text-shadow: 0 1px 2px rgba(80, 60, 30, 0.1);
+}
+
+/* Dark mode section titles - luminous */
+:root[data-theme="dark"] .section-title {
+  @apply text-foreground;
+  text-shadow: 0 0 40px rgba(200, 170, 80, 0.1);
+}
+
+/* ============================================
+   DECORATIVE ELEMENTS
+   ============================================ */
+
+/* Parchment edge effect for light mode */
+.parchment-edge {
+  position: relative;
+}
+
+.parchment-edge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(160, 130, 80, 0.3) 20%,
+    rgba(160, 130, 80, 0.4) 50%,
+    rgba(160, 130, 80, 0.3) 80%,
+    transparent 100%
+  );
+}
+
+/* Tech scan line for dark mode */
+:root[data-theme="dark"] .parchment-edge::before {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(200, 170, 80, 0.2) 20%,
+    rgba(200, 170, 80, 0.4) 50%,
+    rgba(200, 170, 80, 0.2) 80%,
+    transparent 100%
+  );
+  box-shadow: 0 0 10px rgba(200, 170, 80, 0.3);
+}
+
+/* Gold accent line */
+.gold-accent-line {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--accent) 50%,
+    transparent 100%
+  );
 }
