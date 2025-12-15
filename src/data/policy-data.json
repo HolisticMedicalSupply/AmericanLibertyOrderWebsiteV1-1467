@@ -11,27 +11,28 @@
         {
           "title": "Medicare Competitive Bidding Program Reform",
           "viability": "moderate",
-          "level": "Federal",
+          "level": "Federal (CMS regulatory reform or congressional action)",
           "problem": [
-            "Medicare pays fixed prices set by formula, not market competition",
-            "Durable medical equipment costs 2-3x retail prices",
-            "No incentive for suppliers to compete on price",
-            "Taxpayers and beneficiaries pay inflated costs",
-            "Prior competitive bidding pilot saved 42% — then was ended due to industry lobbying"
+            "Drove small, local medical equipment suppliers out of business",
+            "Created regional monopolies for large national suppliers",
+            "Reduced patient choice and service quality",
+            "Bid prices so low suppliers can't maintain quality service",
+            "Exemplifies regulatory capture — large players shaped rules to eliminate competition"
           ],
           "positions": [
-            "Expand competitive bidding to all durable medical equipment",
-            "Apply competitive bidding principles to other Medicare purchases where feasible",
-            "Require transparent pricing data",
-            "Allow beneficiaries to shop and keep a portion of savings (reference pricing)"
+            "Reform competitive bidding to ensure fair competition and preserve local suppliers",
+            "Quality Standards: Require meaningful quality metrics, not just lowest price",
+            "Geographic Access: Ensure rural and underserved areas have adequate supplier access",
+            "Small Business Set-Asides: Reserve portion of contracts for small and local suppliers",
+            "Transparency: Full disclosure of bid evaluation criteria and winner selection"
           ],
           "framing": {
-            "forConservatives": "Market competition, not government price-fixing. Let suppliers compete.",
-            "forProgressives": "Stop overpaying corporations. Save Medicare money for actual care.",
-            "forEveryone": "Why pay $500 for something that costs $100 at the store?"
+            "forConservatives": "This is crony capitalism — big companies used government to crush small business competition.",
+            "forHealthcareAdvocates": "Patients suffer when local suppliers who know them are replaced by distant call centers.",
+            "forRuralCommunities": "This policy devastated small-town medical equipment providers."
           },
-          "allies": "Taxpayer advocates, fiscal conservatives, some healthcare reformers",
-          "opposition": "Medical equipment suppliers, healthcare industry lobbyists"
+          "allies": "Small business associations, rural health advocates, patient advocacy groups",
+          "opposition": "Large DME suppliers benefiting from current system"
         },
         {
           "title": "Occupational Licensing Reform",
@@ -113,7 +114,7 @@
         },
         {
           "title": "ESG & Corporate-Government Collusion",
-          "viability": "mod-high",
+          "viability": "high",
           "level": "State (pension funds, state contracts), Federal (SEC rules)",
           "problem": [
             "ESG (Environmental, Social, Governance) scores pressure companies to adopt specific political positions",
@@ -167,7 +168,7 @@
         },
         {
           "title": "Environmental Policy: Polluter Pays Without Crushing Innovation",
-          "viability": "moderate",
+          "viability": "mod-high",
           "level": "Federal (framework), State (implementation)",
           "problem": [
             "Environmental regulations increasingly driven by political agenda rather than measurable outcomes",
