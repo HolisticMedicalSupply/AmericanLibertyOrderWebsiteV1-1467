@@ -216,7 +216,7 @@ export default function PolicyDetail() {
               animate={{ opacity: 1, y: 0 }}
               className="glass-effect rounded-xl p-8 border border-border/50"
             >
-              <h2 className="text-2xl font-bold mb-4">Get Involved</h2>
+              <h2 className="text-2xl font-bold mb-4 gradient-text">Get Involved</h2>
               <p className="text-muted-foreground mb-6">
                 Ready to make a difference? Join us in advocating for {policy.title.toLowerCase()}.
               </p>

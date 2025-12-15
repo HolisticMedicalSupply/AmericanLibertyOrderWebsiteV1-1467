@@ -22,9 +22,9 @@
   },
   "d1_databases": [
     {
-      "binding": "D1",
-      "database_name": "testing",
-      "database_id": "xyz",
+      "binding": "DB",
+      "database_name": "american-liberty-order-db",
+      "database_id": "6f1277a6-0d10-4857-9f95-519b196ae118",
       "migrations_dir": "./drizzle",
     },
   ],
