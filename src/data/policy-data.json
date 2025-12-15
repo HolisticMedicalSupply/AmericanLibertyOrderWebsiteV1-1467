@@ -643,92 +643,136 @@
       "title": "Election Integrity",
       "icon": "Vote",
       "color": "#8B5CF6",
-      "description": "Ensure secure, transparent, and trustworthy elections through common-sense safeguards.",
+      "description": "Free and fair elections are essential to self-governance. Reforms should make it easy to vote and hard to cheat, while restoring public confidence in electoral outcomes. Every legal vote should count; no illegal vote should count.",
       "subPolicies": [
         {
-          "title": "Voter ID Requirements",
+          "title": "Voter Identification",
           "viability": "high",
+          "level": "State",
           "problem": [
             "Many states allow voting without verifying identity",
-            "Opens door to fraud and undermines confidence",
-            "Inconsistent standards create confusion"
+            "Inconsistent standards create confusion across jurisdictions",
+            "Lack of verification undermines confidence in results",
+            "Absentee ballot verification often weaker than in-person"
           ],
           "positions": [
-            "Require government-issued photo ID to vote",
-            "Provide free voter ID to anyone who needs one",
+            "Require government-issued photo ID to vote in person",
+            "Free ID available to any citizen who lacks one",
+            "Provisional ballot available for those without ID (with verification process)",
+            "ID requirement for requesting and returning absentee ballots",
             "Accept multiple forms (driver's license, passport, military ID, state ID)",
             "Reasonable accommodations for elderly and disabled"
           ],
-          "framing": "You need an ID to buy beer—why not to vote? Free ID plus voter ID requirement is common sense."
+          "framing": {
+            "forEveryone": "You need an ID to buy beer—why not to vote? Free ID plus voter ID requirement is common sense."
+          },
+          "currentStatus": "Majority of states have some form of voter ID; broad public support across party lines",
+          "allies": "Election integrity advocates, most state legislators",
+          "opposition": "Some voting rights groups concerned about access barriers"
         },
         {
-          "title": "Paper Ballot Requirement",
+          "title": "Paper Ballots",
           "viability": "high",
+          "level": "State",
           "problem": [
             "Electronic-only voting machines have no audit trail",
-            "Vulnerable to hacking and malfunction",
-            "Difficult to verify accuracy",
-            "No way to recount if needed"
+            "Voting systems vulnerable to hacking and malfunction",
+            "Internet-connected systems create security vulnerabilities",
+            "Difficult to verify accuracy or conduct meaningful recounts without paper"
           ],
           "positions": [
-            "Require paper ballots for all elections",
-            "Electronic machines can assist but must produce paper record",
+            "Hand-marked paper ballots as primary voting method",
+            "Where machines are used, voter-verified paper audit trail required",
+            "Paper ballots preserved for recount and audit purposes",
+            "No internet-connected voting systems",
             "Voter verifies paper ballot before casting",
             "Paper is the official record for recounts"
           ],
-          "framing": "Paper ballots are simple, transparent, and trustworthy. High-tech isn't always better."
+          "framing": {
+            "forEveryone": "Paper ballots are simple, transparent, and trustworthy. High-tech isn't always better."
+          },
+          "currentStatus": "Most states already use paper ballots; consensus building across political spectrum",
+          "allies": "Election security experts, both parties increasingly",
+          "opposition": "Some election equipment vendors"
         },
         {
           "title": "Chain of Custody & Security",
           "viability": "mod-high",
+          "level": "State",
           "problem": [
-            "Ballots transported without clear tracking",
-            "Unsecured drop boxes",
-            "Gaps in custody records",
-            "Difficult to trace irregularities"
+            "Ballots transported without clear tracking documentation",
+            "Unsecured or unmonitored drop boxes in some jurisdictions",
+            "Gaps in custody records make irregularities difficult to trace",
+            "Insufficient observer access at critical stages"
           ],
           "positions": [
-            "Strict chain-of-custody protocols for all ballots",
-            "Secured, monitored drop boxes (if used)",
-            "Real-time tracking and documentation",
-            "Bipartisan observation at every step",
+            "Documented chain of custody for all ballots from printing to counting",
+            "Bipartisan observer access at all stages of election process",
+            "Video surveillance of ballot storage and counting areas",
+            "Secure ballot transport with multiple witnesses",
+            "Secured, monitored drop boxes (if used at all)",
+            "Real-time tracking and documentation systems",
             "Criminal penalties for chain-of-custody violations"
           ],
-          "framing": "We track Amazon packages—why not ballots? Tight security builds trust."
+          "framing": {
+            "forEveryone": "We track Amazon packages—why not ballots? Tight security builds trust."
+          },
+          "allies": "Election integrity advocates, law enforcement",
+          "opposition": "Some election administrators concerned about implementation costs"
         },
         {
           "title": "Timely Results & Audits",
           "viability": "moderate",
+          "level": "State",
           "problem": [
-            "Days or weeks to count votes",
-            "Results announced before counting complete",
-            "Rare and inconsistent audits",
-            "Erodes public confidence"
+            "Days or weeks to count votes in some jurisdictions",
+            "Delayed results erode public confidence",
+            "Inconsistent and rare audits across states",
+            "Some states prohibit early processing of mail ballots"
           ],
           "positions": [
+            "Count all ballots election night to extent possible",
+            "Early processing of mail ballots (where permitted) to enable timely counting",
+            "Mandatory post-election audits (risk-limiting audits preferred)",
+            "Random precinct hand-count verification",
+            "Full audit if margin within specified threshold",
             "Results announced same night or within 24 hours",
-            "Mandatory random audits of 5-10% of precincts",
-            "Full forensic audit available upon petition or close results",
             "Public observation of counting process"
           ],
-          "framing": "France counts 40 million votes in 24 hours. America can do better."
+          "framing": {
+            "forEveryone": "France counts 40 million votes in 24 hours. America can do better."
+          },
+          "viabilityNote": "Requires process changes; some state resistance to changing mail ballot processing rules",
+          "allies": "Election reformers, transparency advocates",
+          "opposition": "Some election administrators, states with extensive mail voting"
         },
         {
-          "title": "Voter Roll Maintenance",
-          "viability": "high",
+          "title": "Voter Roll Maintenance & Mail Voting",
+          "viability": "moderate",
+          "level": "State",
           "problem": [
-            "Rolls include deceased voters, moved voters, duplicates",
-            "States don't share data",
-            "Outdated rolls enable fraud and mistakes"
+            "Voter rolls include deceased voters, moved voters, and duplicates",
+            "States don't adequately share data for cross-state verification",
+            "Outdated rolls can enable errors or fraud",
+            "Unsolicited mail ballots sent to outdated addresses",
+            "Inconsistent signature verification standards"
           ],
           "positions": [
-            "Annual voter roll updates",
-            "Cross-state database to prevent double registration",
-            "Remove deceased and relocated voters promptly",
-            "Verify citizenship",
+            "Regular list maintenance to remove deceased, moved, and ineligible voters",
+            "Participation in interstate cross-check systems (ERIC or alternatives)",
+            "Verification of citizenship for voter registration",
+            "Voter request required for mail ballots (no unsolicited mailing to all addresses)",
+            "Signature verification with cure process for mismatches",
+            "Ballot received by election day (postmark not sufficient)",
+            "Limits on ballot harvesting (third-party collection)",
             "Easy re-registration if removed in error"
           ],
-          "framing": "Clean voter rolls protect everyone's vote. Regular maintenance is basic election hygiene."
+          "framing": {
+            "forEveryone": "Clean voter rolls protect everyone's vote. Regular maintenance is basic election hygiene."
+          },
+          "viabilityNote": "Politically contentious; legal challenges common; mail voting restrictions highly dependent on state political environment",
+          "allies": "Election integrity groups, some state legislators",
+          "opposition": "Voting rights groups, states with universal mail voting"
         }
       ]
     },
