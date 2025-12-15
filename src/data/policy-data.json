@@ -6,140 +6,190 @@
       "title": "Economic Freedom & Anti-Cronyism",
       "icon": "TrendingUp",
       "color": "#14B8A6",
-      "description": "Eliminate corporate welfare, monopolistic practices, and government favoritism to restore true market competition and economic liberty.",
+      "description": "Breaking up the cozy relationship between government and big business benefits all Americans. Government should not pick winners and losers. These policies find support across the political spectrum and represent realistic starting points.",
       "subPolicies": [
         {
-          "title": "Competitive Medicare Bidding",
+          "title": "Medicare Competitive Bidding",
           "viability": "high",
+          "level": "Federal",
           "problem": [
-            "Medicare pays wildly inflated prices for medical equipment and supplies",
-            "Suppliers charge 2-10x what items cost on the open market",
-            "Taxpayers lose billions annually to price-gouging",
-            "No competitive pressure to lower costs"
+            "Medicare pays fixed prices set by formula, not market competition",
+            "Durable medical equipment costs 2-3x retail prices",
+            "No incentive for suppliers to compete on price",
+            "Taxpayers and beneficiaries pay inflated costs",
+            "Prior competitive bidding pilot saved 42% — then was ended due to industry lobbying"
           ],
           "positions": [
-            "Require Medicare to use competitive bidding for all durable medical equipment",
-            "Allow beneficiaries to shop and keep savings",
-            "Publish transparent pricing data",
-            "Eliminate barriers to supplier competition",
-            "Estimated savings: $10-20 billion annually"
+            "Expand competitive bidding to all durable medical equipment",
+            "Apply competitive bidding principles to other Medicare purchases where feasible",
+            "Require transparent pricing data",
+            "Allow beneficiaries to shop and keep a portion of savings (reference pricing)"
           ],
-          "framing": "Why should taxpayers pay $600 for a wheelchair that costs $150 on Amazon? This isn't about cutting Medicare—it's about stopping waste and giving seniors better value."
+          "framing": {
+            "forConservatives": "Market competition, not government price-fixing. Let suppliers compete.",
+            "forProgressives": "Stop overpaying corporations. Save Medicare money for actual care.",
+            "forEveryone": "Why pay $500 for something that costs $100 at the store?"
+          },
+          "allies": "Taxpayer advocates, fiscal conservatives, some healthcare reformers",
+          "opposition": "Medical equipment suppliers, healthcare industry lobbyists"
         },
         {
           "title": "Occupational Licensing Reform",
-          "viability": "mod-high",
+          "viability": "high",
+          "level": "State",
           "problem": [
-            "1 in 4 workers now need government permission to work",
-            "Licensing requirements often have no safety justification",
-            "Creates barriers for low-income workers and veterans",
-            "Protects established businesses from competition",
-            "Licenses don't transfer between states"
+            "1 in 4 American workers now needs government permission to work (up from 1 in 20 in the 1950s)",
+            "Average license requires $267 in fees, 9 months of training, and an exam",
+            "Licenses don't transfer between states — blocks military spouses, movers",
+            "Primarily protects existing practitioners from competition, not consumers from harm",
+            "Barriers hit hardest for low-income workers, immigrants, and those with criminal records"
           ],
           "positions": [
-            "Require cost-benefit analysis for all licensing requirements",
-            "Eliminate licenses that serve no public safety purpose",
-            "Accept out-of-state licenses (universal recognition)",
-            "Replace most licenses with voluntary certification",
-            "Protect specific high-risk professions only (surgeons, pilots, etc.)"
+            "Universal recognition: Accept valid out-of-state licenses",
+            "Sunset reviews: Require periodic justification for all licensing requirements",
+            "Least restrictive means: Use certification, bonding, or inspection instead of licensing where possible",
+            "Right to earn a living: Require government to prove licensing is necessary, not the worker to prove they're qualified",
+            "Clean slate provisions: Remove licensing barriers for rehabilitated offenders in non-sensitive fields"
           ],
-          "framing": "Should you need 1,500 hours of training to shampoo hair? Licensing protects insiders, not consumers. Let people work."
+          "framing": {
+            "forConservatives": "Free market. Right to earn a living. Get government out of the way.",
+            "forProgressives": "Licensing barriers hurt minorities, immigrants, and the poor. This is economic justice.",
+            "forEveryone": "You shouldn't need government permission to braid hair or arrange flowers."
+          },
+          "allies": "Institute for Justice, state policy think tanks, small business groups, workforce development organizations",
+          "opposition": "Licensed professionals protecting their markets, some trade associations"
         },
         {
           "title": "Right to Repair",
           "viability": "high",
+          "level": "State (primary), Federal (vehicles, medical devices)",
           "problem": [
-            "Manufacturers block independent repair through proprietary tools and parts",
-            "Farmers can't fix their own tractors",
-            "Artificially shortened product lifespans",
-            "Monopolistic repair pricing",
-            "Environmental waste from un-repairable products"
+            "Manufacturers use software locks, proprietary parts, and withheld documentation to block independent repair",
+            "John Deere tractors require dealer visits for basic repairs — farmers can't fix their own equipment",
+            "Apple and others void warranties for independent repairs and refuse parts to non-authorized shops",
+            "Medical devices locked so hospitals can't perform basic maintenance",
+            "Electronics designed with planned obsolescence — can't be economically repaired"
           ],
           "positions": [
-            "Require manufacturers to provide repair manuals and diagnostic tools",
-            "Ban software locks that prevent repair",
-            "Allow independent repair shops to compete",
-            "Protect consumer ownership rights",
-            "Apply to all products: tractors, phones, appliances, medical devices"
+            "Require manufacturers to provide diagnostic tools, repair documentation, and replacement parts",
+            "Prohibit software locks that prevent repair",
+            "Prohibit voiding warranties solely because of independent repair",
+            "Apply to all product categories: agricultural equipment, electronics, appliances, medical devices, vehicles"
           ],
-          "framing": "If you bought it, you should be able to fix it. Right to Repair is about ownership, not regulation."
+          "framing": {
+            "forConservatives": "Property rights. If you bought it, you own it. You should be able to fix what you own.",
+            "forProgressives": "Environmental sustainability. Consumer protection against corporate control.",
+            "forFarmers": "Fix your own tractor. Don't wait three weeks for a dealer in planting season."
+          },
+          "allies": "Farmers' organizations, independent repair shops, consumer advocates, environmental groups, tech repair community",
+          "opposition": "Major manufacturers (John Deere, Apple, medical device companies), authorized dealer networks"
         },
         {
           "title": "Civil Asset Forfeiture Reform",
           "viability": "mod-high",
+          "level": "State (primary), Federal",
           "problem": [
-            "Police can seize property without criminal conviction",
-            "Owners must prove innocence to get property back",
-            "Law enforcement profits from seizures—creates perverse incentives",
-            "Disproportionately affects low-income and minority communities",
-            "Used as revenue generation rather than crime-fighting"
+            "Police can seize property (cash, cars, homes) without ever charging the owner with a crime",
+            "Property is 'guilty until proven innocent' — owner must prove it wasn't connected to crime",
+            "Law enforcement agencies often keep seized assets, creating profit incentive",
+            "Median cash seizure is ~$1,300 — not worth the legal fees to contest",
+            "Disproportionately affects low-income and minority communities"
           ],
           "positions": [
-            "Require criminal conviction before asset forfeiture",
-            "End profit incentive—redirect forfeiture funds to general revenue",
+            "Require criminal conviction before permanent forfeiture",
             "Shift burden of proof to government",
-            "Provide legal counsel for those contesting seizures",
-            "Increase transparency and reporting requirements"
+            "Redirect forfeiture proceeds to general fund (remove profit incentive)",
+            "Require clear and convincing evidence standard at minimum",
+            "Provide legal representation for those contesting seizures",
+            "Mandatory reporting of all seizures"
           ],
-          "framing": "Your property shouldn't be guilty until proven innocent. This is legalized theft, and it needs to end."
+          "framing": {
+            "forConservatives": "Property rights. Due process. Limited government. This is legalized theft.",
+            "forProgressives": "Racial justice. Economic justice. Police accountability.",
+            "forEveryone": "Your property shouldn't be guilty until you prove it innocent."
+          },
+          "allies": "Institute for Justice, ACLU, libertarian organizations, criminal justice reform groups",
+          "opposition": "Law enforcement unions, prosecutors' associations, agencies that benefit from forfeiture funds"
         },
         {
-          "title": "Anti-ESG / Anti-Stakeholder Capitalism",
-          "viability": "moderate",
+          "title": "ESG & Stakeholder Capitalism Opposition",
+          "viability": "mod-high",
+          "level": "State (pension funds, state contracts), Federal (SEC rules)",
           "problem": [
-            "Corporations push social agendas using investor money without approval",
-            "ESG scores pressure companies to adopt specific political positions",
-            "Fiduciary duty replaced with 'stakeholder' obligations",
-            "Investment firms vote shareholder proxies to advance ESG goals",
-            "Pension funds forced into ESG investments despite lower returns"
+            "ESG (Environmental, Social, Governance) scores pressure companies to adopt specific political positions",
+            "Major asset managers (BlackRock, Vanguard, State Street) vote YOUR shares for ESG goals without your consent",
+            "Banks and insurers deny services based on ESG scores (energy companies, gun manufacturers, etc.)",
+            "Fiduciary duty to investors replaced with vague 'stakeholder' obligations",
+            "State pension funds forced into ESG investments that may underperform"
           ],
           "positions": [
-            "Require explicit shareholder approval for all political/social spending",
-            "Ban pension funds from ESG-based investing without member consent",
-            "Prohibit discrimination based on ESG scores (banking, insurance)",
-            "Restore fiduciary duty to shareholders, not 'stakeholders'",
-            "Full transparency on proxy voting by investment firms"
+            "Fiduciary duty means financial returns: State pension funds must prioritize returns, not ESG goals",
+            "Pass-through voting: Asset managers must vote shares as beneficial owners direct, not as managers prefer",
+            "No ESG discrimination: Banks and insurers cannot deny services to legal industries based on ESG scores",
+            "Disclosure requirements: Companies must disclose ESG-related costs and impacts on returns",
+            "Anti-boycott provisions: State contracts cannot exclude companies for political stances"
           ],
-          "framing": "Your retirement savings shouldn't fund political agendas. ESG is social engineering disguised as investing."
+          "framing": {
+            "forConservatives": "Fiduciary duty. Shareholder rights. Stop politicizing retirement savings.",
+            "forProgressives": "Ask why billionaire asset managers get to vote your shares for their priorities, not yours.",
+            "forEveryone": "Your retirement savings should be managed for returns, not political agendas."
+          },
+          "allies": "State financial officers, energy sector, Second Amendment groups, free market think tanks",
+          "opposition": "Major asset managers, ESG rating agencies, progressive advocacy groups"
         },
         {
           "title": "Healthcare Price Transparency",
           "viability": "high",
+          "level": "Federal (Medicare/Medicaid), State (commercial)",
           "problem": [
-            "Patients can't get prices before receiving care",
-            "Same procedure costs 10x more at one hospital vs another",
-            "Insurance and providers hide negotiated rates",
-            "Creates artificial market—no shopping possible",
-            "Drives up costs and eliminates competition"
+            "Patients cannot get prices before receiving care",
+            "Same procedure varies 10x between facilities in same city",
+            "Insurance 'negotiated rates' are secret — you can't shop",
+            "Surprise bills from out-of-network providers",
+            "Hospital chargemasters are fiction — no one pays those rates",
+            "Existing federal transparency rules (2021) widely ignored, poorly enforced"
           ],
           "positions": [
-            "Require upfront, binding price quotes for all non-emergency care",
-            "Publish all negotiated rates between insurers and providers",
-            "Allow patients to shop and keep savings",
-            "Standardize billing codes and terminology",
-            "Heavy penalties for price-hiding"
+            "Enforce existing hospital price transparency rules with real penalties",
+            "Require binding upfront estimates for non-emergency care",
+            "All-payer claims databases at state level (every insurance payment public)",
+            "Real-time eligibility and price lookup tools",
+            "Ban gag clauses that prevent price disclosure",
+            "Reference pricing: Medicare pays market rate, not inflated hospital rate"
           ],
-          "framing": "You can't have a free market without prices. Healthcare transparency isn't radical—it's basic economics."
+          "framing": {
+            "forConservatives": "Free markets require price information. You can't have competition without prices.",
+            "forProgressives": "Patients deserve to know what they'll pay. End surprise bills.",
+            "forEveryone": "You wouldn't buy a car without knowing the price. Why accept that for surgery?"
+          },
+          "allies": "Patient advocates, employers, some insurers, fiscal conservatives",
+          "opposition": "Hospital systems, some provider groups that benefit from price opacity"
         },
         {
-          "title": "Environmental Policy Reform",
+          "title": "Environmental Policy: Outcome-Based, State-Driven",
           "viability": "moderate",
+          "level": "Federal (framework), State (implementation)",
           "problem": [
-            "Environmental regulations often lack cost-benefit analysis",
-            "One-size-fits-all federal mandates ignore local conditions",
-            "Delays and costs make infrastructure and housing impossible",
-            "Agenda-driven agencies exceed statutory authority",
-            "Regulations used to block competition and local development"
+            "Environmental regulations increasingly driven by political agenda rather than measurable outcomes",
+            "One-size-fits-all federal mandates ignore regional differences",
+            "Permitting delays block infrastructure for years (average NEPA review: 4.5 years)",
+            "Regulations used as weapon against disfavored industries regardless of actual environmental impact",
+            "Compliance costs fall hardest on small businesses and rural communities"
           ],
           "positions": [
-            "Require rigorous cost-benefit analysis for all environmental rules",
-            "Return most environmental authority to states",
-            "Set clear statutory limits on agency authority",
-            "Expedite permits for critical infrastructure",
-            "Focus on measurable outcomes, not process compliance",
-            "Reform NEPA to prevent endless litigation delays"
+            "Outcome-based standards: Set measurable environmental goals (air quality, water quality, species population), let states determine how to achieve them",
+            "Streamline permitting: Categorical exclusions for proven low-impact activities; concurrent (not sequential) reviews",
+            "Cost-benefit requirements: Rigorous analysis of costs vs. environmental benefits for all major rules",
+            "State primacy: States with proven track records should have primary implementation authority",
+            "Sunset provisions: Regulations expire unless renewed with demonstrated effectiveness"
           ],
-          "framing": "Good environmental policy shouldn't take 10 years to approve. Empower states, streamline permitting, focus on results."
+          "framing": {
+            "forConservatives": "Federalism. States know their environments better than Washington. Focus on results, not process.",
+            "forProgressives": "Outcome-based standards can achieve better environmental results faster than bureaucratic process.",
+            "forEveryone": "Clean air and water matter. Decade-long permitting delays don't help the environment."
+          },
+          "allies": "State environmental agencies, business groups, some conservation organizations focused on outcomes",
+          "opposition": "National environmental groups invested in federal control, regulatory agencies protecting jurisdiction"
         }
       ]
     },
