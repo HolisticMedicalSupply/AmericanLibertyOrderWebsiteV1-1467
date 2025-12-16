@@ -99,7 +99,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="mb-8"
           >
-            <img src="/logo-transparent.png" alt="ALO" className="h-80 w-80 mx-auto mb-8 animate-float" />
+            <img src="/logo-transparent.png" alt="American Liberty Order" className="h-96 w-96 md:h-[28rem] md:w-[28rem] mx-auto mb-8 animate-float object-contain" />
           </motion.div>
           
           <motion.h1
