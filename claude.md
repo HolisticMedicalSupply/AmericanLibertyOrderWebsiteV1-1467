@@ -201,25 +201,38 @@ const mutation = useMutation({
 ### Policies (16 pillars)
 Located in `src/data/policy-data.json`:
 1. Economic Freedom & Anti-Cronyism (7 sub-policies)
-2. Food & Health Sovereignty (4 sub-policies)
+2. Food & Health Sovereignty (6 sub-policies) - includes Healthy School Lunches, Fix American Grown Wheat
 3. Property Rights (3 sub-policies)
-4. Government Accountability & Reform (6 sub-policies)
+4. Government Accountability & Reform (8 sub-policies) - includes Tax Spending Audit, Politician Wealth Investigation
 5. Election Integrity (5 sub-policies)
 6. Constitutional Rights (7 sub-policies)
-7. Technology & Communications Freedom (3 sub-policies)
-8. Monetary & Financial Reform (5 sub-policies)
-9. Political System Reform (3 sub-policies)
-10. Foreign Policy & National Interest (4 sub-policies)
+7. Technology & Communications Freedom (4 sub-policies) - includes AI Regulation: State Primacy
+8. Monetary & Financial Reform (7 sub-policies) - includes Fort Knox Audit, Debt Trading Restrictions
+9. Political System Reform (4 sub-policies) - includes Campaign Finance Reform: Citizen Sponsorship
+10. Foreign Policy & National Interest (5 sub-policies) - includes Fair Trade: Environmental & Human Rights Parity
 11. Healthcare System Reform (3 sub-policies)
 12. Education Reform (3 sub-policies)
 13. Social Security Reform (1 sub-policy)
-14. Tax Reform (4 sub-policies)
+14. Tax Reform (4 sub-policies + revenueModel object)
 15. Drug Policy Reform (3 sub-policies)
 16. Housing Reform (4 sub-policies)
 
 **Policy Data Structure:**
 Each policy includes: `id`, `slug`, `title`, `icon`, `color`, `description`, and `subPolicies[]`.
 Each sub-policy includes: `title`, `viability`, `level`, `problem[]`, `positions[]`, `framing{}`, `allies`, `opposition`.
+
+**Framing Audience Keys (used in PolicyDetail.tsx):**
+- `forConservatives` (red border)
+- `forProgressives` (blue border)
+- `forEveryone` (primary color border)
+- `forFarmers` (green border)
+- `forParents` (purple border)
+- `forHealthcareAdvocates` (teal border)
+- `forRuralCommunities` (amber border)
+
+**Viability Values:** `high`, `mod-high`, `moderate`, `low-mod`, `low`, `varies`
+
+**Source Document:** Policy content should align with `alo_policy_platform_v2(1).html` - the authoritative HTML source document.
 
 ### Programs (11 categories)
 Located in `src/data/programs-data.json`:
@@ -289,3 +302,25 @@ bunx wrangler deploy       # Deploy to Cloudflare
 **Target Audience:** Civic-minded Americans, small business owners, parents, veterans, community leaders, students, and anyone concerned about government overreach.
 
 **Strategic Approach:** State-first strategy, phased implementation, coalition building, transparency, education before advocacy.
+
+## Public Assets
+
+Key images in `public/`:
+- `logo-transparent.png` - Main logo (used in hero section and footer)
+- `hero-bg-final.png` - Homepage hero background
+- `mission-we-people.png` - Mission section image (conference room photo)
+- `programs-bg.png` - Programs section background
+
+## Recent Development Notes
+
+### Policy Data Updates (Dec 2024)
+- All 16 policy pillars updated from HTML source document
+- 10 new sub-policies added across various sections
+- Tax Reform section includes `revenueModel` object with revenue sources
+- Medicare Competitive Bidding policy corrected to reflect reform stance (not expansion)
+- ESG viability corrected to "high", Environmental Policy viability corrected to "mod-high"
+
+### Homepage Updates (Dec 2024)
+- Logo sizing: `h-80 w-80 md:h-96 md:w-96` (responsive)
+- Float animation reduced to `-10px` range (prevents logo getting too close to nav)
+- Mission section image updated to conference room photo
