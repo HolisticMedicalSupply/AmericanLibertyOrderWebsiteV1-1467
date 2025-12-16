@@ -236,6 +236,18 @@ export default function PolicyDetail() {
                                   <p className="text-muted-foreground italic mt-1">{subPolicy.framing.forParents}</p>
                                 </div>
                               )}
+                              {subPolicy.framing.forHealthcareAdvocates && (
+                                <div className="border-l-2 border-teal-400 pl-4">
+                                  <span className="text-xs font-semibold text-teal-400 uppercase tracking-wide">For Healthcare Advocates</span>
+                                  <p className="text-muted-foreground italic mt-1">{subPolicy.framing.forHealthcareAdvocates}</p>
+                                </div>
+                              )}
+                              {subPolicy.framing.forRuralCommunities && (
+                                <div className="border-l-2 border-amber-400 pl-4">
+                                  <span className="text-xs font-semibold text-amber-400 uppercase tracking-wide">For Rural Communities</span>
+                                  <p className="text-muted-foreground italic mt-1">{subPolicy.framing.forRuralCommunities}</p>
+                                </div>
+                              )}
                             </div>
                           )}
                         </div>
